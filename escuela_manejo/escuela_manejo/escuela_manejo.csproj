@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{1B73A200-A12C-4D9E-BD6E-0CB465E14611}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>escuela_manejo</RootNamespace>
+    <AssemblyName>escuela_manejo</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="entidades\" />
+    <Folder Include="seguridad\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="entidades\Payment.cs" />
+    <Compile Include="entidades\Branch.cs" />
+    <Compile Include="entidades\Course.cs" />
+    <Compile Include="entidades\CourseOperating.cs" />
+    <Compile Include="entidades\CourseService.cs" />
+    <Compile Include="entidades\CreditCardPayment.cs" />
+    <Compile Include="entidades\Customer.cs" />
+    <Compile Include="entidades\Instructor.cs" />
+    <Compile Include="entidades\PaymentDetails.cs" />
+    <Compile Include="entidades\Vehicle.cs" />
+    <Compile Include="entidades\ServiceType.cs" />
+    <Compile Include="entidades\SessionsAttend.cs" />
+    <Compile Include="seguridad\Option.cs" />
+    <Compile Include="seguridad\Rol.cs" />
+    <Compile Include="seguridad\RolOption.cs" />
+    <Compile Include="seguridad\User.cs" />
+    <Compile Include="seguridad\UserRol.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

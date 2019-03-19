@@ -1,0 +1,2 @@
+/home/javier/Projects/escuela_manejo/escuela_manejo/obj/x86/Debug/escuela_manejo.csprojAssemblyReference.cache
+/home/javier/Projects/escuela_manejo/escuela_manejo/obj/x86/Debug/escuela_manejo.csproj.CoreCompileInputs.cache
