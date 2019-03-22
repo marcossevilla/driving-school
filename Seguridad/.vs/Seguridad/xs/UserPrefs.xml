@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{BA3B96C6-0577-4757-95ED-694443E1C71E}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Seguridad/FrmUsuarios.cs">
+    <Files>
+      <File FileName="Seguridad/entidades/Tbl_rolOpcion.cs" Line="8" Column="19" />
+      <File FileName="Seguridad/entidades/vwUserRol.cs" Line="16" Column="1" />
+      <File FileName="Seguridad/MainWindow.cs" Line="8" Column="11" />
+      <File FileName="Seguridad/Datos/dtUsuario.cs" Line="34" Column="1" />
+      <File FileName="Seguridad/Datos/Connection.cs" Line="1" Column="1" />
+      <File FileName="Seguridad/FrmUsuarios.cs" Line="79" Column="40" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Seguridad PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
