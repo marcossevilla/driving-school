@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+    <target-gtk-version>2.12</target-gtk-version>
+  </configuration>
+  <import>
+    <widget-library name="../bin/Debug/escuela_manejo.exe" internal="true" />
+  </import>
+  <icon-factory>
+    <icon-set id="car">
+      <source>
+        <property name="Image">resource:escuela_manejo.Icon-144(1).png</property>
+      </source>
+    </icon-set>
+  </icon-factory>
+  <widget class="Gtk.Window" id="escuela_manejo.Main_forms.Window" design-size="675 700">
+    <property name="MemberName" />
+    <property name="WidthRequest">600</property>
+    <property name="HeightRequest">300</property>
+    <property name="Title" translatable="yes">Menu Principal</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <property name="Resizable">False</property>
+    <property name="AllowGrow">False</property>
+    <property name="DefaultHeight">500</property>
+    <child>
+      <widget class="Gtk.Fixed" id="fixed1">
+        <property name="MemberName" />
+        <property name="WidthRequest">500</property>
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="Gtk.DrawingArea" id="drawingarea1">
+            <property name="MemberName" />
+          </widget>
+          <packing>
+            <property name="X">234</property>
+            <property name="Y">99</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Image" id="image2">
+            <property name="MemberName" />
+            <property name="WidthRequest">144</property>
+            <property name="HeightRequest">144</property>
+            <property name="Pixbuf">resource:escuela_manejo.driving-144.png</property>
+          </widget>
+          <packing>
+            <property name="X">437</property>
+            <property name="Y">65</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="button1">
+            <property name="MemberName" />
+            <property name="WidthRequest">200</property>
+            <property name="HeightRequest">0</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Cursos</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnButtonCoursesClicked" />
+          </widget>
+          <packing>
+            <property name="X">28</property>
+            <property name="Y">56</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="button3">
+            <property name="MemberName" />
+            <property name="WidthRequest">200</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Pagos</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">28</property>
+            <property name="Y">113</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="button2">
+            <property name="MemberName" />
+            <property name="WidthRequest">200</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Seguridad</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">28</property>
+            <property name="Y">172</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="escuela_manejo.Main_forms.CoursesMain" design-size="400 300">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">CoursesMain</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <child>
+      <widget class="Gtk.Fixed" id="fixed2">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="Gtk.Button" id="button2">
+            <property name="MemberName" />
+            <property name="WidthRequest">180</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Administrar cursos</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">13</property>
+            <property name="Y">65</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="button3">
+            <property name="MemberName" />
+            <property name="WidthRequest">180</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Administrar instructores</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">17</property>
+            <property name="Y">115</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="button4">
+            <property name="MemberName" />
+            <property name="WidthRequest">180</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Administrar vehiculos</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">18</property>
+            <property name="Y">171</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</stetic-interface>

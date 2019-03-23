@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{1B73A200-A12C-4D9E-BD6E-0CB465E14611}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="escuela_manejo/Main_forms/CoursesMain.cs">
+    <Files>
+      <File FileName="escuela_manejo/Window.cs" Line="1" Column="1" />
+      <File FileName="escuela_manejo/Main.cs" Line="1" Column="1" />
+      <File FileName="escuela_manejo/Main_forms/CoursesMain.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.ItemProperties.escuela__manejo PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -27,27 +27,76 @@
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="entidades\" />
-    <Folder Include="seguridad\" />
+    <Folder Include="Entity\" />
+    <Folder Include="Security_entities\" />
+    <Folder Include="Security_forms\" />
+    <Folder Include="Connection\" />
+    <Folder Include="Assets\" />
+    <Folder Include="Main_forms\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="entidades\Payment.cs" />
-    <Compile Include="entidades\Branch.cs" />
-    <Compile Include="entidades\Course.cs" />
-    <Compile Include="entidades\CourseOperating.cs" />
-    <Compile Include="entidades\CourseService.cs" />
-    <Compile Include="entidades\CreditCardPayment.cs" />
-    <Compile Include="entidades\Customer.cs" />
-    <Compile Include="entidades\Instructor.cs" />
-    <Compile Include="entidades\PaymentDetails.cs" />
-    <Compile Include="entidades\Vehicle.cs" />
-    <Compile Include="entidades\ServiceType.cs" />
-    <Compile Include="entidades\SessionsAttend.cs" />
-    <Compile Include="seguridad\Option.cs" />
-    <Compile Include="seguridad\Rol.cs" />
-    <Compile Include="seguridad\RolOption.cs" />
-    <Compile Include="seguridad\User.cs" />
-    <Compile Include="seguridad\UserRol.cs" />
+    <Compile Include="Entity\Payment.cs" />
+    <Compile Include="Entity\Branch.cs" />
+    <Compile Include="Entity\Course.cs" />
+    <Compile Include="Entity\CourseOperating.cs" />
+    <Compile Include="Entity\CourseService.cs" />
+    <Compile Include="Entity\CreditCardPayment.cs" />
+    <Compile Include="Entity\Customer.cs" />
+    <Compile Include="Entity\Instructor.cs" />
+    <Compile Include="Entity\PaymentDetails.cs" />
+    <Compile Include="Entity\Vehicle.cs" />
+    <Compile Include="Entity\ServiceType.cs" />
+    <Compile Include="Entity\SessionsAttend.cs" />
+    <Compile Include="Security_entities\Option.cs" />
+    <Compile Include="Security_entities\Rol.cs" />
+    <Compile Include="Security_entities\RolOption.cs" />
+    <Compile Include="Security_entities\User.cs" />
+    <Compile Include="Security_entities\UserRol.cs" />
+    <Compile Include="gtk-gui\generated.cs" />
+    <Compile Include="Connection\Connection.cs" />
+    <Compile Include="Main_forms\MainWindow.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="gtk-gui\escuela_manejo.Main_forms.Window.cs" />
+    <Compile Include="Main_forms\CoursesMain.cs" />
+    <Compile Include="gtk-gui\escuela_manejo.Main_forms.CoursesMain.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="gtk-dotnet, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Package>gtk-dotnet-2.0</Package>
+    </Reference>
+    <Reference Include="glib-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Package>glib-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="gdk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="Mono.Posix" />
+    <Reference Include="System.Data" />
+    <Reference Include="atk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="MySQL.Data.EntityFrameworkCore">
+      <HintPath>..\..\..\mySqlMonoConnector\mysql-connector-net-8.0.15-noinstall\v4.5.2\MySQL.Data.EntityFrameworkCore.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\Seguridad\mysql-connector-net-8.0.15-noinstall\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="gtk-gui\gui.stetic">
+      <LogicalName>gui.stetic</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\..\Downloads\driving-144.png">
+      <Link>driving-144.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\..\Downloads\driving.jpg">
+      <Link>driving.jpg</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\..\Downloads\Icon-144%281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
