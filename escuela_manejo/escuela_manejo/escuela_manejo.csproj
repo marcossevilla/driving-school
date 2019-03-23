@@ -33,6 +33,7 @@
     <Folder Include="Connection\" />
     <Folder Include="Assets\" />
     <Folder Include="Main_forms\" />
+    <Folder Include="Data\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entity\Payment.cs" />
@@ -59,6 +60,9 @@
     <Compile Include="gtk-gui\escuela_manejo.Main_forms.Window.cs" />
     <Compile Include="Main_forms\CoursesMain.cs" />
     <Compile Include="gtk-gui\escuela_manejo.Main_forms.CoursesMain.cs" />
+    <Compile Include="Main_forms\CoursesAdmin.cs" />
+    <Compile Include="gtk-gui\escuela_manejo.Main_forms.CoursesAdmin.cs" />
+    <Compile Include="Data\DTcoursesAdmin.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
@@ -90,13 +94,7 @@
     <EmbeddedResource Include="gtk-gui\gui.stetic">
       <LogicalName>gui.stetic</LogicalName>
     </EmbeddedResource>
-    <EmbeddedResource Include="..\..\..\..\..\Downloads\driving-144.png">
-      <Link>driving-144.png</Link>
-    </EmbeddedResource>
-    <EmbeddedResource Include="..\..\..\..\..\Downloads\driving.jpg">
-      <Link>driving.jpg</Link>
-    </EmbeddedResource>
-    <EmbeddedResource Include="..\..\..\..\..\Downloads\Icon-144%281%29.png" />
+    <EmbeddedResource Include="Assets\driving-144.png" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

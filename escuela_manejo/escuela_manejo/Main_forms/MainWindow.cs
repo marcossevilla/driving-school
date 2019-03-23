@@ -19,9 +19,5 @@ namespace escuela_manejo.Main_forms
 
         }
 
-        protected void OnButton1Clicked(object sender, EventArgs e)
-        {
-        }
     }
-
 }

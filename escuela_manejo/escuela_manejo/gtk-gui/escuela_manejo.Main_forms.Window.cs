@@ -8,13 +8,13 @@ namespace escuela_manejo.Main_forms
 
 		private global::Gtk.DrawingArea drawingarea1;
 
-		private global::Gtk.Image image2;
-
 		private global::Gtk.Button button1;
 
 		private global::Gtk.Button button3;
 
 		private global::Gtk.Button button2;
+
+		private global::Gtk.Image image1;
 
 		protected virtual void Build()
 		{
@@ -41,16 +41,6 @@ namespace escuela_manejo.Main_forms
 			w1.X = 234;
 			w1.Y = 99;
 			// Container child fixed1.Gtk.Fixed+FixedChild
-			this.image2 = new global::Gtk.Image();
-			this.image2.WidthRequest = 144;
-			this.image2.HeightRequest = 144;
-			this.image2.Name = "image2";
-			this.image2.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("escuela_manejo.driving-144.png");
-			this.fixed1.Add(this.image2);
-			global::Gtk.Fixed.FixedChild w2 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.image2]));
-			w2.X = 437;
-			w2.Y = 65;
-			// Container child fixed1.Gtk.Fixed+FixedChild
 			this.button1 = new global::Gtk.Button();
 			this.button1.WidthRequest = 200;
 			this.button1.HeightRequest = 0;
@@ -59,9 +49,9 @@ namespace escuela_manejo.Main_forms
 			this.button1.UseUnderline = true;
 			this.button1.Label = global::Mono.Unix.Catalog.GetString("Cursos");
 			this.fixed1.Add(this.button1);
-			global::Gtk.Fixed.FixedChild w3 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.button1]));
-			w3.X = 28;
-			w3.Y = 56;
+			global::Gtk.Fixed.FixedChild w2 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.button1]));
+			w2.X = 28;
+			w2.Y = 56;
 			// Container child fixed1.Gtk.Fixed+FixedChild
 			this.button3 = new global::Gtk.Button();
 			this.button3.WidthRequest = 200;
@@ -70,9 +60,9 @@ namespace escuela_manejo.Main_forms
 			this.button3.UseUnderline = true;
 			this.button3.Label = global::Mono.Unix.Catalog.GetString("Pagos");
 			this.fixed1.Add(this.button3);
-			global::Gtk.Fixed.FixedChild w4 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.button3]));
-			w4.X = 28;
-			w4.Y = 113;
+			global::Gtk.Fixed.FixedChild w3 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.button3]));
+			w3.X = 28;
+			w3.Y = 113;
 			// Container child fixed1.Gtk.Fixed+FixedChild
 			this.button2 = new global::Gtk.Button();
 			this.button2.WidthRequest = 200;
@@ -81,9 +71,16 @@ namespace escuela_manejo.Main_forms
 			this.button2.UseUnderline = true;
 			this.button2.Label = global::Mono.Unix.Catalog.GetString("Seguridad");
 			this.fixed1.Add(this.button2);
-			global::Gtk.Fixed.FixedChild w5 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.button2]));
-			w5.X = 28;
-			w5.Y = 172;
+			global::Gtk.Fixed.FixedChild w4 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.button2]));
+			w4.X = 28;
+			w4.Y = 172;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.image1 = new global::Gtk.Image();
+			this.image1.Name = "image1";
+			this.fixed1.Add(this.image1);
+			global::Gtk.Fixed.FixedChild w5 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.image1]));
+			w5.X = 491;
+			w5.Y = 101;
 			this.Add(this.fixed1);
 			if ((this.Child != null))
 			{

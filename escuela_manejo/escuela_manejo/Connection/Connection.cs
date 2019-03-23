@@ -29,7 +29,7 @@ namespace escuela_manejo.Connection
         {
             MySqlConnectionStringBuilder sb = new MySqlConnectionStringBuilder();
             sb.Server = "localhost";
-            sb.UserID = "manejo";
+            sb.UserID = "manejo1";
             sb.Database = "EscuelaManejo";
             sb.Password = "PurpleLamborghini";
             return sb.ConnectionString;
@@ -49,7 +49,7 @@ namespace escuela_manejo.Connection
                 {
 
                     con.Open();
-                    ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Info, ButtonsType.Ok, "Se abrio la conexion a la BD seguridad");
+                    ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Info, ButtonsType.Ok, "Se abrio la conexion a la BD");
                     ms.Run();
                     ms.Destroy();
                 }

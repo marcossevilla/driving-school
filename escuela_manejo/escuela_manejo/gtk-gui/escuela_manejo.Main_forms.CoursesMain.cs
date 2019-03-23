@@ -8,9 +8,9 @@ namespace escuela_manejo.Main_forms
 
 		private global::Gtk.Button button3;
 
-		private global::Gtk.Button button4;
-
 		private global::Gtk.Button button2;
+
+		private global::Gtk.Button button4;
 
 		protected virtual void Build()
 		{
@@ -33,18 +33,7 @@ namespace escuela_manejo.Main_forms
 			this.fixed2.Add(this.button3);
 			global::Gtk.Fixed.FixedChild w1 = ((global::Gtk.Fixed.FixedChild)(this.fixed2[this.button3]));
 			w1.X = 11;
-			w1.Y = 119;
-			// Container child fixed2.Gtk.Fixed+FixedChild
-			this.button4 = new global::Gtk.Button();
-			this.button4.WidthRequest = 180;
-			this.button4.CanFocus = true;
-			this.button4.Name = "button4";
-			this.button4.UseUnderline = true;
-			this.button4.Label = global::Mono.Unix.Catalog.GetString("Administrar vehiculos");
-			this.fixed2.Add(this.button4);
-			global::Gtk.Fixed.FixedChild w2 = ((global::Gtk.Fixed.FixedChild)(this.fixed2[this.button4]));
-			w2.X = 13;
-			w2.Y = 173;
+			w1.Y = 123;
 			// Container child fixed2.Gtk.Fixed+FixedChild
 			this.button2 = new global::Gtk.Button();
 			this.button2.WidthRequest = 180;
@@ -53,9 +42,20 @@ namespace escuela_manejo.Main_forms
 			this.button2.UseUnderline = true;
 			this.button2.Label = global::Mono.Unix.Catalog.GetString("Administrar cursos");
 			this.fixed2.Add(this.button2);
-			global::Gtk.Fixed.FixedChild w3 = ((global::Gtk.Fixed.FixedChild)(this.fixed2[this.button2]));
-			w3.X = 13;
-			w3.Y = 65;
+			global::Gtk.Fixed.FixedChild w2 = ((global::Gtk.Fixed.FixedChild)(this.fixed2[this.button2]));
+			w2.X = 9;
+			w2.Y = 73;
+			// Container child fixed2.Gtk.Fixed+FixedChild
+			this.button4 = new global::Gtk.Button();
+			this.button4.WidthRequest = 180;
+			this.button4.CanFocus = true;
+			this.button4.Name = "button4";
+			this.button4.UseUnderline = true;
+			this.button4.Label = global::Mono.Unix.Catalog.GetString("Administrar vehiculos");
+			this.fixed2.Add(this.button4);
+			global::Gtk.Fixed.FixedChild w3 = ((global::Gtk.Fixed.FixedChild)(this.fixed2[this.button4]));
+			w3.X = 10;
+			w3.Y = 173;
 			this.Add(this.fixed2);
 			if ((this.Child != null))
 			{
@@ -64,6 +64,7 @@ namespace escuela_manejo.Main_forms
 			this.DefaultWidth = 400;
 			this.DefaultHeight = 300;
 			this.Show();
+			this.button2.Clicked += new global::System.EventHandler(this.OnButtonCoursesAdminClicked);
 		}
 	}
 }

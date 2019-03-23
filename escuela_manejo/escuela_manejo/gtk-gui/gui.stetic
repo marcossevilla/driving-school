@@ -38,18 +38,6 @@
           </packing>
         </child>
         <child>
-          <widget class="Gtk.Image" id="image2">
-            <property name="MemberName" />
-            <property name="WidthRequest">144</property>
-            <property name="HeightRequest">144</property>
-            <property name="Pixbuf">resource:escuela_manejo.driving-144.png</property>
-          </widget>
-          <packing>
-            <property name="X">437</property>
-            <property name="Y">65</property>
-          </packing>
-        </child>
-        <child>
           <widget class="Gtk.Button" id="button1">
             <property name="MemberName" />
             <property name="WidthRequest">200</property>
@@ -93,6 +81,15 @@
             <property name="Y">172</property>
           </packing>
         </child>
+        <child>
+          <widget class="Gtk.Image" id="image1">
+            <property name="MemberName" />
+          </widget>
+          <packing>
+            <property name="X">491</property>
+            <property name="Y">101</property>
+          </packing>
+        </child>
       </widget>
     </child>
   </widget>
@@ -105,20 +102,6 @@
         <property name="MemberName" />
         <property name="HasWindow">False</property>
         <child>
-          <widget class="Gtk.Button" id="button2">
-            <property name="MemberName" />
-            <property name="WidthRequest">180</property>
-            <property name="CanFocus">True</property>
-            <property name="Type">TextOnly</property>
-            <property name="Label" translatable="yes">Administrar cursos</property>
-            <property name="UseUnderline">True</property>
-          </widget>
-          <packing>
-            <property name="X">13</property>
-            <property name="Y">65</property>
-          </packing>
-        </child>
-        <child>
           <widget class="Gtk.Button" id="button3">
             <property name="MemberName" />
             <property name="WidthRequest">180</property>
@@ -128,8 +111,23 @@
             <property name="UseUnderline">True</property>
           </widget>
           <packing>
-            <property name="X">17</property>
-            <property name="Y">115</property>
+            <property name="X">11</property>
+            <property name="Y">123</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="button2">
+            <property name="MemberName" />
+            <property name="WidthRequest">180</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Administrar cursos</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnButtonCoursesAdminClicked" />
+          </widget>
+          <packing>
+            <property name="X">9</property>
+            <property name="Y">73</property>
           </packing>
         </child>
         <child>
@@ -142,8 +140,72 @@
             <property name="UseUnderline">True</property>
           </widget>
           <packing>
-            <property name="X">18</property>
-            <property name="Y">171</property>
+            <property name="X">10</property>
+            <property name="Y">173</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="escuela_manejo.Main_forms.CoursesAdmin" design-size="685 300">
+    <action-group name="Default">
+      <action id="AgregarCursoAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Agregar Curso</property>
+        <property name="ShortLabel" translatable="yes">Agregar Curso</property>
+      </action>
+      <action id="EliminarCursoAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Eliminar Curso</property>
+        <property name="ShortLabel" translatable="yes">Eliminar Curso</property>
+      </action>
+      <action id="ModificarCursoAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Modificar Curso</property>
+        <property name="ShortLabel" translatable="yes">Modificar Curso</property>
+      </action>
+    </action-group>
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">CoursesAdmin</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <child>
+      <widget class="Gtk.VBox" id="vbox1">
+        <property name="MemberName" />
+        <property name="Spacing">6</property>
+        <child>
+          <widget class="Gtk.MenuBar" id="menubar1">
+            <property name="MemberName" />
+            <node name="menubar1" type="Menubar">
+              <node type="Menu" action="AgregarCursoAction" />
+              <node type="Menu" action="EliminarCursoAction" />
+              <node type="Menu" action="ModificarCursoAction" />
+            </node>
+          </widget>
+          <packing>
+            <property name="Position">0</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.ScrolledWindow" id="scrolledwindow1">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="ShadowType">In</property>
+            <child>
+              <widget class="Gtk.Viewport" id="GtkViewport">
+                <property name="MemberName" />
+                <property name="ShadowType">None</property>
+                <child>
+                  <placeholder />
+                </child>
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">1</property>
+            <property name="AutoSize">True</property>
           </packing>
         </child>
       </widget>
