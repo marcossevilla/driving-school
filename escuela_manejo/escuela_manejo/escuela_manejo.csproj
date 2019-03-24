@@ -55,14 +55,16 @@
     <Compile Include="Security_entities\UserRol.cs" />
     <Compile Include="gtk-gui\generated.cs" />
     <Compile Include="Connection\Connection.cs" />
-    <Compile Include="Main_forms\MainWindow.cs" />
     <Compile Include="Main.cs" />
-    <Compile Include="gtk-gui\escuela_manejo.Main_forms.Window.cs" />
-    <Compile Include="Main_forms\CoursesMain.cs" />
-    <Compile Include="gtk-gui\escuela_manejo.Main_forms.CoursesMain.cs" />
     <Compile Include="Main_forms\CoursesAdmin.cs" />
     <Compile Include="gtk-gui\escuela_manejo.Main_forms.CoursesAdmin.cs" />
     <Compile Include="Data\DTcoursesAdmin.cs" />
+    <Compile Include="Main_forms\AddCourse.cs" />
+    <Compile Include="gtk-gui\escuela_manejo.Main_forms.AddCourse.cs" />
+    <Compile Include="Main_forms\AddCourseInstance.cs" />
+    <Compile Include="gtk-gui\escuela_manejo.Main_forms.AddCourseInstance.cs" />
+    <Compile Include="Main_forms\Start.cs" />
+    <Compile Include="gtk-gui\escuela_manejo.Main_forms.Start.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
@@ -94,7 +96,7 @@
     <EmbeddedResource Include="gtk-gui\gui.stetic">
       <LogicalName>gui.stetic</LogicalName>
     </EmbeddedResource>
-    <EmbeddedResource Include="Assets\driving-144.png" />
+    <EmbeddedResource Include="Icon-144%281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

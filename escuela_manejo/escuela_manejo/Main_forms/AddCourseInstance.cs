@@ -1,9 +1,9 @@
 ﻿using System;
 namespace escuela_manejo.Main_forms
 {
-    public partial class MainWindow : Gtk.Window
+    public partial class AddCourseInstance : Gtk.Window
     {
-        public MainWindow() :
+        public AddCourseInstance() :
                 base(Gtk.WindowType.Toplevel)
         {
             this.Build();

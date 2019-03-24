@@ -10,7 +10,7 @@ class MainClass
          
             Application.Init();
 
-            Main_forms.Window win = new Main_forms.Window();
+            escuela_manejo.Main_forms.Start win = new Start();
             win.Show();
             Application.Run();
           

@@ -29,7 +29,7 @@ namespace escuela_manejo.Connection
         {
             MySqlConnectionStringBuilder sb = new MySqlConnectionStringBuilder();
             sb.Server = "localhost";
-            sb.UserID = "manejo1";
+            sb.UserID = "manejo";
             sb.Database = "EscuelaManejo";
             sb.Password = "PurpleLamborghini";
             return sb.ConnectionString;

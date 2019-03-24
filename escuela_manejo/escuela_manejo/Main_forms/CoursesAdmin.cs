@@ -11,5 +11,28 @@ namespace escuela_manejo.Main_forms
             var DTcoursesAdmin = new DTcoursesAdmin();
             this.Build();
         }
+
+        protected virtual void OnButtonAddCourseClicked(object sender, System.EventArgs e)
+        {
+            //code executed when the button is clicked
+            AddCourse addCourse = new AddCourse();
+            addCourse.Show();
+
+
+        }
+
+
+        protected virtual void OnButtonAddCourseInstanceClicked(object sender, System.EventArgs e)
+        {
+            //code executed when the button is clicked
+            AddCourseInstance addCourseIns = new AddCourseInstance();
+            addCourseIns.Show();
+
+
+        }
+
+
+
+
     }
 }
