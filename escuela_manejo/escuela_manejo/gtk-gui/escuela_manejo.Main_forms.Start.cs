@@ -65,6 +65,7 @@ namespace escuela_manejo.Main_forms
 			this.DefaultHeight = 300;
 			this.Show();
 			this.button2.Clicked += new global::System.EventHandler(this.OnButtonCourseClicked);
+			this.button3.Clicked += new global::System.EventHandler(this.OnButtonSecurityClicked);
 		}
 	}
 }

@@ -1,12 +1,11 @@
 ﻿<Properties StartupConfiguration="{1B73A200-A12C-4D9E-BD6E-0CB465E14611}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="escuela_manejo/Main_forms/AddCourseInstance.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="escuela_manejo/Main_forms/CoursesAdmin.cs">
     <Files>
       <File FileName="escuela_manejo/Main.cs" Line="22" Column="6" />
-      <File FileName="escuela_manejo/Main_forms/MainWindow.cs" Line="9" Column="18" />
-      <File FileName="escuela_manejo/Main_forms/Start.cs" Line="12" Column="53" />
-      <File FileName="escuela_manejo/Main_forms/CoursesAdmin.cs" Line="15" Column="7" />
-      <File FileName="escuela_manejo/Main_forms/AddCourseInstance.cs" Line="1" Column="1" />
-      <File FileName="escuela_manejo/Main_forms/AddCourse.cs" Line="1" Column="1" />
+      <File FileName="escuela_manejo/Main_forms/Start.cs" Line="30" Column="13" />
+      <File FileName="escuela_manejo/Main_forms/CoursesAdmin.cs" Line="16" Column="6" />
+      <File FileName="escuela_manejo/Security_forms/SecurityAddUser.cs" Line="1" Column="1" />
+      <File FileName="escuela_manejo/Security_forms/SecurityAdmin.cs" Line="2" Column="27" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

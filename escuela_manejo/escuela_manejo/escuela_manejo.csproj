@@ -65,6 +65,11 @@
     <Compile Include="gtk-gui\escuela_manejo.Main_forms.AddCourseInstance.cs" />
     <Compile Include="Main_forms\Start.cs" />
     <Compile Include="gtk-gui\escuela_manejo.Main_forms.Start.cs" />
+    <Compile Include="Security_forms\SecurityAdmin.cs" />
+    <Compile Include="Data\DTsecurityAdmin.cs" />
+    <Compile Include="gtk-gui\escuela_manejo.Security_forms.SecurityAdmin.cs" />
+    <Compile Include="Security_forms\SecurityAddUser.cs" />
+    <Compile Include="gtk-gui\escuela_manejo.Security_forms.SecurityAddUser.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">

@@ -1,5 +1,10 @@
 ﻿<Properties StartupConfiguration="{1B73A200-A12C-4D9E-BD6E-0CB465E14611}|Default">
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Main_forms/Start.cs">
+    <Files>
+      <File FileName="Main_forms/AddCourseInstance.cs" Line="1" Column="1" />
+      <File FileName="Main_forms/Start.cs" Line="25" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.ItemProperties.escuela__manejo PreferredExecutionTarget="MonoDevelop.Default" />

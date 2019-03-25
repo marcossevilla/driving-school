@@ -637,10 +637,472 @@
             <property name="Type">TextOnly</property>
             <property name="Label" translatable="yes">Seguridad</property>
             <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnButtonSecurityClicked" />
           </widget>
           <packing>
             <property name="X">47</property>
             <property name="Y">200</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="escuela_manejo.Security_forms.SecurityAdmin" design-size="463 300">
+    <action-group name="Default">
+      <action id="UsuariosAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Usuarios</property>
+        <property name="ShortLabel" translatable="yes">Usuarios</property>
+      </action>
+      <action id="RolesAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Roles</property>
+        <property name="ShortLabel" translatable="yes">Roles</property>
+      </action>
+      <action id="OpcionesAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Opciones</property>
+        <property name="ShortLabel" translatable="yes">Opciones</property>
+      </action>
+      <action id="AgregarAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Agregar</property>
+        <property name="ShortLabel" translatable="yes">Agregar</property>
+        <signal name="Activated" handler=" OnButtonAddUserClicked" />
+      </action>
+      <action id="ModificarYEliminarAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Modificar y Eliminar</property>
+        <property name="ShortLabel" translatable="yes">Modificar y Eliminar</property>
+      </action>
+      <action id="AgregarAction1">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Agregar</property>
+        <property name="ShortLabel" translatable="yes">Agregar</property>
+      </action>
+      <action id="ModificarYEliminarAction1">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Modificar y eliminar</property>
+        <property name="ShortLabel" translatable="yes">Modificar y eliminar</property>
+      </action>
+      <action id="AgregarAction2">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Agregar</property>
+        <property name="ShortLabel" translatable="yes">Agregar</property>
+      </action>
+      <action id="ModificarYEliminarAction2">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Modificar y eliminar</property>
+        <property name="ShortLabel" translatable="yes">Modificar y eliminar</property>
+      </action>
+    </action-group>
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">SecurityMain</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <child>
+      <widget class="Gtk.Fixed" id="fixed1">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="Gtk.MenuBar" id="menubar1">
+            <property name="MemberName" />
+            <node name="menubar1" type="Menubar">
+              <node type="Menu" action="UsuariosAction">
+                <node type="Menuitem" action="AgregarAction" />
+                <node type="Menuitem" action="ModificarYEliminarAction" />
+              </node>
+              <node type="Menu" action="RolesAction">
+                <node type="Menuitem" action="AgregarAction1" />
+                <node type="Menuitem" action="ModificarYEliminarAction1" />
+              </node>
+              <node type="Menu" action="OpcionesAction">
+                <node type="Menuitem" action="AgregarAction2" />
+                <node type="Menuitem" action="ModificarYEliminarAction2" />
+              </node>
+            </node>
+          </widget>
+          <packing>
+            <property name="X">-2</property>
+            <property name="Y">3</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="escuela_manejo.Security_forms.SecurityMain" design-size="463 300">
+    <action-group name="Default">
+      <action id="UsuariosAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Usuarios</property>
+        <property name="ShortLabel" translatable="yes">Usuarios</property>
+      </action>
+      <action id="RolesAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Roles</property>
+        <property name="ShortLabel" translatable="yes">Roles</property>
+      </action>
+      <action id="OpcionesAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Opciones</property>
+        <property name="ShortLabel" translatable="yes">Opciones</property>
+      </action>
+      <action id="AgregarAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Agregar</property>
+        <property name="ShortLabel" translatable="yes">Agregar</property>
+      </action>
+      <action id="ModificarYEliminarAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Modificar y Eliminar</property>
+        <property name="ShortLabel" translatable="yes">Modificar y Eliminar</property>
+      </action>
+      <action id="AgregarAction1">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Agregar</property>
+        <property name="ShortLabel" translatable="yes">Agregar</property>
+      </action>
+      <action id="ModificarYEliminarAction1">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Modificar y eliminar</property>
+        <property name="ShortLabel" translatable="yes">Modificar y eliminar</property>
+      </action>
+      <action id="AgregarAction2">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Agregar</property>
+        <property name="ShortLabel" translatable="yes">Agregar</property>
+      </action>
+      <action id="ModificarYEliminarAction2">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Modificar y eliminar</property>
+        <property name="ShortLabel" translatable="yes">Modificar y eliminar</property>
+      </action>
+    </action-group>
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">SecurityMain</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <child>
+      <widget class="Gtk.Fixed" id="fixed1">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="Gtk.MenuBar" id="menubar1">
+            <property name="MemberName" />
+            <node name="menubar1" type="Menubar">
+              <node type="Menu" action="UsuariosAction">
+                <node type="Menuitem" action="AgregarAction" />
+                <node type="Menuitem" action="ModificarYEliminarAction" />
+              </node>
+              <node type="Menu" action="RolesAction">
+                <node type="Menuitem" action="AgregarAction1" />
+                <node type="Menuitem" action="ModificarYEliminarAction1" />
+              </node>
+              <node type="Menu" action="OpcionesAction">
+                <node type="Menuitem" action="AgregarAction2" />
+                <node type="Menuitem" action="ModificarYEliminarAction2" />
+              </node>
+            </node>
+          </widget>
+          <packing>
+            <property name="X">-2</property>
+            <property name="Y">3</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="escuela_manejo.Security_forms.SecurityAddUser" design-size="400 300">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">SecurityAddUser</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <child>
+      <widget class="Gtk.VBox" id="vbox1">
+        <property name="MemberName" />
+        <property name="Spacing">6</property>
+        <child>
+          <widget class="Gtk.VBox" id="vbox3">
+            <property name="MemberName" />
+            <property name="Spacing">6</property>
+            <child>
+              <widget class="Gtk.HBox" id="hbox3">
+                <property name="MemberName" />
+                <property name="Spacing">6</property>
+                <child>
+                  <widget class="Gtk.Label" id="label1">
+                    <property name="MemberName" />
+                    <property name="LabelProp" translatable="yes">Nombre de usuario:</property>
+                  </widget>
+                  <packing>
+                    <property name="Position">0</property>
+                    <property name="AutoSize">False</property>
+                    <property name="Expand">False</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Entry" id="entry1">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="IsEditable">True</property>
+                    <property name="InvisibleChar">•</property>
+                  </widget>
+                  <packing>
+                    <property name="Position">1</property>
+                    <property name="AutoSize">False</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="Position">0</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.HBox" id="hbox4">
+                <property name="MemberName" />
+                <property name="Spacing">6</property>
+                <child>
+                  <widget class="Gtk.Label" id="label2">
+                    <property name="MemberName" />
+                    <property name="LabelProp" translatable="yes">Contraseña:</property>
+                  </widget>
+                  <packing>
+                    <property name="Position">0</property>
+                    <property name="AutoSize">True</property>
+                    <property name="Expand">False</property>
+                    <property name="Fill">False</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Entry" id="entry2">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="IsEditable">True</property>
+                    <property name="InvisibleChar">•</property>
+                  </widget>
+                  <packing>
+                    <property name="Position">1</property>
+                    <property name="AutoSize">False</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="Position">1</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.HBox" id="hbox5">
+                <property name="MemberName" />
+                <property name="Spacing">6</property>
+                <child>
+                  <widget class="Gtk.Label" id="label3">
+                    <property name="MemberName" />
+                    <property name="LabelProp" translatable="yes">Nombre:</property>
+                  </widget>
+                  <packing>
+                    <property name="Position">0</property>
+                    <property name="AutoSize">True</property>
+                    <property name="Expand">False</property>
+                    <property name="Fill">False</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Entry" id="entry3">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="IsEditable">True</property>
+                    <property name="InvisibleChar">•</property>
+                  </widget>
+                  <packing>
+                    <property name="Position">1</property>
+                    <property name="AutoSize">True</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="Position">2</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">0</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.VBox" id="vbox4">
+            <property name="MemberName" />
+            <property name="Spacing">6</property>
+            <child>
+              <widget class="Gtk.HBox" id="hbox6">
+                <property name="MemberName" />
+                <property name="Spacing">6</property>
+                <child>
+                  <widget class="Gtk.Label" id="label4">
+                    <property name="MemberName" />
+                    <property name="LabelProp" translatable="yes">Apellido:</property>
+                  </widget>
+                  <packing>
+                    <property name="Position">0</property>
+                    <property name="AutoSize">True</property>
+                    <property name="Expand">False</property>
+                    <property name="Fill">False</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Entry" id="entry4">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="IsEditable">True</property>
+                    <property name="InvisibleChar">•</property>
+                  </widget>
+                  <packing>
+                    <property name="Position">1</property>
+                    <property name="AutoSize">True</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="Position">0</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.HBox" id="hbox7">
+                <property name="MemberName" />
+                <property name="Spacing">6</property>
+                <child>
+                  <widget class="Gtk.Label" id="label5">
+                    <property name="MemberName" />
+                    <property name="LabelProp" translatable="yes">Email:</property>
+                  </widget>
+                  <packing>
+                    <property name="Position">0</property>
+                    <property name="AutoSize">True</property>
+                    <property name="Expand">False</property>
+                    <property name="Fill">False</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Entry" id="entry5">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="IsEditable">True</property>
+                    <property name="InvisibleChar">•</property>
+                  </widget>
+                  <packing>
+                    <property name="Position">1</property>
+                    <property name="AutoSize">True</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="Position">1</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.HBox" id="hbox8">
+                <property name="MemberName" />
+                <property name="Spacing">6</property>
+                <child>
+                  <widget class="Gtk.Label" id="label6">
+                    <property name="MemberName" />
+                    <property name="LabelProp">Teléfono :</property>
+                  </widget>
+                  <packing>
+                    <property name="Position">0</property>
+                    <property name="AutoSize">True</property>
+                    <property name="Expand">False</property>
+                    <property name="Fill">False</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Entry" id="entry6">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="IsEditable">True</property>
+                    <property name="InvisibleChar">•</property>
+                  </widget>
+                  <packing>
+                    <property name="Position">1</property>
+                    <property name="AutoSize">True</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="Position">2</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">1</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.VBox" id="vbox5">
+            <property name="MemberName" />
+            <property name="Spacing">6</property>
+            <child>
+              <widget class="Gtk.HBox" id="hbox9">
+                <property name="MemberName" />
+                <property name="Spacing">6</property>
+                <child>
+                  <widget class="Gtk.Label" id="label8">
+                    <property name="MemberName" />
+                    <property name="LabelProp" translatable="yes"> Cédula:</property>
+                  </widget>
+                  <packing>
+                    <property name="Position">0</property>
+                    <property name="AutoSize">True</property>
+                    <property name="Expand">False</property>
+                    <property name="Fill">False</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Entry" id="entry7">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="IsEditable">True</property>
+                    <property name="InvisibleChar">•</property>
+                  </widget>
+                  <packing>
+                    <property name="Position">1</property>
+                    <property name="AutoSize">True</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="Position">0</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">2</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
           </packing>
         </child>
       </widget>
