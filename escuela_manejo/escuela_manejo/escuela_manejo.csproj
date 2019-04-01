@@ -70,6 +70,12 @@
     <Compile Include="gtk-gui\escuela_manejo.Security_forms.SecurityAdmin.cs" />
     <Compile Include="Security_forms\SecurityAddUser.cs" />
     <Compile Include="gtk-gui\escuela_manejo.Security_forms.SecurityAddUser.cs" />
+    <Compile Include="Main_forms\ModifyCourse.cs" />
+    <Compile Include="gtk-gui\escuela_manejo.Main_forms.ModifyCourse.cs" />
+    <Compile Include="Security_forms\SecurityModifyUser.cs" />
+    <Compile Include="gtk-gui\escuela_manejo.Security_forms.SecurityModifyUser.cs" />
+    <Compile Include="Security_forms\SecurityAddRol.cs" />
+    <Compile Include="gtk-gui\escuela_manejo.Security_forms.SecurityAddRol.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
@@ -102,6 +108,12 @@
       <LogicalName>gui.stetic</LogicalName>
     </EmbeddedResource>
     <EmbeddedResource Include="Icon-144%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\drive-payment\drive\drive.csproj">
+      <Project>{BB8FCDE5-2BAF-4CCA-A1A0-068D963BAEBE}</Project>
+      <Name>drive</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

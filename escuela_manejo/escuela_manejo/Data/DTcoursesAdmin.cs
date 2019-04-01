@@ -1,4 +1,6 @@
 ﻿using System;
+using escuela_manejo.Connection;
+
 namespace escuela_manejo.Data
 {
     public class DTcoursesAdmin
@@ -6,7 +8,7 @@ namespace escuela_manejo.Data
         public DTcoursesAdmin()
         {
 
-            var conCoursesAd = new escuela_manejo.Connection.Connection();
+            var conCoursesAd = new Connection.Connection();
 
             conCoursesAd.AbrirCOnexion();
 

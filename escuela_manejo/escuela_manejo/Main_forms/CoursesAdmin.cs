@@ -22,6 +22,20 @@ namespace escuela_manejo.Main_forms
         }
 
 
+        protected virtual void OnButtonModifyCourseClicked(object sender, System.EventArgs e)
+        {
+            //code executed when the button is clicked
+            ModifyCourse modCourse = new ModifyCourse();
+            modCourse.Show();
+
+
+        }
+
+
+
+
+
+
         protected virtual void OnButtonAddCourseInstanceClicked(object sender, System.EventArgs e)
         {
             //code executed when the button is clicked

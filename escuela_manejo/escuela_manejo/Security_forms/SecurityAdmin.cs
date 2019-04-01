@@ -21,5 +21,18 @@ namespace escuela_manejo.Security_forms
 
         }
 
+
+        protected virtual void OnButtonModifyUserClicked(object sender, System.EventArgs e)
+        {
+            //code executed when the button is clicked
+            SecurityModifyUser moduser = new SecurityModifyUser();
+            moduser.Show();
+
+
+        }
+
+
+
+
     }
 }

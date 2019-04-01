@@ -11,3 +11,15 @@
 /home/javier/Desktop/UCA/driving-school/escuela_manejo/escuela_manejo/obj/x86/Debug/escuela_manejo.csproj.CopyComplete
 /home/javier/Desktop/UCA/driving-school/escuela_manejo/escuela_manejo/obj/x86/Debug/escuela_manejo.exe
 /home/javier/Desktop/UCA/driving-school/escuela_manejo/escuela_manejo/obj/x86/Debug/escuela_manejo.pdb
+/home/javier/Desktop/UCA/driving-school2/driving-school/escuela_manejo/escuela_manejo/obj/x86/Debug/escuela_manejo.csprojAssemblyReference.cache
+/home/javier/Desktop/UCA/driving-school2/driving-school/escuela_manejo/escuela_manejo/obj/x86/Debug/escuela_manejo.csproj.CoreCompileInputs.cache
+/home/javier/Desktop/UCA/driving-school2/driving-school/escuela_manejo/escuela_manejo/bin/Debug/escuela_manejo.exe
+/home/javier/Desktop/UCA/driving-school2/driving-school/escuela_manejo/escuela_manejo/bin/Debug/escuela_manejo.pdb
+/home/javier/Desktop/UCA/driving-school2/driving-school/escuela_manejo/escuela_manejo/bin/Debug/drive.exe
+/home/javier/Desktop/UCA/driving-school2/driving-school/escuela_manejo/escuela_manejo/bin/Debug/MySql.Data.dll
+/home/javier/Desktop/UCA/driving-school2/driving-school/escuela_manejo/escuela_manejo/bin/Debug/Google.Protobuf.dll
+/home/javier/Desktop/UCA/driving-school2/driving-school/escuela_manejo/escuela_manejo/bin/Debug/drive.pdb
+/home/javier/Desktop/UCA/driving-school2/driving-school/escuela_manejo/escuela_manejo/bin/Debug/MySql.Data.xml
+/home/javier/Desktop/UCA/driving-school2/driving-school/escuela_manejo/escuela_manejo/obj/x86/Debug/escuela_manejo.csproj.CopyComplete
+/home/javier/Desktop/UCA/driving-school2/driving-school/escuela_manejo/escuela_manejo/obj/x86/Debug/escuela_manejo.exe
+/home/javier/Desktop/UCA/driving-school2/driving-school/escuela_manejo/escuela_manejo/obj/x86/Debug/escuela_manejo.pdb

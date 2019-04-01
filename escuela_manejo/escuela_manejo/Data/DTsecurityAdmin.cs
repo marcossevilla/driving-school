@@ -1,4 +1,5 @@
 ﻿using System;
+using escuela_manejo.Connection;
 namespace escuela_manejo.Data
 {
     public class DTsecurityAdmin
@@ -6,8 +7,7 @@ namespace escuela_manejo.Data
         public DTsecurityAdmin()
         {
 
-            var consecurityAd = new escuela_manejo.Connection.Connection();
-
+            var consecurityAd = new Connection.Connection();
             consecurityAd.AbrirCOnexion();
 
 

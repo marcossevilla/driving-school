@@ -87,6 +87,7 @@ namespace escuela_manejo.Security_forms
 			this.DefaultHeight = 300;
 			this.Show();
 			this.AgregarAction.Activated += new global::System.EventHandler(this.OnButtonAddUserClicked);
+			this.ModificarYEliminarAction.Activated += new global::System.EventHandler(this.OnButtonModifyUserClicked);
 		}
 	}
 }

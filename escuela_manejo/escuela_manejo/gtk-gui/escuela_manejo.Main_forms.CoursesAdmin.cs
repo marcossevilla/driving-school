@@ -8,7 +8,7 @@ namespace escuela_manejo.Main_forms
 
 		private global::Gtk.Action AgregarCursoAction;
 
-		private global::Gtk.Action EliminarCursoAction;
+		private global::Gtk.Action ModificarYEliminarCursoAction;
 
 		private global::Gtk.Action ModificarCursoAction;
 
@@ -31,9 +31,9 @@ namespace escuela_manejo.Main_forms
 			this.AgregarCursoAction = new global::Gtk.Action("AgregarCursoAction", global::Mono.Unix.Catalog.GetString("Agregar Curso"), null, null);
 			this.AgregarCursoAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Agregar Curso");
 			w1.Add(this.AgregarCursoAction, null);
-			this.EliminarCursoAction = new global::Gtk.Action("EliminarCursoAction", global::Mono.Unix.Catalog.GetString("Eliminar Curso"), null, null);
-			this.EliminarCursoAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Eliminar Curso");
-			w1.Add(this.EliminarCursoAction, null);
+			this.ModificarYEliminarCursoAction = new global::Gtk.Action("ModificarYEliminarCursoAction", global::Mono.Unix.Catalog.GetString("Modificar y eliminar curso"), null, null);
+			this.ModificarYEliminarCursoAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Eliminar Curso");
+			w1.Add(this.ModificarYEliminarCursoAction, null);
 			this.ModificarCursoAction = new global::Gtk.Action("ModificarCursoAction", global::Mono.Unix.Catalog.GetString("Modificar Curso"), null, null);
 			this.ModificarCursoAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Modificar Curso");
 			w1.Add(this.ModificarCursoAction, null);
@@ -53,7 +53,7 @@ namespace escuela_manejo.Main_forms
 			this.vbox1.Name = "vbox1";
 			this.vbox1.Spacing = 6;
 			// Container child vbox1.Gtk.Box+BoxChild
-			this.UIManager.AddUiFromString(@"<ui><menubar name='menubar1'><menu name='AgregarCursoAction' action='AgregarCursoAction'><menuitem name='NuevoTipoDeCursoAction' action='NuevoTipoDeCursoAction'/><menuitem name='NuevaInstanciaDeCursoAction' action='NuevaInstanciaDeCursoAction'/></menu><menuitem name='EliminarCursoAction' action='EliminarCursoAction'/><menuitem name='ModificarCursoAction' action='ModificarCursoAction'/></menubar></ui>");
+			this.UIManager.AddUiFromString(@"<ui><menubar name='menubar1'><menu name='AgregarCursoAction' action='AgregarCursoAction'><menuitem name='NuevoTipoDeCursoAction' action='NuevoTipoDeCursoAction'/><menuitem name='NuevaInstanciaDeCursoAction' action='NuevaInstanciaDeCursoAction'/></menu><menuitem name='ModificarYEliminarCursoAction' action='ModificarYEliminarCursoAction'/></menubar></ui>");
 			this.menubar1 = ((global::Gtk.MenuBar)(this.UIManager.GetWidget("/menubar1")));
 			this.menubar1.Name = "menubar1";
 			this.vbox1.Add(this.menubar1);
@@ -77,6 +77,7 @@ namespace escuela_manejo.Main_forms
 			this.DefaultWidth = 685;
 			this.DefaultHeight = 300;
 			this.Show();
+			this.ModificarYEliminarCursoAction.Activated += new global::System.EventHandler(this.OnButtonModifyCourseClicked);
 			this.NuevoTipoDeCursoAction.Activated += new global::System.EventHandler(this.OnButtonAddCourseClicked);
 			this.NuevaInstanciaDeCursoAction.Activated += new global::System.EventHandler(this.OnButtonAddCourseInstanceClicked);
 		}

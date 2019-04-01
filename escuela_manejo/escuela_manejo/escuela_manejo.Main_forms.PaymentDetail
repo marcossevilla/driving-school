@@ -1,0 +1,12 @@
+﻿using System;
+namespace escuela_manejo
+{
+ public partial class escuela_manejo : Gtk.Window
+ {
+     public escuela_manejo() : 
+             base(Gtk.WindowType.Toplevel)
+     {
+         this.Build();
+     }
+ }
+}

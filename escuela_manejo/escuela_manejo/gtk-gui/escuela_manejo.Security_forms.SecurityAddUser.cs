@@ -54,6 +54,8 @@ namespace escuela_manejo.Security_forms
 
 		private global::Gtk.Entry entry7;
 
+		private global::Gtk.Button button3;
+
 		protected virtual void Build()
 		{
 			global::Stetic.Gui.Initialize(this);
@@ -280,6 +282,18 @@ namespace escuela_manejo.Security_forms
 			w24.Position = 2;
 			w24.Expand = false;
 			w24.Fill = false;
+			// Container child vbox1.Gtk.Box+BoxChild
+			this.button3 = new global::Gtk.Button();
+			this.button3.CanFocus = true;
+			this.button3.Name = "button3";
+			this.button3.UseUnderline = true;
+			this.button3.Label = global::Mono.Unix.Catalog.GetString("Agregar");
+			this.vbox1.Add(this.button3);
+			global::Gtk.Box.BoxChild w25 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.button3]));
+			w25.PackType = ((global::Gtk.PackType)(1));
+			w25.Position = 3;
+			w25.Expand = false;
+			w25.Fill = false;
 			this.Add(this.vbox1);
 			if ((this.Child != null))
 			{
