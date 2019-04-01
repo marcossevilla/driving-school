@@ -1,6 +1,5 @@
 ﻿using System;
 using escuela_manejo.Security_forms;
-using drive;
 
 
 
@@ -27,7 +26,7 @@ namespace escuela_manejo.Main_forms
         protected virtual void OnButtonSecurityClicked(object sender, System.EventArgs e)
         {
             //code executed when the button is clicked
-            Security_forms.SecurityAdmin sec = new SecurityAdmin() ;
+            Security_forms.SecurityAdmin sec = new SecurityAdmin();
             sec.Show();
 
 
@@ -43,9 +42,23 @@ namespace escuela_manejo.Main_forms
 
         }
 
+        protected virtual void OnButtonPaymentClients(object sender, System.EventArgs e)
+        {
+            //code executed when the button is clicked
+            drive.Payment pay = new drive.Payment();
+            pay.Show();
 
 
+        }
 
+        protected virtual void OnButtonClients(object sender, System.EventArgs e)
+        {
+            //code executed when the button is clicked
+            users.Forms.ClientF client = new  users.Forms.ClientF();
+            client.Show();
+        }
 
+    
+       
     }
 }

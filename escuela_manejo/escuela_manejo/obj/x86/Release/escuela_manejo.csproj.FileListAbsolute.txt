@@ -1,9 +1,0 @@
-/home/javier/Desktop/UCA/driving-school/escuela_manejo/escuela_manejo/bin/Release/escuela_manejo.exe
-/home/javier/Desktop/UCA/driving-school/escuela_manejo/escuela_manejo/bin/Release/MySql.Data.dll
-/home/javier/Desktop/UCA/driving-school/escuela_manejo/escuela_manejo/bin/Release/MySQL.Data.EntityFrameworkCore.dll
-/home/javier/Desktop/UCA/driving-school/escuela_manejo/escuela_manejo/bin/Release/Google.Protobuf.dll
-/home/javier/Desktop/UCA/driving-school/escuela_manejo/escuela_manejo/bin/Release/MySQL.Data.EntityFrameworkCore.xml
-/home/javier/Desktop/UCA/driving-school/escuela_manejo/escuela_manejo/bin/Release/MySql.Data.xml
-/home/javier/Desktop/UCA/driving-school/escuela_manejo/escuela_manejo/obj/x86/Release/escuela_manejo.csproj.CoreCompileInputs.cache
-/home/javier/Desktop/UCA/driving-school/escuela_manejo/escuela_manejo/obj/x86/Release/escuela_manejo.csproj.CopyComplete
-/home/javier/Desktop/UCA/driving-school/escuela_manejo/escuela_manejo/obj/x86/Release/escuela_manejo.exe

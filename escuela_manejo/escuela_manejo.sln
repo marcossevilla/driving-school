@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "escuela_manejo", "escuela_m
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "drive", "..\drive-payment\drive\drive.csproj", "{BB8FCDE5-2BAF-4CCA-A1A0-068D963BAEBE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "users", "..\form_usuarios\Escuela_manejo\users.csproj", "{AE752022-C3E0-4DF3-8223-0C4003306325}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -19,5 +21,9 @@ Global
 		{BB8FCDE5-2BAF-4CCA-A1A0-068D963BAEBE}.Debug|x86.Build.0 = Debug|x86
 		{BB8FCDE5-2BAF-4CCA-A1A0-068D963BAEBE}.Release|x86.ActiveCfg = Release|x86
 		{BB8FCDE5-2BAF-4CCA-A1A0-068D963BAEBE}.Release|x86.Build.0 = Release|x86
+		{AE752022-C3E0-4DF3-8223-0C4003306325}.Debug|x86.ActiveCfg = Debug|x86
+		{AE752022-C3E0-4DF3-8223-0C4003306325}.Debug|x86.Build.0 = Debug|x86
+		{AE752022-C3E0-4DF3-8223-0C4003306325}.Release|x86.ActiveCfg = Release|x86
+		{AE752022-C3E0-4DF3-8223-0C4003306325}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal

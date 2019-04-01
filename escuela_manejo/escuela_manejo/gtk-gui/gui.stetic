@@ -5,8 +5,9 @@
     <target-gtk-version>2.12</target-gtk-version>
   </configuration>
   <import>
-    <widget-library name="../bin/Debug/escuela_manejo.exe" internal="true" />
     <widget-library name="../../../drive-payment/drive/bin/Debug/drive.exe" />
+    <widget-library name="../../../form_usuarios/Escuela_manejo/bin/Debug/Escuela_manejo.exe" />
+    <widget-library name="../bin/Debug/escuela_manejo.exe" internal="true" />
   </import>
   <icon-factory>
     <icon-set id="car">
@@ -593,13 +594,15 @@
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="escuela_manejo.Main_forms.Start" design-size="400 300">
+  <widget class="Gtk.Window" id="escuela_manejo.Main_forms.Start" design-size="811 450">
     <property name="MemberName" />
+    <property name="HeightRequest">450</property>
     <property name="Title" translatable="yes">Start</property>
     <property name="WindowPosition">CenterOnParent</property>
     <child>
       <widget class="Gtk.Fixed" id="fixed1">
         <property name="MemberName" />
+        <property name="HeightRequest">500</property>
         <property name="HasWindow">False</property>
         <child>
           <widget class="Gtk.Button" id="button1">
@@ -612,8 +615,8 @@
             <signal name="Clicked" handler="OnButtonPaymentClicked" />
           </widget>
           <packing>
-            <property name="X">45</property>
-            <property name="Y">58</property>
+            <property name="X">49</property>
+            <property name="Y">50</property>
           </packing>
         </child>
         <child>
@@ -627,8 +630,8 @@
             <signal name="Clicked" handler="OnButtonCourseClicked" />
           </widget>
           <packing>
-            <property name="X">46</property>
-            <property name="Y">126</property>
+            <property name="X">408</property>
+            <property name="Y">50</property>
           </packing>
         </child>
         <child>
@@ -642,8 +645,51 @@
             <signal name="Clicked" handler="OnButtonSecurityClicked" />
           </widget>
           <packing>
-            <property name="X">47</property>
-            <property name="Y">200</property>
+            <property name="X">49</property>
+            <property name="Y">150</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="button4">
+            <property name="MemberName" />
+            <property name="WidthRequest">300</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Clientes </property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnButtonClients" />
+          </widget>
+          <packing>
+            <property name="X">408</property>
+            <property name="Y">150</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="button5">
+            <property name="MemberName" />
+            <property name="WidthRequest">300</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Instructores</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">49</property>
+            <property name="Y">250</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="button6">
+            <property name="MemberName" />
+            <property name="WidthRequest">300</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Vehiculos</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">408</property>
+            <property name="Y">250</property>
           </packing>
         </child>
       </widget>

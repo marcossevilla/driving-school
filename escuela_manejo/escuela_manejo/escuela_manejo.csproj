@@ -114,6 +114,10 @@
       <Project>{BB8FCDE5-2BAF-4CCA-A1A0-068D963BAEBE}</Project>
       <Name>drive</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\form_usuarios\Escuela_manejo\users.csproj">
+      <Project>{AE752022-C3E0-4DF3-8223-0C4003306325}</Project>
+      <Name>users</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
