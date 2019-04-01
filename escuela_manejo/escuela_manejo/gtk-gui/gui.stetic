@@ -5,8 +5,8 @@
     <target-gtk-version>2.12</target-gtk-version>
   </configuration>
   <import>
-    <widget-library name="../../../../../drive-payment/drive/bin/Debug/drive.exe" />
     <widget-library name="../bin/Debug/escuela_manejo.exe" internal="true" />
+    <widget-library name="../../../drive-payment/drive/bin/Debug/drive.exe" />
   </import>
   <icon-factory>
     <icon-set id="car">

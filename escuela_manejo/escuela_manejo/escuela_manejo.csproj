@@ -110,7 +110,7 @@
     <EmbeddedResource Include="Icon-144%281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\drive-payment\drive\drive.csproj">
+    <ProjectReference Include="..\..\drive-payment\drive\drive.csproj">
       <Project>{BB8FCDE5-2BAF-4CCA-A1A0-068D963BAEBE}</Project>
       <Name>drive</Name>
     </ProjectReference>

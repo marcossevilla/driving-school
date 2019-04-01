@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "escuela_manejo", "escuela_manejo\escuela_manejo.csproj", "{1B73A200-A12C-4D9E-BD6E-0CB465E14611}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "drive", "..\..\..\drive-payment\drive\drive.csproj", "{BB8FCDE5-2BAF-4CCA-A1A0-068D963BAEBE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "drive", "..\drive-payment\drive\drive.csproj", "{BB8FCDE5-2BAF-4CCA-A1A0-068D963BAEBE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
