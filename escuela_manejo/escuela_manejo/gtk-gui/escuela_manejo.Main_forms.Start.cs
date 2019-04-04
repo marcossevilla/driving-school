@@ -109,6 +109,7 @@ namespace escuela_manejo.Main_forms
 			this.button2.Clicked += new global::System.EventHandler(this.OnButtonCourseClicked);
 			this.button3.Clicked += new global::System.EventHandler(this.OnButtonSecurityClicked);
 			this.button4.Clicked += new global::System.EventHandler(this.OnButtonClients);
+			this.button6.Clicked += new global::System.EventHandler(this.OnButtonVehicle);
 		}
 	}
 }

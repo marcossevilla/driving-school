@@ -1,5 +1,6 @@
 ﻿using System;
 using escuela_manejo.Security_forms;
+using escuela_manejo.Main_forms;
 
 
 
@@ -58,7 +59,17 @@ namespace escuela_manejo.Main_forms
 
         }
 
-    
-       
+        protected virtual void OnButtonVehicle(object sender, System.EventArgs e)
+        {
+            //code executed when the button is clicked
+            VehicleAdmin veh = new VehicleAdmin();
+            veh.Show();
+
+        }
+
+
+
+
+
     }
 }
