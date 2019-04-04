@@ -54,8 +54,8 @@ namespace escuela_manejo.Main_forms
         protected virtual void OnButtonClients(object sender, System.EventArgs e)
         {
             //code executed when the button is clicked
-            users.Forms.ClientF client = new  users.Forms.ClientF();
-            client.Show();
+
+
         }
 
     

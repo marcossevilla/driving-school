@@ -3,7 +3,7 @@ using System.Data;
 using MySql.Data.MySqlClient;
 using Gtk;
 
-namespace escuela_manejo.Connection
+namespace drive.Connection
 {
     public class Connection
     {
@@ -30,7 +30,7 @@ namespace escuela_manejo.Connection
             MySqlConnectionStringBuilder sb = new MySqlConnectionStringBuilder();
             sb.Server = "localhost";
             sb.UserID = "manejo";
-            sb.Database = "escuela_manejo";
+            sb.Database = "EscuelaManejo";
             sb.Password = "PurpleLamborghini";
             return sb.ConnectionString;
         }

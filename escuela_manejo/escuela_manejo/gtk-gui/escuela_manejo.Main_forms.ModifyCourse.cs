@@ -8,11 +8,15 @@ namespace escuela_manejo.Main_forms
 
 		private global::Gtk.ScrolledWindow GtkScrolledWindow;
 
-		private global::Gtk.TreeView treeview1;
+		private global::Gtk.TreeView trwCourse;
 
 		private global::Gtk.Button button1;
 
 		private global::Gtk.Button button2;
+
+		private global::Gtk.Entry txtdes;
+
+		private global::Gtk.Entry txtname;
 
 		protected virtual void Build()
 		{
@@ -32,10 +36,10 @@ namespace escuela_manejo.Main_forms
 			this.GtkScrolledWindow.Name = "GtkScrolledWindow";
 			this.GtkScrolledWindow.ShadowType = ((global::Gtk.ShadowType)(1));
 			// Container child GtkScrolledWindow.Gtk.Container+ContainerChild
-			this.treeview1 = new global::Gtk.TreeView();
-			this.treeview1.CanFocus = true;
-			this.treeview1.Name = "treeview1";
-			this.GtkScrolledWindow.Add(this.treeview1);
+			this.trwCourse = new global::Gtk.TreeView();
+			this.trwCourse.CanFocus = true;
+			this.trwCourse.Name = "trwCourse";
+			this.GtkScrolledWindow.Add(this.trwCourse);
 			this.fixed1.Add(this.GtkScrolledWindow);
 			global::Gtk.Fixed.FixedChild w2 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.GtkScrolledWindow]));
 			w2.X = 20;
@@ -60,14 +64,37 @@ namespace escuela_manejo.Main_forms
 			global::Gtk.Fixed.FixedChild w4 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.button2]));
 			w4.X = 261;
 			w4.Y = 353;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.txtdes = new global::Gtk.Entry();
+			this.txtdes.CanFocus = true;
+			this.txtdes.Name = "txtdes";
+			this.txtdes.IsEditable = true;
+			this.txtdes.InvisibleChar = '•';
+			this.fixed1.Add(this.txtdes);
+			global::Gtk.Fixed.FixedChild w5 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.txtdes]));
+			w5.X = 210;
+			w5.Y = 42;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.txtname = new global::Gtk.Entry();
+			this.txtname.CanFocus = true;
+			this.txtname.Name = "txtname";
+			this.txtname.IsEditable = true;
+			this.txtname.InvisibleChar = '•';
+			this.fixed1.Add(this.txtname);
+			global::Gtk.Fixed.FixedChild w6 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.txtname]));
+			w6.X = 17;
+			w6.Y = 42;
 			this.Add(this.fixed1);
 			if ((this.Child != null))
 			{
 				this.Child.ShowAll();
 			}
-			this.DefaultWidth = 400;
+			this.DefaultWidth = 423;
 			this.DefaultHeight = 400;
 			this.Show();
+			this.trwCourse.CursorChanged += new global::System.EventHandler(this.OnTvwUsuariosCursorChanged);
+			this.button1.Clicked += new global::System.EventHandler(this.OnBtnActualizarClicked);
+			this.button2.Clicked += new global::System.EventHandler(this.OnBtnEliminarClicked);
 		}
 	}
 }

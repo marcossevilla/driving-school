@@ -34,6 +34,7 @@
     <Folder Include="Assets\" />
     <Folder Include="Main_forms\" />
     <Folder Include="Data\" />
+    <Folder Include="Business\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entity\Payment.cs" />
@@ -76,6 +77,9 @@
     <Compile Include="gtk-gui\escuela_manejo.Security_forms.SecurityModifyUser.cs" />
     <Compile Include="Security_forms\SecurityAddRol.cs" />
     <Compile Include="gtk-gui\escuela_manejo.Security_forms.SecurityAddRol.cs" />
+    <Compile Include="Data\DTinstanceCourse.cs" />
+    <Compile Include="Data\DTcourse.cs" />
+    <Compile Include="Business\BScourse.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
@@ -113,10 +117,6 @@
     <ProjectReference Include="..\..\drive-payment\drive\drive.csproj">
       <Project>{BB8FCDE5-2BAF-4CCA-A1A0-068D963BAEBE}</Project>
       <Name>drive</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\form_usuarios\Escuela_manejo\users.csproj">
-      <Project>{AE752022-C3E0-4DF3-8223-0C4003306325}</Project>
-      <Name>users</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

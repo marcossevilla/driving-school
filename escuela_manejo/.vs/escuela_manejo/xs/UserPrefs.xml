@@ -1,17 +1,13 @@
 ﻿<Properties StartupConfiguration="{1B73A200-A12C-4D9E-BD6E-0CB465E14611}|Default">
-  <MonoDevelop.Ide.ItemProperties.drive PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.users PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="escuela_manejo/Main_forms/Start.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="escuela_manejo/Main_forms/ModifyCourse.cs">
     <Files>
-      <File FileName="escuela_manejo/Main_forms/ModifyCourse.cs" Line="13" Column="1" />
-      <File FileName="escuela_manejo/escuela_manejo.Main_forms.PaymentDetail" Line="1" Column="1" />
-      <File FileName="../form_usuarios/Escuela_manejo/Entity/Customer.cs" Line="2" Column="16" />
-      <File FileName="../drive-payment/drive/Program.cs" Line="11" Column="12" />
-      <File FileName="escuela_manejo/Main.cs" Line="1" Column="1" />
-      <File FileName="escuela_manejo/Main_forms/Start.cs" Line="57" Column="27" />
-      <File FileName="../form_usuarios/Escuela_manejo/MainWindow.cs" Line="1" Column="1" />
-      <File FileName="../form_usuarios/Escuela_manejo/Forms/Instructor.cs" Line="4" Column="28" />
-      <File FileName="../form_usuarios/Escuela_manejo/Forms/Client.cs" Line="9" Column="23" />
+      <File FileName="escuela_manejo/Main_forms/AddCourseInstance.cs" Line="9" Column="10" />
+      <File FileName="escuela_manejo/Main_forms/AddCourse.cs" Line="14" Column="33" />
+      <File FileName="escuela_manejo/Data/DTcourse.cs" Line="134" Column="14" />
+      <File FileName="escuela_manejo/Data/DTcoursesAdmin.cs" Line="1" Column="1" />
+      <File FileName="../drive-payment/drive/CreditCardPayment.cs" Line="29" Column="7" />
+      <File FileName="escuela_manejo/Business/BScourse.cs" Line="1" Column="1" />
+      <File FileName="escuela_manejo/Main_forms/ModifyCourse.cs" Line="78" Column="35" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

@@ -14,19 +14,21 @@ namespace escuela_manejo.Main_forms
 
 		private global::Gtk.Label label1;
 
-		private global::Gtk.Entry entry2;
+		private global::Gtk.Entry entryName;
 
 		private global::Gtk.HBox hbox6;
 
 		private global::Gtk.Label label2;
 
-		private global::Gtk.Entry entry3;
+		private global::Gtk.Entry entryDes;
 
 		private global::Gtk.VBox vbox7;
 
 		private global::Gtk.VBox vbox8;
 
 		private global::Gtk.Button button2;
+
+		private global::Gtk.Button ClearEntry;
 
 		protected virtual void Build()
 		{
@@ -61,13 +63,13 @@ namespace escuela_manejo.Main_forms
 			w1.Expand = false;
 			w1.Fill = false;
 			// Container child hbox5.Gtk.Box+BoxChild
-			this.entry2 = new global::Gtk.Entry();
-			this.entry2.CanFocus = true;
-			this.entry2.Name = "entry2";
-			this.entry2.IsEditable = true;
-			this.entry2.InvisibleChar = '•';
-			this.hbox5.Add(this.entry2);
-			global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.hbox5[this.entry2]));
+			this.entryName = new global::Gtk.Entry();
+			this.entryName.CanFocus = true;
+			this.entryName.Name = "entryName";
+			this.entryName.IsEditable = true;
+			this.entryName.InvisibleChar = '•';
+			this.hbox5.Add(this.entryName);
+			global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.hbox5[this.entryName]));
 			w2.Position = 1;
 			this.vbox6.Add(this.hbox5);
 			global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.vbox6[this.hbox5]));
@@ -88,13 +90,13 @@ namespace escuela_manejo.Main_forms
 			w4.Expand = false;
 			w4.Fill = false;
 			// Container child hbox6.Gtk.Box+BoxChild
-			this.entry3 = new global::Gtk.Entry();
-			this.entry3.CanFocus = true;
-			this.entry3.Name = "entry3";
-			this.entry3.IsEditable = true;
-			this.entry3.InvisibleChar = '•';
-			this.hbox6.Add(this.entry3);
-			global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.hbox6[this.entry3]));
+			this.entryDes = new global::Gtk.Entry();
+			this.entryDes.CanFocus = true;
+			this.entryDes.Name = "entryDes";
+			this.entryDes.IsEditable = true;
+			this.entryDes.InvisibleChar = '•';
+			this.hbox6.Add(this.entryDes);
+			global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.hbox6[this.entryDes]));
 			w5.Position = 1;
 			this.vbox6.Add(this.hbox6);
 			global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.vbox6[this.hbox6]));
@@ -135,11 +137,23 @@ namespace escuela_manejo.Main_forms
 			w10.Position = 1;
 			w10.Expand = false;
 			w10.Fill = false;
-			this.hbox1.Add(this.vbox3);
-			global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.vbox3]));
-			w11.Position = 0;
+			// Container child vbox3.Gtk.Box+BoxChild
+			this.ClearEntry = new global::Gtk.Button();
+			this.ClearEntry.CanFocus = true;
+			this.ClearEntry.Name = "ClearEntry";
+			this.ClearEntry.UseUnderline = true;
+			this.ClearEntry.Label = global::Mono.Unix.Catalog.GetString("Limpiar campos");
+			this.vbox3.Add(this.ClearEntry);
+			global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.vbox3[this.ClearEntry]));
+			w11.PackType = ((global::Gtk.PackType)(1));
+			w11.Position = 2;
 			w11.Expand = false;
 			w11.Fill = false;
+			this.hbox1.Add(this.vbox3);
+			global::Gtk.Box.BoxChild w12 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.vbox3]));
+			w12.Position = 0;
+			w12.Expand = false;
+			w12.Fill = false;
 			this.Add(this.hbox1);
 			if ((this.Child != null))
 			{
@@ -148,6 +162,8 @@ namespace escuela_manejo.Main_forms
 			this.DefaultWidth = 370;
 			this.DefaultHeight = 300;
 			this.Show();
+			this.button2.Clicked += new global::System.EventHandler(this.OnBtnGuardarClicked);
+			this.ClearEntry.Clicked += new global::System.EventHandler(this.onClickBtnClean);
 		}
 	}
 }

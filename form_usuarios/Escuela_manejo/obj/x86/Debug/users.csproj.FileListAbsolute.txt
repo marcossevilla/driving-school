@@ -1,6 +1,0 @@
-/home/javier/Desktop/UCA/driving-school2/driving-school/form_usuarios/Escuela_manejo/bin/Debug/Escuela_manejo.exe
-/home/javier/Desktop/UCA/driving-school2/driving-school/form_usuarios/Escuela_manejo/bin/Debug/Escuela_manejo.pdb
-/home/javier/Desktop/UCA/driving-school2/driving-school/form_usuarios/Escuela_manejo/obj/x86/Debug/users.csprojAssemblyReference.cache
-/home/javier/Desktop/UCA/driving-school2/driving-school/form_usuarios/Escuela_manejo/obj/x86/Debug/users.csproj.CoreCompileInputs.cache
-/home/javier/Desktop/UCA/driving-school2/driving-school/form_usuarios/Escuela_manejo/obj/x86/Debug/Escuela_manejo.exe
-/home/javier/Desktop/UCA/driving-school2/driving-school/form_usuarios/Escuela_manejo/obj/x86/Debug/Escuela_manejo.pdb
