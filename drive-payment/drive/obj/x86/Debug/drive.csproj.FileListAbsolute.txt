@@ -3,3 +3,4 @@
 /home/javier/Desktop/UCA/driving-school2/driving-school/drive-payment/drive/obj/x86/Debug/drive.csproj.CoreCompileInputs.cache
 /home/javier/Desktop/UCA/driving-school2/driving-school/drive-payment/drive/obj/x86/Debug/drive.exe
 /home/javier/Desktop/UCA/driving-school2/driving-school/drive-payment/drive/obj/x86/Debug/drive.pdb
+/home/javier/Desktop/UCA/driving-school2/driving-school/drive-payment/drive/obj/x86/Debug/drive.csprojAssemblyReference.cache

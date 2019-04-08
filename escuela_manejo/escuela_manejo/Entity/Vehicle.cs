@@ -4,6 +4,7 @@ namespace escuela_manejo
     public class Vehicle
     {
         private int id_vehicle;
+        private int id_category;
         private string model;
         private string brand;
         private string plate;
@@ -11,6 +12,7 @@ namespace escuela_manejo
         private int state;
 
         public int Id_vehicle { get => id_vehicle; set => id_vehicle = value; }
+        public int Id_category { get => id_category; set => id_category = value; }
         public string Model { get => model; set => model = value; }
         public string Brand { get => brand; set => brand = value; }
         public string Plate { get => plate; set => plate = value; }

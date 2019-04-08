@@ -12,33 +12,43 @@ namespace escuela_manejo.Main_forms
 
 		private global::Gtk.Label label3;
 
-		private global::Gtk.Entry entry3;
+		private global::Gtk.Entry txtcategory;
 
-		private global::Gtk.Entry entry4;
+		private global::Gtk.Entry txtmodel;
 
 		private global::Gtk.Label label4;
 
-		private global::Gtk.Entry entry5;
+		private global::Gtk.Entry txtbrand;
 
 		private global::Gtk.Label label5;
 
-		private global::Gtk.Entry entry6;
+		private global::Gtk.Entry txtplate;
 
-		private global::Gtk.Entry entry7;
+		private global::Gtk.Entry txtcolor;
 
 		private global::Gtk.Label label6;
 
 		private global::Gtk.Label label7;
 
-		private global::Gtk.ComboBox combobox1;
+		private global::Gtk.ComboBox statecombo;
 
-		private global::Gtk.Entry entry9;
+		private global::Gtk.Entry txtbuscar;
 
 		private global::Gtk.Button button1;
 
 		private global::Gtk.ScrolledWindow GtkScrolledWindow;
 
-		private global::Gtk.TreeView treeview1;
+		private global::Gtk.TreeView vehitreeview;
+
+		private global::Gtk.Button button2;
+
+		private global::Gtk.Button button3;
+
+		private global::Gtk.Button button4;
+
+		private global::Gtk.Button button5;
+
+		private global::Gtk.Button button6;
 
 		protected virtual void Build()
 		{
@@ -76,23 +86,23 @@ namespace escuela_manejo.Main_forms
 			w3.X = 35;
 			w3.Y = 115;
 			// Container child fixed1.Gtk.Fixed+FixedChild
-			this.entry3 = new global::Gtk.Entry();
-			this.entry3.CanFocus = true;
-			this.entry3.Name = "entry3";
-			this.entry3.IsEditable = true;
-			this.entry3.InvisibleChar = '•';
-			this.fixed1.Add(this.entry3);
-			global::Gtk.Fixed.FixedChild w4 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.entry3]));
+			this.txtcategory = new global::Gtk.Entry();
+			this.txtcategory.CanFocus = true;
+			this.txtcategory.Name = "txtcategory";
+			this.txtcategory.IsEditable = true;
+			this.txtcategory.InvisibleChar = '•';
+			this.fixed1.Add(this.txtcategory);
+			global::Gtk.Fixed.FixedChild w4 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.txtcategory]));
 			w4.X = 125;
 			w4.Y = 60;
 			// Container child fixed1.Gtk.Fixed+FixedChild
-			this.entry4 = new global::Gtk.Entry();
-			this.entry4.CanFocus = true;
-			this.entry4.Name = "entry4";
-			this.entry4.IsEditable = true;
-			this.entry4.InvisibleChar = '•';
-			this.fixed1.Add(this.entry4);
-			global::Gtk.Fixed.FixedChild w5 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.entry4]));
+			this.txtmodel = new global::Gtk.Entry();
+			this.txtmodel.CanFocus = true;
+			this.txtmodel.Name = "txtmodel";
+			this.txtmodel.IsEditable = true;
+			this.txtmodel.InvisibleChar = '•';
+			this.fixed1.Add(this.txtmodel);
+			global::Gtk.Fixed.FixedChild w5 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.txtmodel]));
 			w5.X = 125;
 			w5.Y = 110;
 			// Container child fixed1.Gtk.Fixed+FixedChild
@@ -104,13 +114,13 @@ namespace escuela_manejo.Main_forms
 			w6.X = 35;
 			w6.Y = 165;
 			// Container child fixed1.Gtk.Fixed+FixedChild
-			this.entry5 = new global::Gtk.Entry();
-			this.entry5.CanFocus = true;
-			this.entry5.Name = "entry5";
-			this.entry5.IsEditable = true;
-			this.entry5.InvisibleChar = '•';
-			this.fixed1.Add(this.entry5);
-			global::Gtk.Fixed.FixedChild w7 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.entry5]));
+			this.txtbrand = new global::Gtk.Entry();
+			this.txtbrand.CanFocus = true;
+			this.txtbrand.Name = "txtbrand";
+			this.txtbrand.IsEditable = true;
+			this.txtbrand.InvisibleChar = '•';
+			this.fixed1.Add(this.txtbrand);
+			global::Gtk.Fixed.FixedChild w7 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.txtbrand]));
 			w7.X = 125;
 			w7.Y = 160;
 			// Container child fixed1.Gtk.Fixed+FixedChild
@@ -122,23 +132,23 @@ namespace escuela_manejo.Main_forms
 			w8.X = 344;
 			w8.Y = 65;
 			// Container child fixed1.Gtk.Fixed+FixedChild
-			this.entry6 = new global::Gtk.Entry();
-			this.entry6.CanFocus = true;
-			this.entry6.Name = "entry6";
-			this.entry6.IsEditable = true;
-			this.entry6.InvisibleChar = '•';
-			this.fixed1.Add(this.entry6);
-			global::Gtk.Fixed.FixedChild w9 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.entry6]));
+			this.txtplate = new global::Gtk.Entry();
+			this.txtplate.CanFocus = true;
+			this.txtplate.Name = "txtplate";
+			this.txtplate.IsEditable = true;
+			this.txtplate.InvisibleChar = '•';
+			this.fixed1.Add(this.txtplate);
+			global::Gtk.Fixed.FixedChild w9 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.txtplate]));
 			w9.X = 416;
 			w9.Y = 60;
 			// Container child fixed1.Gtk.Fixed+FixedChild
-			this.entry7 = new global::Gtk.Entry();
-			this.entry7.CanFocus = true;
-			this.entry7.Name = "entry7";
-			this.entry7.IsEditable = true;
-			this.entry7.InvisibleChar = '•';
-			this.fixed1.Add(this.entry7);
-			global::Gtk.Fixed.FixedChild w10 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.entry7]));
+			this.txtcolor = new global::Gtk.Entry();
+			this.txtcolor.CanFocus = true;
+			this.txtcolor.Name = "txtcolor";
+			this.txtcolor.IsEditable = true;
+			this.txtcolor.InvisibleChar = '•';
+			this.fixed1.Add(this.txtcolor);
+			global::Gtk.Fixed.FixedChild w10 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.txtcolor]));
 			w10.X = 416;
 			w10.Y = 110;
 			// Container child fixed1.Gtk.Fixed+FixedChild
@@ -158,22 +168,26 @@ namespace escuela_manejo.Main_forms
 			w12.X = 345;
 			w12.Y = 157;
 			// Container child fixed1.Gtk.Fixed+FixedChild
-			this.combobox1 = global::Gtk.ComboBox.NewText();
-			this.combobox1.WidthRequest = 100;
-			this.combobox1.Name = "combobox1";
-			this.fixed1.Add(this.combobox1);
-			global::Gtk.Fixed.FixedChild w13 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.combobox1]));
+			this.statecombo = global::Gtk.ComboBox.NewText();
+			this.statecombo.AppendText(global::Mono.Unix.Catalog.GetString("1"));
+			this.statecombo.AppendText(global::Mono.Unix.Catalog.GetString("2"));
+			this.statecombo.AppendText(global::Mono.Unix.Catalog.GetString("3"));
+			this.statecombo.WidthRequest = 100;
+			this.statecombo.Name = "statecombo";
+			this.statecombo.Active = 0;
+			this.fixed1.Add(this.statecombo);
+			global::Gtk.Fixed.FixedChild w13 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.statecombo]));
 			w13.X = 417;
 			w13.Y = 150;
 			// Container child fixed1.Gtk.Fixed+FixedChild
-			this.entry9 = new global::Gtk.Entry();
-			this.entry9.WidthRequest = 500;
-			this.entry9.CanFocus = true;
-			this.entry9.Name = "entry9";
-			this.entry9.IsEditable = true;
-			this.entry9.InvisibleChar = '•';
-			this.fixed1.Add(this.entry9);
-			global::Gtk.Fixed.FixedChild w14 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.entry9]));
+			this.txtbuscar = new global::Gtk.Entry();
+			this.txtbuscar.WidthRequest = 500;
+			this.txtbuscar.CanFocus = true;
+			this.txtbuscar.Name = "txtbuscar";
+			this.txtbuscar.IsEditable = true;
+			this.txtbuscar.InvisibleChar = '•';
+			this.fixed1.Add(this.txtbuscar);
+			global::Gtk.Fixed.FixedChild w14 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.txtbuscar]));
 			w14.X = 20;
 			w14.Y = 227;
 			// Container child fixed1.Gtk.Fixed+FixedChild
@@ -194,22 +208,78 @@ namespace escuela_manejo.Main_forms
 			this.GtkScrolledWindow.Name = "GtkScrolledWindow";
 			this.GtkScrolledWindow.ShadowType = ((global::Gtk.ShadowType)(1));
 			// Container child GtkScrolledWindow.Gtk.Container+ContainerChild
-			this.treeview1 = new global::Gtk.TreeView();
-			this.treeview1.CanFocus = true;
-			this.treeview1.Name = "treeview1";
-			this.GtkScrolledWindow.Add(this.treeview1);
+			this.vehitreeview = new global::Gtk.TreeView();
+			this.vehitreeview.CanFocus = true;
+			this.vehitreeview.Name = "vehitreeview";
+			this.GtkScrolledWindow.Add(this.vehitreeview);
 			this.fixed1.Add(this.GtkScrolledWindow);
 			global::Gtk.Fixed.FixedChild w17 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.GtkScrolledWindow]));
 			w17.X = 21;
 			w17.Y = 285;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.button2 = new global::Gtk.Button();
+			this.button2.CanFocus = true;
+			this.button2.Name = "button2";
+			this.button2.UseUnderline = true;
+			this.button2.Label = global::Mono.Unix.Catalog.GetString("Modificar");
+			this.fixed1.Add(this.button2);
+			global::Gtk.Fixed.FixedChild w18 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.button2]));
+			w18.X = 379;
+			w18.Y = 191;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.button3 = new global::Gtk.Button();
+			this.button3.CanFocus = true;
+			this.button3.Name = "button3";
+			this.button3.UseUnderline = true;
+			this.button3.Label = global::Mono.Unix.Catalog.GetString("Eliminar");
+			this.fixed1.Add(this.button3);
+			global::Gtk.Fixed.FixedChild w19 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.button3]));
+			w19.X = 471;
+			w19.Y = 191;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.button4 = new global::Gtk.Button();
+			this.button4.CanFocus = true;
+			this.button4.Name = "button4";
+			this.button4.UseUnderline = true;
+			this.button4.Label = global::Mono.Unix.Catalog.GetString("Cancelar");
+			this.fixed1.Add(this.button4);
+			global::Gtk.Fixed.FixedChild w20 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.button4]));
+			w20.X = 563;
+			w20.Y = 192;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.button5 = new global::Gtk.Button();
+			this.button5.CanFocus = true;
+			this.button5.Name = "button5";
+			this.button5.UseUnderline = true;
+			this.button5.Label = global::Mono.Unix.Catalog.GetString("Guardar");
+			this.fixed1.Add(this.button5);
+			global::Gtk.Fixed.FixedChild w21 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.button5]));
+			w21.X = 284;
+			w21.Y = 193;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.button6 = new global::Gtk.Button();
+			this.button6.CanFocus = true;
+			this.button6.Name = "button6";
+			this.button6.UseUnderline = true;
+			this.button6.Label = global::Mono.Unix.Catalog.GetString("Reiniciar Tabla");
+			this.fixed1.Add(this.button6);
+			global::Gtk.Fixed.FixedChild w22 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.button6]));
+			w22.X = 262;
+			w22.Y = 694;
 			this.Add(this.fixed1);
 			if ((this.Child != null))
 			{
 				this.Child.ShowAll();
 			}
 			this.DefaultWidth = 679;
-			this.DefaultHeight = 704;
+			this.DefaultHeight = 723;
 			this.Show();
+			this.button1.Clicked += new global::System.EventHandler(this.OnBtnBuscarClicked);
+			this.vehitreeview.CursorChanged += new global::System.EventHandler(this.OnTvwVehicleCursorChanged);
+			this.button3.Clicked += new global::System.EventHandler(this.OnBtnEliminarClicked);
+			this.button4.Clicked += new global::System.EventHandler(this.onClickBtnClean);
+			this.button5.Clicked += new global::System.EventHandler(this.OnBtnGuardarClicked);
+			this.button6.Clicked += new global::System.EventHandler(this.RestartTable);
 		}
 	}
 }
