@@ -23,6 +23,7 @@ namespace escuela_manejo.Security_forms
 			this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 			// Container child escuela_manejo.Security_forms.SecurityModifyUser.Gtk.Container+ContainerChild
 			this.fixed2 = new global::Gtk.Fixed();
+			this.fixed2.Name = "fixed2";
 			this.fixed2.HasWindow = false;
 			// Container child fixed2.Gtk.Fixed+FixedChild
 			this.GtkScrolledWindow = new global::Gtk.ScrolledWindow();

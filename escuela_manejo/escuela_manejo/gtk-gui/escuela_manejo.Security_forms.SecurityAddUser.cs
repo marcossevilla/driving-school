@@ -12,19 +12,19 @@ namespace escuela_manejo.Security_forms
 
 		private global::Gtk.Label label1;
 
-		private global::Gtk.Entry entry1;
+		private global::Gtk.Entry txtusername;
 
 		private global::Gtk.HBox hbox4;
 
 		private global::Gtk.Label label2;
 
-		private global::Gtk.Entry entry2;
+		private global::Gtk.Entry txtpassword;
 
 		private global::Gtk.HBox hbox5;
 
 		private global::Gtk.Label label3;
 
-		private global::Gtk.Entry entry3;
+		private global::Gtk.Entry txtname;
 
 		private global::Gtk.VBox vbox4;
 
@@ -32,19 +32,19 @@ namespace escuela_manejo.Security_forms
 
 		private global::Gtk.Label label4;
 
-		private global::Gtk.Entry entry4;
+		private global::Gtk.Entry txtlastname;
 
 		private global::Gtk.HBox hbox7;
 
 		private global::Gtk.Label label5;
 
-		private global::Gtk.Entry entry5;
+		private global::Gtk.Entry txtemail;
 
 		private global::Gtk.HBox hbox8;
 
 		private global::Gtk.Label label6;
 
-		private global::Gtk.Entry entry6;
+		private global::Gtk.Entry txtphone;
 
 		private global::Gtk.VBox vbox5;
 
@@ -52,7 +52,7 @@ namespace escuela_manejo.Security_forms
 
 		private global::Gtk.Label label8;
 
-		private global::Gtk.Entry entry7;
+		private global::Gtk.Entry txtid;
 
 		private global::Gtk.Button button3;
 
@@ -84,13 +84,13 @@ namespace escuela_manejo.Security_forms
 			w1.Position = 0;
 			w1.Expand = false;
 			// Container child hbox3.Gtk.Box+BoxChild
-			this.entry1 = new global::Gtk.Entry();
-			this.entry1.CanFocus = true;
-			this.entry1.Name = "entry1";
-			this.entry1.IsEditable = true;
-			this.entry1.InvisibleChar = '•';
-			this.hbox3.Add(this.entry1);
-			global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.hbox3[this.entry1]));
+			this.txtusername = new global::Gtk.Entry();
+			this.txtusername.CanFocus = true;
+			this.txtusername.Name = "txtusername";
+			this.txtusername.IsEditable = true;
+			this.txtusername.InvisibleChar = '•';
+			this.hbox3.Add(this.txtusername);
+			global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.hbox3[this.txtusername]));
 			w2.Position = 1;
 			this.vbox3.Add(this.hbox3);
 			global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.vbox3[this.hbox3]));
@@ -111,13 +111,13 @@ namespace escuela_manejo.Security_forms
 			w4.Expand = false;
 			w4.Fill = false;
 			// Container child hbox4.Gtk.Box+BoxChild
-			this.entry2 = new global::Gtk.Entry();
-			this.entry2.CanFocus = true;
-			this.entry2.Name = "entry2";
-			this.entry2.IsEditable = true;
-			this.entry2.InvisibleChar = '•';
-			this.hbox4.Add(this.entry2);
-			global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.hbox4[this.entry2]));
+			this.txtpassword = new global::Gtk.Entry();
+			this.txtpassword.CanFocus = true;
+			this.txtpassword.Name = "txtpassword";
+			this.txtpassword.IsEditable = true;
+			this.txtpassword.InvisibleChar = '•';
+			this.hbox4.Add(this.txtpassword);
+			global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.hbox4[this.txtpassword]));
 			w5.Position = 1;
 			this.vbox3.Add(this.hbox4);
 			global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.vbox3[this.hbox4]));
@@ -138,13 +138,13 @@ namespace escuela_manejo.Security_forms
 			w7.Expand = false;
 			w7.Fill = false;
 			// Container child hbox5.Gtk.Box+BoxChild
-			this.entry3 = new global::Gtk.Entry();
-			this.entry3.CanFocus = true;
-			this.entry3.Name = "entry3";
-			this.entry3.IsEditable = true;
-			this.entry3.InvisibleChar = '•';
-			this.hbox5.Add(this.entry3);
-			global::Gtk.Box.BoxChild w8 = ((global::Gtk.Box.BoxChild)(this.hbox5[this.entry3]));
+			this.txtname = new global::Gtk.Entry();
+			this.txtname.CanFocus = true;
+			this.txtname.Name = "txtname";
+			this.txtname.IsEditable = true;
+			this.txtname.InvisibleChar = '•';
+			this.hbox5.Add(this.txtname);
+			global::Gtk.Box.BoxChild w8 = ((global::Gtk.Box.BoxChild)(this.hbox5[this.txtname]));
 			w8.Position = 1;
 			this.vbox3.Add(this.hbox5);
 			global::Gtk.Box.BoxChild w9 = ((global::Gtk.Box.BoxChild)(this.vbox3[this.hbox5]));
@@ -174,13 +174,13 @@ namespace escuela_manejo.Security_forms
 			w11.Expand = false;
 			w11.Fill = false;
 			// Container child hbox6.Gtk.Box+BoxChild
-			this.entry4 = new global::Gtk.Entry();
-			this.entry4.CanFocus = true;
-			this.entry4.Name = "entry4";
-			this.entry4.IsEditable = true;
-			this.entry4.InvisibleChar = '•';
-			this.hbox6.Add(this.entry4);
-			global::Gtk.Box.BoxChild w12 = ((global::Gtk.Box.BoxChild)(this.hbox6[this.entry4]));
+			this.txtlastname = new global::Gtk.Entry();
+			this.txtlastname.CanFocus = true;
+			this.txtlastname.Name = "txtlastname";
+			this.txtlastname.IsEditable = true;
+			this.txtlastname.InvisibleChar = '•';
+			this.hbox6.Add(this.txtlastname);
+			global::Gtk.Box.BoxChild w12 = ((global::Gtk.Box.BoxChild)(this.hbox6[this.txtlastname]));
 			w12.Position = 1;
 			this.vbox4.Add(this.hbox6);
 			global::Gtk.Box.BoxChild w13 = ((global::Gtk.Box.BoxChild)(this.vbox4[this.hbox6]));
@@ -201,13 +201,13 @@ namespace escuela_manejo.Security_forms
 			w14.Expand = false;
 			w14.Fill = false;
 			// Container child hbox7.Gtk.Box+BoxChild
-			this.entry5 = new global::Gtk.Entry();
-			this.entry5.CanFocus = true;
-			this.entry5.Name = "entry5";
-			this.entry5.IsEditable = true;
-			this.entry5.InvisibleChar = '•';
-			this.hbox7.Add(this.entry5);
-			global::Gtk.Box.BoxChild w15 = ((global::Gtk.Box.BoxChild)(this.hbox7[this.entry5]));
+			this.txtemail = new global::Gtk.Entry();
+			this.txtemail.CanFocus = true;
+			this.txtemail.Name = "txtemail";
+			this.txtemail.IsEditable = true;
+			this.txtemail.InvisibleChar = '•';
+			this.hbox7.Add(this.txtemail);
+			global::Gtk.Box.BoxChild w15 = ((global::Gtk.Box.BoxChild)(this.hbox7[this.txtemail]));
 			w15.Position = 1;
 			this.vbox4.Add(this.hbox7);
 			global::Gtk.Box.BoxChild w16 = ((global::Gtk.Box.BoxChild)(this.vbox4[this.hbox7]));
@@ -228,13 +228,13 @@ namespace escuela_manejo.Security_forms
 			w17.Expand = false;
 			w17.Fill = false;
 			// Container child hbox8.Gtk.Box+BoxChild
-			this.entry6 = new global::Gtk.Entry();
-			this.entry6.CanFocus = true;
-			this.entry6.Name = "entry6";
-			this.entry6.IsEditable = true;
-			this.entry6.InvisibleChar = '•';
-			this.hbox8.Add(this.entry6);
-			global::Gtk.Box.BoxChild w18 = ((global::Gtk.Box.BoxChild)(this.hbox8[this.entry6]));
+			this.txtphone = new global::Gtk.Entry();
+			this.txtphone.CanFocus = true;
+			this.txtphone.Name = "txtphone";
+			this.txtphone.IsEditable = true;
+			this.txtphone.InvisibleChar = '•';
+			this.hbox8.Add(this.txtphone);
+			global::Gtk.Box.BoxChild w18 = ((global::Gtk.Box.BoxChild)(this.hbox8[this.txtphone]));
 			w18.Position = 1;
 			this.vbox4.Add(this.hbox8);
 			global::Gtk.Box.BoxChild w19 = ((global::Gtk.Box.BoxChild)(this.vbox4[this.hbox8]));
@@ -264,13 +264,13 @@ namespace escuela_manejo.Security_forms
 			w21.Expand = false;
 			w21.Fill = false;
 			// Container child hbox9.Gtk.Box+BoxChild
-			this.entry7 = new global::Gtk.Entry();
-			this.entry7.CanFocus = true;
-			this.entry7.Name = "entry7";
-			this.entry7.IsEditable = true;
-			this.entry7.InvisibleChar = '•';
-			this.hbox9.Add(this.entry7);
-			global::Gtk.Box.BoxChild w22 = ((global::Gtk.Box.BoxChild)(this.hbox9[this.entry7]));
+			this.txtid = new global::Gtk.Entry();
+			this.txtid.CanFocus = true;
+			this.txtid.Name = "txtid";
+			this.txtid.IsEditable = true;
+			this.txtid.InvisibleChar = '•';
+			this.hbox9.Add(this.txtid);
+			global::Gtk.Box.BoxChild w22 = ((global::Gtk.Box.BoxChild)(this.hbox9[this.txtid]));
 			w22.Position = 1;
 			this.vbox5.Add(this.hbox9);
 			global::Gtk.Box.BoxChild w23 = ((global::Gtk.Box.BoxChild)(this.vbox5[this.hbox9]));
@@ -302,6 +302,7 @@ namespace escuela_manejo.Security_forms
 			this.DefaultWidth = 400;
 			this.DefaultHeight = 300;
 			this.Show();
+			this.button3.Clicked += new global::System.EventHandler(this.OnBtnSaveClicked);
 		}
 	}
 }

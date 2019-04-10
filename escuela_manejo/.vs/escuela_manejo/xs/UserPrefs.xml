@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{1B73A200-A12C-4D9E-BD6E-0CB465E14611}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="escuela_manejo/Main_forms/VehicleAdmin.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="escuela_manejo/Main_forms/Clients.cs">
     <Files>
       <File FileName="escuela_manejo/Main_forms/AddCourse.cs" Line="30" Column="8" />
       <File FileName="escuela_manejo/Data/DTcourse.cs" Line="131" Column="86" />
@@ -7,10 +7,15 @@
       <File FileName="escuela_manejo/Business/BScourse.cs" Line="52" Column="6" />
       <File FileName="escuela_manejo/Main_forms/Start.cs" Line="65" Column="48" />
       <File FileName="escuela_manejo/Main.cs" Line="15" Column="1" />
-      <File FileName="escuela_manejo/Data/DTvehicle.cs" Line="166" Column="9" />
       <File FileName="../drive-payment/drive/Connection/Connection.cs" Line="33" Column="29" />
       <File FileName="escuela_manejo/Connection/Connection.cs" Line="33" Column="28" />
-      <File FileName="escuela_manejo/Main_forms/VehicleAdmin.cs" Line="177" Column="21" />
+      <File FileName="escuela_manejo/Main_forms/VehicleAdmin.cs" Line="130" Column="8" />
+      <File FileName="escuela_manejo/Security_forms/SecurityAdmin.cs" Line="1" Column="1" />
+      <File FileName="escuela_manejo/Security_business/buser.cs" Line="15" Column="1" />
+      <File FileName="escuela_manejo/Business/BSvehicle.cs" Line="11" Column="9" />
+      <File FileName="escuela_manejo/Security_data/DTuser.cs" Line="36" Column="76" />
+      <File FileName="escuela_manejo/Security_forms/SecurityAddUser.cs" Line="22" Column="172" />
+      <File FileName="escuela_manejo/Main_forms/Clients.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
@@ -23,6 +28,7 @@
     <BreakpointStore>
       <Breakpoint file="/home/javier/Desktop/UCA/driving-school2/driving-school/escuela_manejo/escuela_manejo/gtk-gui/escuela_manejo.Security_forms.SecurityMain.cs" relfile="escuela_manejo/gtk-gui/escuela_manejo.Security_forms.SecurityMain.cs" line="33" column="13" />
       <Breakpoint file="/home/javier/Desktop/UCA/drive-payment/drive/Payment.cs" line="17" column="1" />
+      <Breakpoint file="/home/javier/Desktop/UCA/driving-school2/driving-school/escuela_manejo/escuela_manejo/Security_forms/SecurityAddUser.cs" relfile="escuela_manejo/Security_forms/SecurityAddUser.cs" line="28" column="14" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
