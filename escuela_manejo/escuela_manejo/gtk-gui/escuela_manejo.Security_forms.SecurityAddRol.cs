@@ -10,13 +10,17 @@ namespace escuela_manejo.Security_forms
 
 		private global::Gtk.Label label3;
 
-		private global::Gtk.Entry entry3;
+		private global::Gtk.HBox hbox4;
+
+		private global::Gtk.Label lbrol;
+
+		private global::Gtk.Entry txtrol;
 
 		private global::Gtk.HBox hbox3;
 
 		private global::Gtk.Label label4;
 
-		private global::Gtk.Entry entry4;
+		private global::Gtk.ComboBox comborol;
 
 		private global::Gtk.Button button6;
 
@@ -38,26 +42,41 @@ namespace escuela_manejo.Security_forms
 			// Container child hbox2.Gtk.Box+BoxChild
 			this.label3 = new global::Gtk.Label();
 			this.label3.Name = "label3";
-			this.label3.LabelProp = global::Mono.Unix.Catalog.GetString("label3");
 			this.hbox2.Add(this.label3);
 			global::Gtk.Box.BoxChild w1 = ((global::Gtk.Box.BoxChild)(this.hbox2[this.label3]));
 			w1.Position = 0;
 			w1.Expand = false;
 			w1.Fill = false;
 			// Container child hbox2.Gtk.Box+BoxChild
-			this.entry3 = new global::Gtk.Entry();
-			this.entry3.CanFocus = true;
-			this.entry3.Name = "entry3";
-			this.entry3.IsEditable = true;
-			this.entry3.InvisibleChar = '•';
-			this.hbox2.Add(this.entry3);
-			global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.hbox2[this.entry3]));
-			w2.Position = 1;
+			this.hbox4 = new global::Gtk.HBox();
+			this.hbox4.Name = "hbox4";
+			this.hbox4.Spacing = 6;
+			// Container child hbox4.Gtk.Box+BoxChild
+			this.lbrol = new global::Gtk.Label();
+			this.lbrol.Name = "lbrol";
+			this.lbrol.LabelProp = global::Mono.Unix.Catalog.GetString("Rol");
+			this.hbox4.Add(this.lbrol);
+			global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.hbox4[this.lbrol]));
+			w2.Position = 0;
+			w2.Expand = false;
+			w2.Fill = false;
+			// Container child hbox4.Gtk.Box+BoxChild
+			this.txtrol = new global::Gtk.Entry();
+			this.txtrol.CanFocus = true;
+			this.txtrol.Name = "txtrol";
+			this.txtrol.IsEditable = true;
+			this.txtrol.InvisibleChar = '•';
+			this.hbox4.Add(this.txtrol);
+			global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.hbox4[this.txtrol]));
+			w3.Position = 1;
+			this.hbox2.Add(this.hbox4);
+			global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.hbox2[this.hbox4]));
+			w4.Position = 1;
 			this.vbox4.Add(this.hbox2);
-			global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.vbox4[this.hbox2]));
-			w3.Position = 0;
-			w3.Expand = false;
-			w3.Fill = false;
+			global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.vbox4[this.hbox2]));
+			w5.Position = 0;
+			w5.Expand = false;
+			w5.Fill = false;
 			// Container child vbox4.Gtk.Box+BoxChild
 			this.hbox3 = new global::Gtk.HBox();
 			this.hbox3.Name = "hbox3";
@@ -65,26 +84,26 @@ namespace escuela_manejo.Security_forms
 			// Container child hbox3.Gtk.Box+BoxChild
 			this.label4 = new global::Gtk.Label();
 			this.label4.Name = "label4";
-			this.label4.LabelProp = global::Mono.Unix.Catalog.GetString("estado");
+			this.label4.LabelProp = global::Mono.Unix.Catalog.GetString("Estado");
 			this.hbox3.Add(this.label4);
-			global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.hbox3[this.label4]));
-			w4.Position = 0;
-			w4.Expand = false;
-			w4.Fill = false;
-			// Container child hbox3.Gtk.Box+BoxChild
-			this.entry4 = new global::Gtk.Entry();
-			this.entry4.CanFocus = true;
-			this.entry4.Name = "entry4";
-			this.entry4.IsEditable = true;
-			this.entry4.InvisibleChar = '•';
-			this.hbox3.Add(this.entry4);
-			global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.hbox3[this.entry4]));
-			w5.Position = 1;
-			this.vbox4.Add(this.hbox3);
-			global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.vbox4[this.hbox3]));
-			w6.Position = 1;
+			global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.hbox3[this.label4]));
+			w6.Position = 0;
 			w6.Expand = false;
 			w6.Fill = false;
+			// Container child hbox3.Gtk.Box+BoxChild
+			this.comborol = global::Gtk.ComboBox.NewText();
+			this.comborol.WidthRequest = 150;
+			this.comborol.Name = "comborol";
+			this.hbox3.Add(this.comborol);
+			global::Gtk.Box.BoxChild w7 = ((global::Gtk.Box.BoxChild)(this.hbox3[this.comborol]));
+			w7.Position = 1;
+			w7.Expand = false;
+			w7.Fill = false;
+			this.vbox4.Add(this.hbox3);
+			global::Gtk.Box.BoxChild w8 = ((global::Gtk.Box.BoxChild)(this.vbox4[this.hbox3]));
+			w8.Position = 1;
+			w8.Expand = false;
+			w8.Fill = false;
 			// Container child vbox4.Gtk.Box+BoxChild
 			this.button6 = new global::Gtk.Button();
 			this.button6.CanFocus = true;
@@ -92,9 +111,9 @@ namespace escuela_manejo.Security_forms
 			this.button6.UseUnderline = true;
 			this.button6.Label = global::Mono.Unix.Catalog.GetString("Agregar rol");
 			this.vbox4.Add(this.button6);
-			global::Gtk.Box.BoxChild w7 = ((global::Gtk.Box.BoxChild)(this.vbox4[this.button6]));
-			w7.Position = 2;
-			w7.Fill = false;
+			global::Gtk.Box.BoxChild w9 = ((global::Gtk.Box.BoxChild)(this.vbox4[this.button6]));
+			w9.Position = 2;
+			w9.Fill = false;
 			this.Add(this.vbox4);
 			if ((this.Child != null))
 			{
@@ -103,6 +122,7 @@ namespace escuela_manejo.Security_forms
 			this.DefaultWidth = 400;
 			this.DefaultHeight = 300;
 			this.Show();
+			this.button6.Clicked += new global::System.EventHandler(this.OnBtnAgregarRolClicked);
 		}
 	}
 }

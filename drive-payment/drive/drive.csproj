@@ -53,7 +53,10 @@
     </Reference>
     <Reference Include="Mono.Posix" />
     <Reference Include="MySql.Data">
-      <HintPath>..\..\mySqlMonoConnector\mysql-connector-net-8.0.15-noinstall\v4.5.2\MySql.Data.dll</HintPath>
+      <HintPath>..\..\..\..\mySqlMonoConnector\mysql-connector-net-8.0.15-noinstall\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySQL.Data.EntityFrameworkCore">
+      <HintPath>..\..\..\..\mySqlMonoConnector\mysql-connector-net-8.0.15-noinstall\v4.5.2\MySQL.Data.EntityFrameworkCore.dll</HintPath>
     </Reference>
     <Reference Include="System.Data" />
   </ItemGroup>
@@ -74,12 +77,16 @@
     <Compile Include="gtk-gui\drive.CreditCardPayment.cs" />
     <Compile Include="CashPayment.cs" />
     <Compile Include="gtk-gui\drive.CashPayment.cs" />
-    <Compile Include="Data\DTpaymentAdmin.cs" />
+    <Compile Include="Data\DTPaymentAdmin.cs" />
     <Compile Include="Connection\Connection.cs" />
+    <Compile Include="Entity\CourseService.cs" />
+    <Compile Include="Data\DTService.cs" />
+    <Compile Include="Entity\PaymentEnt.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
     <Folder Include="Connection\" />
+    <Folder Include="Entity\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

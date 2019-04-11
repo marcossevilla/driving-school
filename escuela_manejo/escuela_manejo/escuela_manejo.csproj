@@ -90,6 +90,14 @@
     <Compile Include="Security_data\DTuser.cs" />
     <Compile Include="Main_forms\Clients.cs" />
     <Compile Include="gtk-gui\escuela_manejo.Main_forms.Clients.cs" />
+    <Compile Include="Security_data\DTrol.cs" />
+    <Compile Include="Main_forms\AddService.cs" />
+    <Compile Include="gtk-gui\escuela_manejo.Main_forms.AddService.cs" />
+    <Compile Include="Data\DTservice.cs" />
+    <Compile Include="Data\DTservicetype.cs" />
+    <Compile Include="Business\BSservice.cs" />
+    <Compile Include="Main_forms\ModifyService.cs" />
+    <Compile Include="gtk-gui\escuela_manejo.Main_forms.ModifyService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">

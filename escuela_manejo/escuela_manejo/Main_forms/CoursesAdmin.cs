@@ -32,15 +32,21 @@ namespace escuela_manejo.Main_forms
         }
 
 
-
-
-
-
         protected virtual void OnButtonAddCourseInstanceClicked(object sender, System.EventArgs e)
         {
             //code executed when the button is clicked
             AddCourseInstance addCourseIns = new AddCourseInstance();
             addCourseIns.Show();
+
+
+        }
+
+
+        protected virtual void OnButtonAddService(object sender, System.EventArgs e)
+        {
+            //code executed when the button is clicked
+            AddService addService = new AddService();
+            addService.Show();
 
 
         }

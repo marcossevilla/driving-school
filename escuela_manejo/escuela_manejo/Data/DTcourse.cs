@@ -2,6 +2,7 @@
 using System.Data;
 using System.Text;
 using Gtk;
+using System.Collections.Generic;
 namespace escuela_manejo.Data
 {
     public class DTcourse
@@ -188,6 +189,50 @@ namespace escuela_manejo.Data
             }
 
     }
+
+
+        public List<Course> cbxCourse()
+        {
+            List<Course> listCourse = new List<Course>();
+            IDataReader idr = null;
+            sb.Clear();
+            sb.Append("USE escuela_manejo;");
+            sb.Append("SELECT id_course, name FROM course ;");
+
+            try
+            {
+                con.AbrirCOnexion();
+                idr = con.Leer(CommandType.Text, sb.ToString());
+                while (idr.Read())
+                {
+                    Course tcour = new Course()
+                    //Tbl_usuarios tus = new Tbl_usuarios()
+                    {
+                        Id_course = (Int32)idr["id_course"],
+                        Name = idr["name"].ToString(),
+
+                    };
+                    listCourse.Add(tcour);
+
+                }
+                idr.Close();
+                return listCourse;
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                Console.WriteLine(e.StackTrace);
+                throw;
+            }
+            finally
+            {
+                con.CerrarConexion();
+            }
+        }
+
+
+
 
         #endregion
     }

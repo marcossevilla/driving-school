@@ -29,7 +29,6 @@ namespace escuela_manejo.Main_forms
 			// Container child escuela_manejo.Main_forms.Start.Gtk.Container+ContainerChild
 			this.fixed1 = new global::Gtk.Fixed();
 			this.fixed1.HeightRequest = 500;
-			this.fixed1.Name = "fixed1";
 			this.fixed1.HasWindow = false;
 			// Container child fixed1.Gtk.Fixed+FixedChild
 			this.button1 = new global::Gtk.Button();
@@ -48,7 +47,7 @@ namespace escuela_manejo.Main_forms
 			this.button2.CanFocus = true;
 			this.button2.Name = "button2";
 			this.button2.UseUnderline = true;
-			this.button2.Label = global::Mono.Unix.Catalog.GetString("Cursos");
+			this.button2.Label = global::Mono.Unix.Catalog.GetString("Cursos y Servicios");
 			this.fixed1.Add(this.button2);
 			global::Gtk.Fixed.FixedChild w2 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.button2]));
 			w2.X = 408;

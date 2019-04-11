@@ -88,6 +88,7 @@ namespace escuela_manejo.Security_forms
 			this.Show();
 			this.AgregarAction.Activated += new global::System.EventHandler(this.OnButtonAddUserClicked);
 			this.ModificarYEliminarAction.Activated += new global::System.EventHandler(this.OnButtonModifyUserClicked);
+			this.AgregarAction1.Activated += new global::System.EventHandler(this.OnButtonAddRolClicked);
 		}
 	}
 }

@@ -31,6 +31,15 @@ namespace escuela_manejo.Security_forms
 
         }
 
+        protected virtual void OnButtonAddRolClicked(object sender, System.EventArgs e)
+        {
+            //code executed when the button is clicked
+            SecurityAddRol moduser = new SecurityAddRol();
+            moduser.Show();
+
+
+        }
+
 
 
 

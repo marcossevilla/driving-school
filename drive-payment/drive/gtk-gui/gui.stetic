@@ -32,7 +32,7 @@
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="drive.Payment" design-size="530 649">
+  <widget class="Gtk.Window" id="drive.Payment" design-size="689 649">
     <property name="MemberName" />
     <property name="Title" translatable="yes">Payment</property>
     <property name="WindowPosition">CenterOnParent</property>
@@ -41,16 +41,6 @@
         <property name="MemberName" />
         <property name="HasWindow">False</property>
         <child>
-          <widget class="Gtk.Label" id="lblTotal">
-            <property name="MemberName" />
-            <property name="LabelProp" translatable="yes">Total</property>
-          </widget>
-          <packing>
-            <property name="X">57</property>
-            <property name="Y">269</property>
-          </packing>
-        </child>
-        <child>
           <widget class="Gtk.Label" id="lblServiceType">
             <property name="MemberName" />
             <property name="LabelProp" translatable="yes">Tipo de Servicio</property>
@@ -58,84 +48,6 @@
           <packing>
             <property name="X">28</property>
             <property name="Y">114</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="Gtk.ComboBoxEntry" id="cmbCustomerName">
-            <property name="MemberName" />
-            <property name="IsTextCombo">True</property>
-            <property name="Items" translatable="yes">
-Javier Oviedo
-Marcos Sevilla
-Guillermo Montenegro
-Nubia Robleto</property>
-          </widget>
-          <packing>
-            <property name="X">123</property>
-            <property name="Y">172</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="Gtk.Label" id="lblSubtotalDollar">
-            <property name="MemberName" />
-            <property name="LabelProp" translatable="yes">$</property>
-          </widget>
-          <packing>
-            <property name="X">127</property>
-            <property name="Y">226</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="Gtk.Label" id="lblSubtotal">
-            <property name="MemberName" />
-            <property name="LabelProp" translatable="yes">Subtotal</property>
-          </widget>
-          <packing>
-            <property name="X">44</property>
-            <property name="Y">227</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="Gtk.Label" id="lblTotalDollar">
-            <property name="MemberName" />
-            <property name="LabelProp" translatable="yes">$</property>
-          </widget>
-          <packing>
-            <property name="X">127</property>
-            <property name="Y">268</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="Gtk.Button" id="btnAddCustomer">
-            <property name="MemberName" />
-            <property name="CanFocus">True</property>
-            <property name="Type">TextOnly</property>
-            <property name="Label" translatable="yes">Agregar Cliente</property>
-            <property name="UseUnderline">True</property>
-          </widget>
-          <packing>
-            <property name="X">329</property>
-            <property name="Y">172</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="Gtk.Label" id="lblSubtotalValue">
-            <property name="MemberName" />
-            <property name="LabelProp" translatable="yes">{placeholder}</property>
-          </widget>
-          <packing>
-            <property name="X">149</property>
-            <property name="Y">226</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="Gtk.Label" id="lblTotalValue">
-            <property name="MemberName" />
-            <property name="LabelProp" translatable="yes">{placeholder}</property>
-          </widget>
-          <packing>
-            <property name="X">149</property>
-            <property name="Y">268</property>
           </packing>
         </child>
         <child>
@@ -152,69 +64,11 @@ Nubia Robleto</property>
           <widget class="Gtk.ComboBox" id="cmbServiceType">
             <property name="MemberName" />
             <property name="IsTextCombo">True</property>
-            <property name="Items" translatable="yes">
-Curso Cat. 1 Basico
-Curso Cat. 2 Basico
-Curso Cat. 3 Basico
-Curso Cat. 1 Intermedio
-Curso Cat. 2 Intermedio
-Curso Cat. 3 Intermedio
-Curso Cat. 1 Avanzado
-Curso Cat. 2 Avanzado
-Curso Cat. 3 Avanzado</property>
+            <property name="Items" translatable="yes" />
           </widget>
           <packing>
             <property name="X">145</property>
             <property name="Y">108</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="Gtk.Label" id="lblCustomer">
-            <property name="MemberName" />
-            <property name="LabelProp" translatable="yes">Cliente</property>
-          </widget>
-          <packing>
-            <property name="X">53</property>
-            <property name="Y">177</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow">
-            <property name="MemberName" />
-            <property name="WidthRequest">450</property>
-            <property name="HeightRequest">200</property>
-            <property name="ShadowType">In</property>
-          </widget>
-          <packing>
-            <property name="X">39</property>
-            <property name="Y">364</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="Gtk.Button" id="btnPayCourseService">
-            <property name="MemberName" />
-            <property name="CanFocus">True</property>
-            <property name="Type">TextOnly</property>
-            <property name="Label" translatable="yes">Agregar a Pago</property>
-            <property name="UseUnderline">True</property>
-          </widget>
-          <packing>
-            <property name="X">273</property>
-            <property name="Y">313</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="Gtk.Button" id="btnClean">
-            <property name="MemberName" />
-            <property name="CanFocus">True</property>
-            <property name="Type">TextOnly</property>
-            <property name="Label" translatable="yes">Limpiar Campos</property>
-            <property name="UseUnderline">True</property>
-            <signal name="Clicked" handler="onClickBtnClean" />
-          </widget>
-          <packing>
-            <property name="X">131</property>
-            <property name="Y">313</property>
           </packing>
         </child>
         <child>
@@ -228,7 +82,7 @@ Cash</property>
           </widget>
           <packing>
             <property name="X">171</property>
-            <property name="Y">592</property>
+            <property name="Y">579</property>
           </packing>
         </child>
         <child>
@@ -238,7 +92,7 @@ Cash</property>
           </widget>
           <packing>
             <property name="X">49</property>
-            <property name="Y">598</property>
+            <property name="Y">584</property>
           </packing>
         </child>
         <child>
@@ -252,7 +106,158 @@ Cash</property>
           </widget>
           <packing>
             <property name="X">376</property>
-            <property name="Y">594</property>
+            <property name="Y">580</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="lblSubtotal">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Subtotal</property>
+          </widget>
+          <packing>
+            <property name="X">71</property>
+            <property name="Y">489</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="lblTotalDollar">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">$</property>
+          </widget>
+          <packing>
+            <property name="X">147</property>
+            <property name="Y">488</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="lblSubtotalValue">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">{placeholder}</property>
+          </widget>
+          <packing>
+            <property name="X">162</property>
+            <property name="Y">487</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="lblTotal">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Total</property>
+          </widget>
+          <packing>
+            <property name="X">86</property>
+            <property name="Y">521</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="lblSubtotalDollar">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">$</property>
+          </widget>
+          <packing>
+            <property name="X">148</property>
+            <property name="Y">520</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="lblTotalValue">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">{placeholder}</property>
+          </widget>
+          <packing>
+            <property name="X">162</property>
+            <property name="Y">520</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="btnAddCustomer">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Agregar Cliente</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">381</property>
+            <property name="Y">407</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.ComboBoxEntry" id="cmbCustomerName">
+            <property name="MemberName" />
+            <property name="IsTextCombo">True</property>
+            <property name="Items" translatable="yes">
+Javier Oviedo
+Marcos Sevilla
+Guillermo Montenegro
+Nubia Robleto</property>
+          </widget>
+          <packing>
+            <property name="X">155</property>
+            <property name="Y">407</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="lblCustomer">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Cliente</property>
+          </widget>
+          <packing>
+            <property name="X">79</property>
+            <property name="Y">414</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="btnClean">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Limpiar Campos</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="onClickBtnClean" />
+          </widget>
+          <packing>
+            <property name="X">535</property>
+            <property name="Y">233</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="btnPayCourseService">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Agregar a Pago</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="onClickBtnPayCourseService" />
+          </widget>
+          <packing>
+            <property name="X">384</property>
+            <property name="Y">110</property>
+          </packing>
+        </child>
+        <child>
+          <placeholder />
+        </child>
+        <child>
+          <placeholder />
+        </child>
+        <child>
+          <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow">
+            <property name="MemberName" />
+            <property name="ShadowType">In</property>
+            <child>
+              <widget class="Gtk.TreeView" id="trwPayments">
+                <property name="MemberName" />
+                <property name="WidthRequest">455</property>
+                <property name="HeightRequest">152</property>
+                <property name="CanFocus">True</property>
+                <property name="ShowScrollbars">True</property>
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="X">36</property>
+            <property name="Y">175</property>
           </packing>
         </child>
       </widget>

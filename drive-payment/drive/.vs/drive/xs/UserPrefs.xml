@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{BB8FCDE5-2BAF-4CCA-A1A0-068D963BAEBE}|Default">
+  <MonoDevelop.Ide.ItemProperties.drive PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Payment.cs">
+    <Files>
+      <File FileName="Payment.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

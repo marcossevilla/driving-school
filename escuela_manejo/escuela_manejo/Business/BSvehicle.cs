@@ -8,7 +8,7 @@ namespace escuela_manejo.business
         }
 
 
-        public bool BSsavevehicle(Vehicle tvehi)
+        public bool BSsavevehicle(Vehicle tvehicle)
         {
             return true;
 

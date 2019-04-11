@@ -5,8 +5,8 @@
     <target-gtk-version>2.12</target-gtk-version>
   </configuration>
   <import>
-    <widget-library name="../../../drive-payment/drive/bin/Debug/drive.exe" />
     <widget-library name="../bin/Debug/escuela_manejo.exe" internal="true" />
+    <widget-library name="../../../drive-payment/drive/bin/Debug/drive.exe" />
   </import>
   <icon-factory>
     <icon-set id="car">
@@ -15,7 +15,7 @@
       </source>
     </icon-set>
   </icon-factory>
-  <widget class="Gtk.Window" id="escuela_manejo.Main_forms.CoursesAdmin" design-size="685 300">
+  <widget class="Gtk.Window" id="escuela_manejo.Main_forms.CoursesAdmin" design-size="773 300">
     <action-group name="Default">
       <action id="AgregarCursoAction">
         <property name="Type">Action</property>
@@ -45,6 +45,17 @@
         <property name="ShortLabel" translatable="yes">Nueva instancia de curso</property>
         <signal name="Activated" handler="OnButtonAddCourseInstanceClicked" />
       </action>
+      <action id="AgregarServicioAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Agregar Servicio</property>
+        <property name="ShortLabel" translatable="yes">Agregar Servicio</property>
+        <signal name="Activated" handler="OnButtonAddService" />
+      </action>
+      <action id="ModificarServicioAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Modificar Servicio</property>
+        <property name="ShortLabel" translatable="yes">Modificar Servicio</property>
+      </action>
     </action-group>
     <property name="MemberName" />
     <property name="Title" translatable="yes">CoursesAdmin</property>
@@ -62,6 +73,8 @@
                 <node type="Menuitem" action="NuevaInstanciaDeCursoAction" />
               </node>
               <node type="Menuitem" action="ModificarYEliminarCursoAction" />
+              <node type="Menuitem" action="AgregarServicioAction" />
+              <node type="Menuitem" action="ModificarServicioAction" />
             </node>
           </widget>
           <packing>
@@ -642,7 +655,7 @@
             <property name="WidthRequest">300</property>
             <property name="CanFocus">True</property>
             <property name="Type">TextOnly</property>
-            <property name="Label" translatable="yes">Cursos</property>
+            <property name="Label" translatable="yes">Cursos y Servicios</property>
             <property name="UseUnderline">True</property>
             <signal name="Clicked" handler="OnButtonCourseClicked" />
           </widget>
@@ -746,6 +759,7 @@
         <property name="Type">Action</property>
         <property name="Label" translatable="yes">Agregar</property>
         <property name="ShortLabel" translatable="yes">Agregar</property>
+        <signal name="Activated" handler="OnButtonAddRolClicked" />
       </action>
       <action id="ModificarYEliminarAction1">
         <property name="Type">Action</property>
@@ -1265,7 +1279,6 @@
             <child>
               <widget class="Gtk.Label" id="label3">
                 <property name="MemberName" />
-                <property name="LabelProp" translatable="yes">label3</property>
               </widget>
               <packing>
                 <property name="Position">0</property>
@@ -1275,11 +1288,33 @@
               </packing>
             </child>
             <child>
-              <widget class="Gtk.Entry" id="entry3">
+              <widget class="Gtk.HBox" id="hbox4">
                 <property name="MemberName" />
-                <property name="CanFocus">True</property>
-                <property name="IsEditable">True</property>
-                <property name="InvisibleChar">•</property>
+                <property name="Spacing">6</property>
+                <child>
+                  <widget class="Gtk.Label" id="lbrol">
+                    <property name="MemberName" />
+                    <property name="LabelProp" translatable="yes">Rol</property>
+                  </widget>
+                  <packing>
+                    <property name="Position">0</property>
+                    <property name="AutoSize">True</property>
+                    <property name="Expand">False</property>
+                    <property name="Fill">False</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Entry" id="txtrol">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="IsEditable">True</property>
+                    <property name="InvisibleChar">•</property>
+                  </widget>
+                  <packing>
+                    <property name="Position">1</property>
+                    <property name="AutoSize">True</property>
+                  </packing>
+                </child>
               </widget>
               <packing>
                 <property name="Position">1</property>
@@ -1301,7 +1336,7 @@
             <child>
               <widget class="Gtk.Label" id="label4">
                 <property name="MemberName" />
-                <property name="LabelProp" translatable="yes">estado</property>
+                <property name="LabelProp" translatable="yes">Estado</property>
               </widget>
               <packing>
                 <property name="Position">0</property>
@@ -1311,15 +1346,17 @@
               </packing>
             </child>
             <child>
-              <widget class="Gtk.Entry" id="entry4">
+              <widget class="Gtk.ComboBox" id="comborol">
                 <property name="MemberName" />
-                <property name="CanFocus">True</property>
-                <property name="IsEditable">True</property>
-                <property name="InvisibleChar">•</property>
+                <property name="WidthRequest">150</property>
+                <property name="IsTextCombo">True</property>
+                <property name="Items" translatable="yes" />
               </widget>
               <packing>
                 <property name="Position">1</property>
-                <property name="AutoSize">False</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
               </packing>
             </child>
           </widget>
@@ -1337,6 +1374,7 @@
             <property name="Type">TextOnly</property>
             <property name="Label" translatable="yes">Agregar rol</property>
             <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnBtnAgregarRolClicked" />
           </widget>
           <packing>
             <property name="Position">2</property>
@@ -1623,6 +1661,158 @@
   <widget class="Gtk.Window" id="escuela_manejo.Main_forms.Clients" design-size="400 300">
     <property name="MemberName" />
     <property name="Title" translatable="yes">Clients</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <child>
+      <placeholder />
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="escuela_manejo.Main_forms.AddService" design-size="407 351">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">AddService</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <child>
+      <widget class="Gtk.Fixed" id="fixed1">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="Gtk.Label" id="label2">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Servicio</property>
+          </widget>
+          <packing>
+            <property name="X">150</property>
+            <property name="Y">7</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label3">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Curso</property>
+          </widget>
+          <packing>
+            <property name="X">40</property>
+            <property name="Y">108</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.ComboBox" id="combocourse">
+            <property name="MemberName" />
+            <property name="IsTextCombo">True</property>
+            <property name="Items" translatable="yes" />
+          </widget>
+          <packing>
+            <property name="X">122</property>
+            <property name="Y">104</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label4">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Precio</property>
+          </widget>
+          <packing>
+            <property name="X">33</property>
+            <property name="Y">200</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label5">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">$</property>
+          </widget>
+          <packing>
+            <property name="X">119</property>
+            <property name="Y">200</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="txtprice">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">•</property>
+          </widget>
+          <packing>
+            <property name="X">141</property>
+            <property name="Y">200</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label6">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Estado</property>
+          </widget>
+          <packing>
+            <property name="X">32</property>
+            <property name="Y">250</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.ComboBox" id="combostate">
+            <property name="MemberName" />
+            <property name="IsTextCombo">True</property>
+            <property name="Items" translatable="yes">Seleccione...
+1
+2
+3</property>
+          </widget>
+          <packing>
+            <property name="X">118</property>
+            <property name="Y">245</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="btnAddService">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Agregar Servicio</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="onClickBtnAddService" />
+          </widget>
+          <packing>
+            <property name="X">131</property>
+            <property name="Y">300</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="txtname">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">•</property>
+          </widget>
+          <packing>
+            <property name="X">121</property>
+            <property name="Y">61</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label1">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Nombre </property>
+          </widget>
+          <packing>
+            <property name="X">28</property>
+            <property name="Y">65</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label7">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Si no es un curso no seleccionar</property>
+          </widget>
+          <packing>
+            <property name="X">122</property>
+            <property name="Y">156</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="escuela_manejo.Main_forms.ModifyService" design-size="400 300">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">ModifyService</property>
     <property name="WindowPosition">CenterOnParent</property>
     <child>
       <placeholder />
