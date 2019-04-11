@@ -16,7 +16,12 @@ Inactive
 
 Broken
 
-but the queary to the database should use integers , representing the states stated above. 
+but the query to the database should use integers , representing the states stated above. 
 
 2. In user security there are fields in the table that cannot be accesed through the forms , start date , pwd_temp and state.
    start date should be the date that the user is created , the other two should be accesible by the form. 
+
+
+WARNINGS:
+
+1. State field in course_service is static, combobox doesn't return right value.
