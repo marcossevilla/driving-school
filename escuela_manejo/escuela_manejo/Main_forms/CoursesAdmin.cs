@@ -52,6 +52,16 @@ namespace escuela_manejo.Main_forms
         }
 
 
+        protected virtual void OnButtonModifyService(object sender, System.EventArgs e)
+        {
+            //code executed when the button is clicked
+            ModifyService modifyService = new ModifyService();
+            modifyService.Show();
+
+
+        }
+
+
 
 
     }

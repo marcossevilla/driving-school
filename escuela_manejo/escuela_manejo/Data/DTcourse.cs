@@ -188,7 +188,7 @@ namespace escuela_manejo.Data
                 con.CerrarConexion();
             }
 
-    }
+        }
 
 
         public List<Course> cbxCourse()

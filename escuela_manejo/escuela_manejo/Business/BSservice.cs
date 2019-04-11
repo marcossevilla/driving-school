@@ -50,7 +50,7 @@ namespace escuela_manejo.business
             }
         }
 
-        public bool BSupdateCourse(Course Tcour)
+        public bool BSupdateCourseService(CourseService tservice)
         {
             return true;
 

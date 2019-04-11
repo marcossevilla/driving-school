@@ -1,20 +1,15 @@
 ﻿<Properties StartupConfiguration="{1B73A200-A12C-4D9E-BD6E-0CB465E14611}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="escuela_manejo/Main_forms/ModifyService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../drive-payment/drive/Data/DTService.cs">
     <Files>
-      <File FileName="../drive-payment/drive/Data/DTPaymentAdmin.cs" Line="44" Column="30" />
-      <File FileName="../drive-payment/drive/Connection/Connection.cs" Line="1" Column="14" />
-      <File FileName="../drive-payment/drive/Data/DTService.cs" Line="15" Column="54" />
-      <File FileName="../drive-payment/drive/Entity/PaymentEnt.cs" Line="2" Column="23" />
-      <File FileName="escuela_manejo/Main_forms/ModifyCourse.cs" Line="21" Column="50" />
-      <File FileName="escuela_manejo/Main_forms/AddCourse.cs" Line="1" Column="1" />
-      <File FileName="escuela_manejo/Main_forms/CoursesAdmin.cs" Line="1" Column="1" />
-      <File FileName="escuela_manejo/Main_forms/ModifyService.cs" Line="1" Column="1" />
-      <File FileName="../drive-payment/drive/Payment.cs" Line="112" Column="47" />
-      <File FileName="escuela_manejo/Entity/CourseService.cs" Line="1" Column="1" />
       <File FileName="escuela_manejo/Main_forms/AddService.cs" Line="71" Column="70" />
-      <File FileName="escuela_manejo/Data/DTcourse.cs" Line="132" Column="67" />
-      <File FileName="escuela_manejo/Business/BScourse.cs" Line="1" Column="1" />
-      <File FileName="escuela_manejo/Business/BSservice.cs" Line="1" Column="1" />
+      <File FileName="escuela_manejo/Main_forms/ModifyService.cs" Line="46" Column="24" />
+      <File FileName="escuela_manejo/Main_forms/ModifyCourse.cs" Line="41" Column="22" />
+      <File FileName="escuela_manejo/Data/DTcoursesAdmin.cs" Line="1" Column="1" />
+      <File FileName="escuela_manejo/Business/BSservice.cs" Line="55" Column="25" />
+      <File FileName="escuela_manejo/Data/DTcourse.cs" Line="191" Column="10" />
+      <File FileName="../drive-payment/drive/Data/DTPaymentAdmin.cs" Line="29" Column="36" />
+      <File FileName="escuela_manejo/Data/DTservice.cs" Line="126" Column="63" />
+      <File FileName="../drive-payment/drive/Data/DTService.cs" Line="23" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

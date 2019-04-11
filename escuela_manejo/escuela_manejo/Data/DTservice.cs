@@ -118,7 +118,114 @@ namespace escuela_manejo.Data
 
         }//fin del metodo
 
+        public ListStore ListService()
+        {
+            MessageDialog ms = null;
 
+            ListStore data = new ListStore(typeof(string),
+                typeof(string), typeof(string), typeof(string));
+
+            IDataReader dr = null;
+            sb.Clear();
+            sb.Append("SELECT id_course_service, name, price, state FROM course_service;");
+
+            try
+            {
+                con.AbrirCOnexion();
+                dr = con.Leer(CommandType.Text, sb.ToString());
+                while (dr.Read())
+                {
+                    data.AppendValues(dr[0].ToString(), dr[1].ToString(),
+                        dr[2].ToString(), dr[3].ToString());
+                    //dr.Close();
+                }//fin de while
+                return data;
+            }
+            catch (Exception e)
+            {
+                ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error,
+                    ButtonsType.Ok, e.Message);
+                ms.Run();
+                ms.Destroy();
+                throw;
+            }
+            finally
+            {
+                dr.Close();
+                con.CerrarConexion();
+            }
+        }//fin del metodo
+
+        public Int32 DeleteService(CourseService tservice)
+        {
+            MessageDialog ms = null;
+
+            int delete;
+            sb.Clear();
+            sb.Append("USE escuela_manejo;");
+            sb.Append("Delete from course_service WHERE id_course_service=" + tservice.Id_course_service + ";");
+
+            try
+            {
+                con.AbrirCOnexion();
+                delete = con.Ejecutar(CommandType.Text, sb.ToString());
+                return delete;
+            }
+            catch (Exception e)
+            {
+                ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error,
+                    ButtonsType.Ok, e.Message);
+                ms.Run();
+                ms.Destroy();
+                throw;
+            }
+            finally
+            {
+                con.CerrarConexion();
+            }
+
+        }//fin del metodo
+
+        public bool UpdateService(CourseService tservice)
+        {
+
+            bool update = false;
+            MessageDialog ms = null;
+
+            int x = 0;
+            sb.Clear();
+            sb.Append("USE escuela_manejo;");
+            sb.Append("UPDATE course_service SET name = '" + tservice.Name + "',");
+            sb.Append("price = '" + tservice.Price + "',");
+            sb.Append("state = '" + tservice.State + "'");
+            sb.Append("WHERE id_course_service = " + tservice.Id_course_service + ";");
+
+            try
+            {
+                con.AbrirCOnexion();
+                x = con.Ejecutar(CommandType.Text, sb.ToString());
+
+                if (x > 0)
+                {
+                    update = true;
+                }
+                //actualizado = cone.Ejecutar(CommandType.Text,sb.ToString());
+                return update;
+            }
+            catch (Exception e)
+            {
+                ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error,
+                    ButtonsType.Ok, e.Message);
+                ms.Run();
+                ms.Destroy();
+                throw;
+            }
+            finally
+            {
+                con.CerrarConexion();
+            }
+
+        }
 
         public DTservice()
         {

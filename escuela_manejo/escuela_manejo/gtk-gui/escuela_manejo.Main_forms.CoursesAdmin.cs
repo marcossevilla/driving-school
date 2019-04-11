@@ -91,6 +91,7 @@ namespace escuela_manejo.Main_forms
 			this.NuevoTipoDeCursoAction.Activated += new global::System.EventHandler(this.OnButtonAddCourseClicked);
 			this.NuevaInstanciaDeCursoAction.Activated += new global::System.EventHandler(this.OnButtonAddCourseInstanceClicked);
 			this.AgregarServicioAction.Activated += new global::System.EventHandler(this.OnButtonAddService);
+			this.ModificarServicioAction.Activated += new global::System.EventHandler(this.OnButtonModifyService);
 		}
 	}
 }
