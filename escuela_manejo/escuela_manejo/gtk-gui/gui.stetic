@@ -5,8 +5,9 @@
     <target-gtk-version>2.12</target-gtk-version>
   </configuration>
   <import>
-    <widget-library name="../bin/Debug/escuela_manejo.exe" internal="true" />
     <widget-library name="../../../drive-payment/drive/bin/Debug/drive.exe" />
+    <widget-library name="../../../client_ins/Escuela_Manejo1/bin/Debug/Escuela_Manejo1.exe" />
+    <widget-library name="../bin/Debug/escuela_manejo.exe" internal="true" />
   </import>
   <icon-factory>
     <icon-set id="car">
@@ -688,7 +689,7 @@
             <property name="Type">TextOnly</property>
             <property name="Label" translatable="yes">Clientes </property>
             <property name="UseUnderline">True</property>
-            <signal name="Clicked" handler="OnButtonClients" />
+            <signal name="Clicked" handler="OnButtonClient" />
           </widget>
           <packing>
             <property name="X">408</property>
@@ -703,6 +704,7 @@
             <property name="Type">TextOnly</property>
             <property name="Label" translatable="yes">Instructores</property>
             <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnButtonIns" />
           </widget>
           <packing>
             <property name="X">49</property>
@@ -1280,7 +1282,6 @@
             <child>
               <widget class="Gtk.Label" id="label3">
                 <property name="MemberName" />
-                <property name="LabelProp" translatable="yes" />
               </widget>
               <packing>
                 <property name="Position">0</property>

@@ -29,6 +29,7 @@ namespace escuela_manejo.Main_forms
 			// Container child escuela_manejo.Main_forms.Start.Gtk.Container+ContainerChild
 			this.fixed1 = new global::Gtk.Fixed();
 			this.fixed1.HeightRequest = 500;
+			this.fixed1.Name = "fixed1";
 			this.fixed1.HasWindow = false;
 			// Container child fixed1.Gtk.Fixed+FixedChild
 			this.button1 = new global::Gtk.Button();
@@ -107,7 +108,8 @@ namespace escuela_manejo.Main_forms
 			this.button1.Clicked += new global::System.EventHandler(this.OnButtonPaymentClicked);
 			this.button2.Clicked += new global::System.EventHandler(this.OnButtonCourseClicked);
 			this.button3.Clicked += new global::System.EventHandler(this.OnButtonSecurityClicked);
-			this.button4.Clicked += new global::System.EventHandler(this.OnButtonClients);
+			this.button4.Clicked += new global::System.EventHandler(this.OnButtonClient);
+			this.button5.Clicked += new global::System.EventHandler(this.OnButtonIns);
 			this.button6.Clicked += new global::System.EventHandler(this.OnButtonVehicle);
 		}
 	}

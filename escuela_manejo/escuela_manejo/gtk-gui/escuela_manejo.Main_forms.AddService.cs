@@ -39,6 +39,7 @@ namespace escuela_manejo.Main_forms
 			this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 			// Container child escuela_manejo.Main_forms.AddService.Gtk.Container+ContainerChild
 			this.fixed1 = new global::Gtk.Fixed();
+			this.fixed1.Name = "fixed1";
 			this.fixed1.HasWindow = false;
 			// Container child fixed1.Gtk.Fixed+FixedChild
 			this.label2 = new global::Gtk.Label();

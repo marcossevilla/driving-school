@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{0AFCA4E8-F29C-452B-9135-041F79F4F903}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Datos/dtCliente.cs">
+    <Files>
+      <File FileName="Datos/dtCliente.cs" Line="27" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Escuela_Manejo1" expanded="True">
+            <Node name="Escuela_Manejo1" expanded="True">
+              <Node name="UserInterface" expanded="True" />
+              <Node name="Datos" expanded="True">
+                <Node name="dtCliente.cs" selected="True" />
+              </Node>
+              <Node name="entidades" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.ItemProperties.Escuela__Manejo1 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

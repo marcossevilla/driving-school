@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{0AFCA4E8-F29C-452B-9135-041F79F4F903}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Escuela_Manejo1/Frm_instructor.cs">
+    <Files>
+      <File FileName="Escuela_Manejo1/Otros/mgInstructor.cs" Line="1" Column="1" />
+      <File FileName="Escuela_Manejo1/Otros/mgCustomer.cs" Line="1" Column="1" />
+      <File FileName="Escuela_Manejo1/Datos/dtCliente.cs" Line="1" Column="1" />
+      <File FileName="Escuela_Manejo1/Datos/Conexion.cs" Line="24" Column="45" />
+      <File FileName="Escuela_Manejo1/Frm_Clientes.cs" Line="1" Column="1" />
+      <File FileName="Escuela_Manejo1/Frm_instructor.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.ItemProperties.Escuela__Manejo1 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
