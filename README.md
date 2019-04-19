@@ -8,7 +8,7 @@ unnecesary line added in chiwa house
 
 TODO:
 
-1.Vehicle state shows as integer, system should be build where the combobox shows:
+1. Vehicle state shows as integer, system should be build where the combobox shows:
 
 Active
 
@@ -20,6 +20,9 @@ but the query to the database should use integers , representing the states stat
 
 2. In user security there are fields in the table that cannot be accesed through the forms , start date , pwd_temp and state.
    start date should be the date that the user is created , the other two should be accesible by the form. 
+
+
+3. In Client and vehicle start_date and final_date are accesible in the forms this shouldn't happen start date should be the date that the user is created and final_date should be the last date that the user was modified 
 
 
 WARNINGS:
