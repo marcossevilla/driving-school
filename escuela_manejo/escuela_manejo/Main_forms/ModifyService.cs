@@ -39,7 +39,7 @@ namespace escuela_manejo.Main_forms
             TreeModel model;
             if (seleccion.GetSelected(out model, out iter))
             {
-                //tservice.Id_course_service = Convert.ToInt32(model.GetValue(iter, 0).ToString());
+                tservice.Id_course_service = Convert.ToInt32(model.GetValue(iter, 0).ToString());
                 this.txtname.Text = model.GetValue(iter, 1).ToString();
                 this.txtprice.Text = model.GetValue(iter, 2).ToString();
                 this.txtstate.Text = model.GetValue(iter, 3).ToString();

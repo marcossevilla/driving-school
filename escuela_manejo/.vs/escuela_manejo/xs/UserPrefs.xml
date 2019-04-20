@@ -1,19 +1,19 @@
 ﻿<Properties StartupConfiguration="{1B73A200-A12C-4D9E-BD6E-0CB465E14611}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="../client_ins/Escuela_Manejo1/Frm_instructor.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="escuela_manejo/Main_forms/VehicleAdmin.cs">
     <Files>
-      <File FileName="escuela_manejo/Main_forms/AddService.cs" Line="71" Column="70" />
       <File FileName="escuela_manejo/Main_forms/ModifyService.cs" Line="96" Column="22" />
       <File FileName="escuela_manejo/Main_forms/ModifyCourse.cs" Line="41" Column="22" />
       <File FileName="escuela_manejo/Data/DTcoursesAdmin.cs" Line="1" Column="1" />
       <File FileName="escuela_manejo/Business/BSservice.cs" Line="55" Column="25" />
       <File FileName="escuela_manejo/Data/DTcourse.cs" Line="191" Column="10" />
       <File FileName="../drive-payment/drive/Data/DTPaymentAdmin.cs" Line="29" Column="36" />
-      <File FileName="escuela_manejo/Data/DTservice.cs" Line="194" Column="1" />
+      <File FileName="escuela_manejo/Data/DTservice.cs" Line="201" Column="84" />
       <File FileName="../drive-payment/drive/Data/DTService.cs" Line="23" Column="16" />
       <File FileName="escuela_manejo/Connection/Connection.cs" Line="34" Column="45" />
       <File FileName="escuela_manejo/Main_forms/Start.cs" Line="79" Column="43" />
       <File FileName="../client_ins/Escuela_Manejo1/Frm_Clientes.cs" Line="7" Column="11" />
-      <File FileName="../client_ins/Escuela_Manejo1/Frm_instructor.cs" Line="1" Column="1" />
+      <File FileName="escuela_manejo/Main_forms/AddService.cs" Line="71" Column="70" />
+      <File FileName="escuela_manejo/Main_forms/VehicleAdmin.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

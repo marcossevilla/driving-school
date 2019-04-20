@@ -198,8 +198,9 @@ namespace escuela_manejo.Data
             sb.Append("UPDATE course_service SET name = '" + tservice.Name + "',");
             sb.Append("price = '" + tservice.Price + "',");
             sb.Append("state = '" + tservice.State + "'");
-            sb.Append("WHERE id_course_service = " + tservice.Id_course_service + ";");
+            sb.Append("WHERE id_course_service = " + tservice.Id_course_service+ ";");
 
+     
             try
             {
                 con.AbrirCOnexion();
