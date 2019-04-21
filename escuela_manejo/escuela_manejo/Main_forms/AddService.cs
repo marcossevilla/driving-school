@@ -17,6 +17,9 @@ namespace escuela_manejo.Main_forms
         BSservice BSservice = new BSservice();
         MessageDialog ms = null;
 
+        Dictionary<string, int> namesAndID =  ///es de curso
+         new Dictionary<string, int>();
+
 
 
         public AddService() :
@@ -39,11 +42,14 @@ namespace escuela_manejo.Main_forms
             List<Course> listCourse = new List<Course>();
             listCourse = dtcourse.cbxCourse();
 
+
+
             combocourse.InsertText(0, "Seleccione...");
 
             foreach (Course tcourse in listCourse)
             {
                 combocourse.InsertText(tcourse.Id_course, tcourse.Name);
+                namesAndID.Add(tcourse.Name, tcourse.Id_course);
             }
 
         }
@@ -66,9 +72,22 @@ namespace escuela_manejo.Main_forms
             }
             else
             {
+                var nameCourse = this.combocourse.ActiveText;
+
+                foreach (KeyValuePair<string, int> name in namesAndID)
+                {
+                    if (nameCourse == name.Key)
+                    {
+                        tservices.Id_course_operating = name.Value;
+
+
+                    }
+                }
+
+
                 tservices.Name = this.txtname.Text;
                 tservices.Price = float.Parse(this.txtprice.Text);
-                tservices.Id_course_operating = dtservice.getIdcourse(this.combocourse.ActiveText);
+                //tservices.Id_course_operating = dtservice.getIdcourse(this.combocourse.ActiveText);
                 ///tservices.State = dtservice.getIdstate(this.combostate.ActiveText);
 
                 if (BSservice.BSsaveService(tservices))

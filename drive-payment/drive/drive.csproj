@@ -88,5 +88,11 @@
     <Folder Include="Connection\" />
     <Folder Include="Entity\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\client_ins\Escuela_Manejo1\Escuela_Manejo1.csproj">
+      <Project>{0AFCA4E8-F29C-452B-9135-041F79F4F903}</Project>
+      <Name>Escuela_Manejo1</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

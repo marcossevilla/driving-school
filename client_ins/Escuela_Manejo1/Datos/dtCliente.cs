@@ -266,7 +266,7 @@ namespace Escuela_Manejo1.Datos
             IDataReader idr = null;
             sbl.Clear();
             sbl.Append("USE escuela_manejo;");
-            sbl.Append("SELECT id_customer, first_name FROM customer ;");
+            sbl.Append("SELECT id_customer, first_name, last_name FROM customer;");
 
             try
             {
@@ -279,7 +279,7 @@ namespace Escuela_Manejo1.Datos
                     {
                         Id_customer = (Int32)idr["id_customer"],
                         First_name = idr["first_name"].ToString(),
-
+                        Last_name = idr["last_name"].ToString(),
                     };
                     listCourse.Add(tins);
 

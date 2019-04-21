@@ -55,5 +55,39 @@ namespace drive.Data
                 con.CerrarConexion();
             }
         }//fin del metodo
+
+        public decimal getServicePrice(string course_service)
+        {
+            decimal subtotal = 0;
+            IDataReader idr = null;
+            sb.Clear();
+            sb.Append("USE escuela_manejo;");
+            sb.Append("SELECT price FROM course_service WHERE name =" + "'" + course_service + "';");
+
+            try
+            {
+                con.AbrirCOnexion();
+
+                idr = con.Leer(CommandType.Text, sb.ToString());
+                idr.Read();
+
+                subtotal = idr.GetDecimal(idr.GetOrdinal("price"));
+
+                idr.Close();
+
+                return subtotal;
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                Console.WriteLine(e.StackTrace);
+                throw;
+            }
+            finally
+            {
+                con.CerrarConexion();
+            }
+        }
     }
 }

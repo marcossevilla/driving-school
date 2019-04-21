@@ -1,31 +1,10 @@
 ﻿<Properties StartupConfiguration="{1B73A200-A12C-4D9E-BD6E-0CB465E14611}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="escuela_manejo/Security_data/DTrol.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../drive-payment/drive/Payment.cs">
     <Files>
-      <File FileName="escuela_manejo/Main_forms/ModifyCourse.cs" Line="41" Column="22" />
-      <File FileName="escuela_manejo/Data/DTcoursesAdmin.cs" Line="1" Column="1" />
-      <File FileName="escuela_manejo/Business/BSservice.cs" Line="55" Column="25" />
-      <File FileName="escuela_manejo/Data/DTcourse.cs" Line="132" Column="49" />
-      <File FileName="../drive-payment/drive/Data/DTPaymentAdmin.cs" Line="29" Column="36" />
-      <File FileName="escuela_manejo/Data/DTservice.cs" Line="203" Column="6" />
-      <File FileName="../drive-payment/drive/Data/DTService.cs" Line="23" Column="16" />
-      <File FileName="escuela_manejo/Connection/Connection.cs" Line="34" Column="45" />
-      <File FileName="escuela_manejo/Main_forms/Start.cs" Line="79" Column="43" />
-      <File FileName="escuela_manejo/Main_forms/AddService.cs" Line="54" Column="4" />
-      <File FileName="escuela_manejo/Main_forms/VehicleAdmin.cs" Line="1" Column="1" />
-      <File FileName="escuela_manejo/Data/DTinstanceCourse.cs" Line="24" Column="182" />
-      <File FileName="../client_ins/Escuela_Manejo1/Negocio/mgCustomer.cs" Line="34" Column="22" />
-      <File FileName="../client_ins/Escuela_Manejo1/Negocio/mgInstructor.cs" Line="5" Column="34" />
-      <File FileName="../client_ins/Escuela_Manejo1/Frm_instructor.cs" Line="59" Column="77" />
-      <File FileName="escuela_manejo/Main_forms/AddCourseInstance.cs" Line="113" Column="33" />
-      <File FileName="../drive-payment/drive/CreditCardPayment.cs" Line="20" Column="8" />
-      <File FileName="../drive-payment/drive/Payment.cs" Line="1" Column="1" />
-      <File FileName="escuela_manejo/Entity/CourseOperating.cs" Line="23" Column="22" />
-      <File FileName="escuela_manejo/Business/BScourseOperating.cs" Line="28" Column="74" />
-      <File FileName="../client_ins/Escuela_Manejo1/Datos/dtInstructor.cs" Line="133" Column="77" />
-      <File FileName="escuela_manejo/Main_forms/AddCourse.cs" Line="1" Column="1" />
-      <File FileName="../client_ins/Escuela_Manejo1/Datos/dtCliente.cs" Line="25" Column="103" />
-      <File FileName="escuela_manejo/Security_data/DTuser.cs" Line="1" Column="1" />
-      <File FileName="escuela_manejo/Security_data/DTrol.cs" Line="1" Column="1" />
+      <File FileName="../drive-payment/drive/Payment.cs" Line="28" Column="41" />
+      <File FileName="../drive-payment/drive/Data/DTPaymentAdmin.cs" Line="78" Column="33" />
+      <File FileName="../drive-payment/drive/Data/DTService.cs" Line="143" Column="23" />
+      <File FileName="escuela_manejo/Main_forms/AddCourseInstance.cs" Line="187" Column="44" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

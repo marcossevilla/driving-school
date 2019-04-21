@@ -9,3 +9,6 @@
 /home/javier/Desktop/UCA/driving-school2/driving-school/drive-payment/drive/obj/x86/Debug/drive.csproj.CopyComplete
 /home/javier/Desktop/UCA/driving-school2/driving-school/drive-payment/drive/obj/x86/Debug/drive.exe
 /home/javier/Desktop/UCA/driving-school2/driving-school/drive-payment/drive/obj/x86/Debug/drive.pdb
+/home/javier/Desktop/UCA/driving-school2/driving-school/drive-payment/drive/bin/Debug/Escuela_Manejo1.exe
+/home/javier/Desktop/UCA/driving-school2/driving-school/drive-payment/drive/bin/Debug/Escuela_Manejo1.pdb
+/home/javier/Desktop/UCA/driving-school2/driving-school/drive-payment/drive/obj/x86/Debug/drive.csprojAssemblyReference.cache

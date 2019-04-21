@@ -86,7 +86,7 @@ namespace escuela_manejo.Data
 
             sb.Clear();
             sb.Append("INSERT INTO course_service ");
-            sb.Append("(id_course_operating,name,price,state)");
+            sb.Append("(id_course,name,price,state)");
             sb.Append(" VALUES('" + tservices.Id_course_operating + "','" + tservices.Name + "','" + tservices.Price + "','" + 1 + "')");
             try
             {

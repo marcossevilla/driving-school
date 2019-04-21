@@ -32,8 +32,6 @@ namespace drive
 
 		private global::Gtk.Button btnAddCustomer;
 
-		private global::Gtk.ComboBoxEntry cmbCustomerName;
-
 		private global::Gtk.Label lblCustomer;
 
 		private global::Gtk.Button btnClean;
@@ -43,6 +41,10 @@ namespace drive
 		private global::Gtk.ScrolledWindow GtkScrolledWindow;
 
 		private global::Gtk.TreeView trwPayments;
+
+		private global::Gtk.ComboBox cmbClient;
+
+		private global::Gtk.Label lblDate;
 
 		protected virtual void Build()
 		{
@@ -69,8 +71,8 @@ namespace drive
 			this.lblPayment.LabelProp = global::Mono.Unix.Catalog.GetString("Factura");
 			this.fixed5.Add(this.lblPayment);
 			global::Gtk.Fixed.FixedChild w2 = ((global::Gtk.Fixed.FixedChild)(this.fixed5[this.lblPayment]));
-			w2.X = 234;
-			w2.Y = 39;
+			w2.X = 35;
+			w2.Y = 35;
 			// Container child fixed5.Gtk.Fixed+FixedChild
 			this.cmbServiceType = global::Gtk.ComboBox.NewText();
 			this.cmbServiceType.Name = "cmbServiceType";
@@ -120,16 +122,16 @@ namespace drive
 			this.lblTotalDollar.LabelProp = global::Mono.Unix.Catalog.GetString("$");
 			this.fixed5.Add(this.lblTotalDollar);
 			global::Gtk.Fixed.FixedChild w8 = ((global::Gtk.Fixed.FixedChild)(this.fixed5[this.lblTotalDollar]));
-			w8.X = 147;
-			w8.Y = 488;
+			w8.X = 145;
+			w8.Y = 489;
 			// Container child fixed5.Gtk.Fixed+FixedChild
 			this.lblSubtotalValue = new global::Gtk.Label();
 			this.lblSubtotalValue.Name = "lblSubtotalValue";
-			this.lblSubtotalValue.LabelProp = global::Mono.Unix.Catalog.GetString("{placeholder}");
+			this.lblSubtotalValue.LabelProp = global::Mono.Unix.Catalog.GetString("0.0");
 			this.fixed5.Add(this.lblSubtotalValue);
 			global::Gtk.Fixed.FixedChild w9 = ((global::Gtk.Fixed.FixedChild)(this.fixed5[this.lblSubtotalValue]));
-			w9.X = 162;
-			w9.Y = 487;
+			w9.X = 165;
+			w9.Y = 489;
 			// Container child fixed5.Gtk.Fixed+FixedChild
 			this.lblTotal = new global::Gtk.Label();
 			this.lblTotal.Name = "lblTotal";
@@ -137,23 +139,23 @@ namespace drive
 			this.fixed5.Add(this.lblTotal);
 			global::Gtk.Fixed.FixedChild w10 = ((global::Gtk.Fixed.FixedChild)(this.fixed5[this.lblTotal]));
 			w10.X = 86;
-			w10.Y = 521;
+			w10.Y = 525;
 			// Container child fixed5.Gtk.Fixed+FixedChild
 			this.lblSubtotalDollar = new global::Gtk.Label();
 			this.lblSubtotalDollar.Name = "lblSubtotalDollar";
 			this.lblSubtotalDollar.LabelProp = global::Mono.Unix.Catalog.GetString("$");
 			this.fixed5.Add(this.lblSubtotalDollar);
 			global::Gtk.Fixed.FixedChild w11 = ((global::Gtk.Fixed.FixedChild)(this.fixed5[this.lblSubtotalDollar]));
-			w11.X = 148;
-			w11.Y = 520;
+			w11.X = 145;
+			w11.Y = 525;
 			// Container child fixed5.Gtk.Fixed+FixedChild
 			this.lblTotalValue = new global::Gtk.Label();
 			this.lblTotalValue.Name = "lblTotalValue";
-			this.lblTotalValue.LabelProp = global::Mono.Unix.Catalog.GetString("{placeholder}");
+			this.lblTotalValue.LabelProp = global::Mono.Unix.Catalog.GetString("0.0");
 			this.fixed5.Add(this.lblTotalValue);
 			global::Gtk.Fixed.FixedChild w12 = ((global::Gtk.Fixed.FixedChild)(this.fixed5[this.lblTotalValue]));
-			w12.X = 162;
-			w12.Y = 520;
+			w12.X = 165;
+			w12.Y = 525;
 			// Container child fixed5.Gtk.Fixed+FixedChild
 			this.btnAddCustomer = new global::Gtk.Button();
 			this.btnAddCustomer.CanFocus = true;
@@ -165,25 +167,13 @@ namespace drive
 			w13.X = 381;
 			w13.Y = 407;
 			// Container child fixed5.Gtk.Fixed+FixedChild
-			this.cmbCustomerName = global::Gtk.ComboBoxEntry.NewText();
-			this.cmbCustomerName.AppendText("");
-			this.cmbCustomerName.AppendText(global::Mono.Unix.Catalog.GetString("Javier Oviedo"));
-			this.cmbCustomerName.AppendText(global::Mono.Unix.Catalog.GetString("Marcos Sevilla"));
-			this.cmbCustomerName.AppendText(global::Mono.Unix.Catalog.GetString("Guillermo Montenegro"));
-			this.cmbCustomerName.AppendText(global::Mono.Unix.Catalog.GetString("Nubia Robleto"));
-			this.cmbCustomerName.Name = "cmbCustomerName";
-			this.fixed5.Add(this.cmbCustomerName);
-			global::Gtk.Fixed.FixedChild w14 = ((global::Gtk.Fixed.FixedChild)(this.fixed5[this.cmbCustomerName]));
-			w14.X = 155;
-			w14.Y = 407;
-			// Container child fixed5.Gtk.Fixed+FixedChild
 			this.lblCustomer = new global::Gtk.Label();
 			this.lblCustomer.Name = "lblCustomer";
 			this.lblCustomer.LabelProp = global::Mono.Unix.Catalog.GetString("Cliente");
 			this.fixed5.Add(this.lblCustomer);
-			global::Gtk.Fixed.FixedChild w15 = ((global::Gtk.Fixed.FixedChild)(this.fixed5[this.lblCustomer]));
-			w15.X = 79;
-			w15.Y = 414;
+			global::Gtk.Fixed.FixedChild w14 = ((global::Gtk.Fixed.FixedChild)(this.fixed5[this.lblCustomer]));
+			w14.X = 79;
+			w14.Y = 414;
 			// Container child fixed5.Gtk.Fixed+FixedChild
 			this.btnClean = new global::Gtk.Button();
 			this.btnClean.CanFocus = true;
@@ -191,9 +181,9 @@ namespace drive
 			this.btnClean.UseUnderline = true;
 			this.btnClean.Label = global::Mono.Unix.Catalog.GetString("Limpiar Campos");
 			this.fixed5.Add(this.btnClean);
-			global::Gtk.Fixed.FixedChild w16 = ((global::Gtk.Fixed.FixedChild)(this.fixed5[this.btnClean]));
-			w16.X = 535;
-			w16.Y = 233;
+			global::Gtk.Fixed.FixedChild w15 = ((global::Gtk.Fixed.FixedChild)(this.fixed5[this.btnClean]));
+			w15.X = 535;
+			w15.Y = 233;
 			// Container child fixed5.Gtk.Fixed+FixedChild
 			this.btnPayCourseService = new global::Gtk.Button();
 			this.btnPayCourseService.CanFocus = true;
@@ -201,9 +191,9 @@ namespace drive
 			this.btnPayCourseService.UseUnderline = true;
 			this.btnPayCourseService.Label = global::Mono.Unix.Catalog.GetString("Agregar a Pago");
 			this.fixed5.Add(this.btnPayCourseService);
-			global::Gtk.Fixed.FixedChild w17 = ((global::Gtk.Fixed.FixedChild)(this.fixed5[this.btnPayCourseService]));
-			w17.X = 384;
-			w17.Y = 110;
+			global::Gtk.Fixed.FixedChild w16 = ((global::Gtk.Fixed.FixedChild)(this.fixed5[this.btnPayCourseService]));
+			w16.X = 384;
+			w16.Y = 110;
 			// Container child fixed5.Gtk.Fixed+FixedChild
 			this.GtkScrolledWindow = new global::Gtk.ScrolledWindow();
 			this.GtkScrolledWindow.Name = "GtkScrolledWindow";
@@ -216,9 +206,24 @@ namespace drive
 			this.trwPayments.Name = "trwPayments";
 			this.GtkScrolledWindow.Add(this.trwPayments);
 			this.fixed5.Add(this.GtkScrolledWindow);
-			global::Gtk.Fixed.FixedChild w19 = ((global::Gtk.Fixed.FixedChild)(this.fixed5[this.GtkScrolledWindow]));
-			w19.X = 36;
-			w19.Y = 175;
+			global::Gtk.Fixed.FixedChild w18 = ((global::Gtk.Fixed.FixedChild)(this.fixed5[this.GtkScrolledWindow]));
+			w18.X = 36;
+			w18.Y = 175;
+			// Container child fixed5.Gtk.Fixed+FixedChild
+			this.cmbClient = global::Gtk.ComboBox.NewText();
+			this.cmbClient.Name = "cmbClient";
+			this.fixed5.Add(this.cmbClient);
+			global::Gtk.Fixed.FixedChild w19 = ((global::Gtk.Fixed.FixedChild)(this.fixed5[this.cmbClient]));
+			w19.X = 176;
+			w19.Y = 407;
+			// Container child fixed5.Gtk.Fixed+FixedChild
+			this.lblDate = new global::Gtk.Label();
+			this.lblDate.Name = "lblDate";
+			this.lblDate.LabelProp = global::Mono.Unix.Catalog.GetString("25/09/00");
+			this.fixed5.Add(this.lblDate);
+			global::Gtk.Fixed.FixedChild w20 = ((global::Gtk.Fixed.FixedChild)(this.fixed5[this.lblDate]));
+			w20.X = 576;
+			w20.Y = 35;
 			this.Add(this.fixed5);
 			if ((this.Child != null))
 			{
@@ -229,6 +234,7 @@ namespace drive
 			this.Show();
 			this.cmbMethod.Changed += new global::System.EventHandler(this.onCmbMethodChange);
 			this.btnPay.Clicked += new global::System.EventHandler(this.onClickBtnPay);
+			this.btnAddCustomer.Clicked += new global::System.EventHandler(this.onClickBtnAddCustomer);
 			this.btnClean.Clicked += new global::System.EventHandler(this.onClickBtnClean);
 			this.btnPayCourseService.Clicked += new global::System.EventHandler(this.onClickBtnPayCourseService);
 		}

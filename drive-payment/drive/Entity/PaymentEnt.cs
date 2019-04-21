@@ -1,7 +1,7 @@
 ﻿using System;
 namespace drive.Entity
 {
-    public class Payment
+    public class PaymentEnt
     {
         private int id_payment;
         private int id_user;
@@ -25,8 +25,5 @@ namespace drive.Entity
         public float Iva { get => iva; set => iva = value; }
         public string Payment_method { get => payment_method; set => payment_method = value; }
 
-        public Payment()
-        {
-        }
     }
 }

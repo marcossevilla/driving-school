@@ -5,6 +5,7 @@
   </configuration>
   <import>
     <widget-library name="../bin/Debug/drive.exe" internal="true" />
+    <widget-library name="../../../client_ins/Escuela_Manejo1/bin/Debug/Escuela_Manejo1.exe" />
   </import>
   <widget class="Gtk.Window" id="MainWindow" design-size="560 433">
     <property name="MemberName" />
@@ -56,8 +57,8 @@
             <property name="LabelProp" translatable="yes">Factura</property>
           </widget>
           <packing>
-            <property name="X">234</property>
-            <property name="Y">39</property>
+            <property name="X">35</property>
+            <property name="Y">35</property>
           </packing>
         </child>
         <child>
@@ -125,18 +126,18 @@ Cash</property>
             <property name="LabelProp" translatable="yes">$</property>
           </widget>
           <packing>
-            <property name="X">147</property>
-            <property name="Y">488</property>
+            <property name="X">145</property>
+            <property name="Y">489</property>
           </packing>
         </child>
         <child>
           <widget class="Gtk.Label" id="lblSubtotalValue">
             <property name="MemberName" />
-            <property name="LabelProp" translatable="yes">{placeholder}</property>
+            <property name="LabelProp" translatable="yes">0.0</property>
           </widget>
           <packing>
-            <property name="X">162</property>
-            <property name="Y">487</property>
+            <property name="X">165</property>
+            <property name="Y">489</property>
           </packing>
         </child>
         <child>
@@ -146,7 +147,7 @@ Cash</property>
           </widget>
           <packing>
             <property name="X">86</property>
-            <property name="Y">521</property>
+            <property name="Y">525</property>
           </packing>
         </child>
         <child>
@@ -155,18 +156,18 @@ Cash</property>
             <property name="LabelProp" translatable="yes">$</property>
           </widget>
           <packing>
-            <property name="X">148</property>
-            <property name="Y">520</property>
+            <property name="X">145</property>
+            <property name="Y">525</property>
           </packing>
         </child>
         <child>
           <widget class="Gtk.Label" id="lblTotalValue">
             <property name="MemberName" />
-            <property name="LabelProp" translatable="yes">{placeholder}</property>
+            <property name="LabelProp" translatable="yes">0.0</property>
           </widget>
           <packing>
-            <property name="X">162</property>
-            <property name="Y">520</property>
+            <property name="X">165</property>
+            <property name="Y">525</property>
           </packing>
         </child>
         <child>
@@ -176,24 +177,10 @@ Cash</property>
             <property name="Type">TextOnly</property>
             <property name="Label" translatable="yes">Agregar Cliente</property>
             <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="onClickBtnAddCustomer" />
           </widget>
           <packing>
             <property name="X">381</property>
-            <property name="Y">407</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="Gtk.ComboBoxEntry" id="cmbCustomerName">
-            <property name="MemberName" />
-            <property name="IsTextCombo">True</property>
-            <property name="Items" translatable="yes">
-Javier Oviedo
-Marcos Sevilla
-Guillermo Montenegro
-Nubia Robleto</property>
-          </widget>
-          <packing>
-            <property name="X">155</property>
             <property name="Y">407</property>
           </packing>
         </child>
@@ -258,6 +245,27 @@ Nubia Robleto</property>
           <packing>
             <property name="X">36</property>
             <property name="Y">175</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.ComboBox" id="cmbClient">
+            <property name="MemberName" />
+            <property name="IsTextCombo">True</property>
+            <property name="Items" translatable="yes" />
+          </widget>
+          <packing>
+            <property name="X">176</property>
+            <property name="Y">407</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="lblDate">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">25/09/00</property>
+          </widget>
+          <packing>
+            <property name="X">555</property>
+            <property name="Y">35</property>
           </packing>
         </child>
       </widget>
