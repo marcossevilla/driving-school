@@ -91,13 +91,13 @@
     <Compile Include="Datos\dtCliente.cs" />
     <Compile Include="entidades\Customer.cs" />
     <Compile Include="entidades\Instructor.cs" />
-    <Compile Include="Otros\mgCustomer.cs" />
+    <Compile Include="Negocio\mgCustomer.cs" />
     <Compile Include="Datos\dtInstructor.cs" />
-    <Compile Include="Otros\mgInstructor.cs" />
+    <Compile Include="Negocio\mgInstructor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Datos\" />
-    <Folder Include="Otros\" />
+    <Folder Include="Negocio\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

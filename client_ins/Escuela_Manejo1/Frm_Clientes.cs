@@ -1,7 +1,7 @@
 ﻿using System;
 using Escuela_Manejo1.entidades;
 using Escuela_Manejo1.Datos;
-using Escuela_Manejo1.Otros;
+using Escuela_Manejo1.Negocio;
 using System.Globalization;
 using Gtk;
 namespace Escuela_Manejo1
@@ -38,33 +38,33 @@ namespace Escuela_Manejo1
 
         }
 
-        public DateTime Devolverfechainicio()
-        {
+        //public DateTime Devolverfechainicio()
+        //{
 
-            DateTime tm;
-            string hora;
-            string minuto;
-            string dateString = calend1.GetDate().ToString("yyyy/MM/dd");
+            //DateTime tm;
+            //string hora;
+            //string minuto;
+            //string dateString = calend1.GetDate().ToString("yyyy/MM/dd");
 
-            hora = this.cmbHrI.ActiveText;
+            //hora = this.cmbHrI.ActiveText;
             //ToString("MM/dd/yyyy HH':'mm':'ss");
-            minuto = this.cmbMinI.ActiveText;
-            string concatenar = dateString+" "+hora+":"+minuto+":"+"00";
+            //minuto = this.cmbMinI.ActiveText;
+            //string concatenar = dateString+" "+hora+":"+minuto+":"+"00";
             //DateTime.TryParse(concatenar,out tm);
             //tm =  DateTime.ParseExact(concatenar, "yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture);
             //Console.WriteLine("fecha"+ tm);
-            Console.WriteLine("fecha cadena " + concatenar);
+            //Console.WriteLine("fecha cadena " + concatenar);
             // tm =  DateTime.ParseExact(concatenar, "yyyy-MM-dd HH:mm HH", CultureInfo.InvariantCulture);
 
             //tm=DateTime.ParseExact(concatenar, "yyyy/MM/dd HH:mm:ss", CultureInfo.InvariantCulture);
-            tm = DateTime.ParseExact(concatenar, "yyyy/MM/dd HH:mm:ss", null);
-            Console.WriteLine("fecha " + tm);
-            return tm;
+            //tm = DateTime.ParseExact(concatenar, "yyyy/MM/dd HH:mm:ss", null);
+            //Console.WriteLine("fecha " + tm);
+            //return tm;
 
 
 
 
-        }
+        //}
 
 
 
@@ -111,8 +111,9 @@ namespace Escuela_Manejo1
                 cus.Email = this.txtcorreoc.Text;
                 cus.Address = this.txtdireccionc.Text;
                 cus.Phone = this.txttelefonoc.Text;
-                cus.Create_date = Devolverfechainicio();
-                //cus.Last_update = this.devolverfechaactualizada();
+                cus.Create_date = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                cus.Last_update = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+
                 if (mgs.Mguardarcliente(cus))
                 {
                     mnsj = new MessageDialog(null, DialogFlags.Modal, MessageType.Info, ButtonsType.Ok, "Se guardo el usuario");
@@ -194,9 +195,10 @@ namespace Escuela_Manejo1
                 cus.Email = this.txtcorreoc.Text;
                 cus.Address = this.txtdireccionc.Text;
                 cus.Phone = this.txttelefonoc.Text;
-                cus.Create_date = Devolverfechainicio();
+                //cus.Create_date = Devolverfechainicio();
                 //cus.Create_date = tm;
                 //cus.Last_update = tml;
+                cus.Last_update = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                 cus.State = 1;
                 if (dcl.actualizar(cus))
                 {

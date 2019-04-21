@@ -10,7 +10,7 @@ namespace escuela_manejo.Main_forms
 
 		private global::Gtk.Label label8;
 
-		private global::Gtk.ComboBox combobox1;
+		private global::Gtk.ComboBox combocourse;
 
 		private global::Gtk.HBox hbox5;
 
@@ -22,39 +22,27 @@ namespace escuela_manejo.Main_forms
 
 		private global::Gtk.VBox vbox10;
 
-		private global::Gtk.ComboBox combobox2;
+		private global::Gtk.ComboBox comboins;
 
-		private global::Gtk.ComboBox combobox3;
+		private global::Gtk.ComboBox comboveh;
 
 		private global::Gtk.HBox hbox6;
 
-		private global::Gtk.VBox vbox9;
+		private global::Gtk.Fixed fixed1;
 
-		private global::Gtk.Label label11;
+		private global::Gtk.Label label1;
 
-		private global::Gtk.Label label12;
+		private global::Gtk.Label label2;
 
-		private global::Gtk.Label label13;
+		private global::Gtk.Label label4;
 
 		private global::Gtk.VBox vbox8;
 
-		private global::Gtk.ComboBox combobox4;
+		private global::Gtk.ComboBox comboclient;
 
-		private global::Gtk.HBox hbox7;
+		private global::Gtk.Calendar calenIni;
 
-		private global::Gtk.SpinButton spinbutton1;
-
-		private global::Gtk.SpinButton spinbutton2;
-
-		private global::Gtk.SpinButton spinbutton3;
-
-		private global::Gtk.HBox hbox8;
-
-		private global::Gtk.SpinButton spinbutton6;
-
-		private global::Gtk.SpinButton spinbutton5;
-
-		private global::Gtk.SpinButton spinbutton4;
+		private global::Gtk.Calendar calenEnd;
 
 		private global::Gtk.Button button4;
 
@@ -83,11 +71,11 @@ namespace escuela_manejo.Main_forms
 			w1.Expand = false;
 			w1.Fill = false;
 			// Container child hbox4.Gtk.Box+BoxChild
-			this.combobox1 = global::Gtk.ComboBox.NewText();
-			this.combobox1.WidthRequest = 300;
-			this.combobox1.Name = "combobox1";
-			this.hbox4.Add(this.combobox1);
-			global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.hbox4[this.combobox1]));
+			this.combocourse = global::Gtk.ComboBox.NewText();
+			this.combocourse.WidthRequest = 300;
+			this.combocourse.Name = "combocourse";
+			this.hbox4.Add(this.combocourse);
+			global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.hbox4[this.combocourse]));
 			w2.Position = 1;
 			w2.Fill = false;
 			this.vbox7.Add(this.hbox4);
@@ -128,18 +116,18 @@ namespace escuela_manejo.Main_forms
 			this.vbox10.Name = "vbox10";
 			this.vbox10.Spacing = 6;
 			// Container child vbox10.Gtk.Box+BoxChild
-			this.combobox2 = global::Gtk.ComboBox.NewText();
-			this.combobox2.WidthRequest = 300;
-			this.combobox2.Name = "combobox2";
-			this.vbox10.Add(this.combobox2);
-			global::Gtk.Box.BoxChild w7 = ((global::Gtk.Box.BoxChild)(this.vbox10[this.combobox2]));
+			this.comboins = global::Gtk.ComboBox.NewText();
+			this.comboins.WidthRequest = 300;
+			this.comboins.Name = "comboins";
+			this.vbox10.Add(this.comboins);
+			global::Gtk.Box.BoxChild w7 = ((global::Gtk.Box.BoxChild)(this.vbox10[this.comboins]));
 			w7.Position = 0;
 			w7.Fill = false;
 			// Container child vbox10.Gtk.Box+BoxChild
-			this.combobox3 = global::Gtk.ComboBox.NewText();
-			this.combobox3.Name = "combobox3";
-			this.vbox10.Add(this.combobox3);
-			global::Gtk.Box.BoxChild w8 = ((global::Gtk.Box.BoxChild)(this.vbox10[this.combobox3]));
+			this.comboveh = global::Gtk.ComboBox.NewText();
+			this.comboveh.Name = "comboveh";
+			this.vbox10.Add(this.comboveh);
+			global::Gtk.Box.BoxChild w8 = ((global::Gtk.Box.BoxChild)(this.vbox10[this.comboveh]));
 			w8.Position = 1;
 			w8.Fill = false;
 			this.hbox5.Add(this.vbox10);
@@ -157,35 +145,35 @@ namespace escuela_manejo.Main_forms
 			this.hbox6.Name = "hbox6";
 			this.hbox6.Spacing = 6;
 			// Container child hbox6.Gtk.Box+BoxChild
-			this.vbox9 = new global::Gtk.VBox();
-			this.vbox9.Name = "vbox9";
-			this.vbox9.Spacing = 6;
-			// Container child vbox9.Gtk.Box+BoxChild
-			this.label11 = new global::Gtk.Label();
-			this.label11.Name = "label11";
-			this.label11.LabelProp = global::Mono.Unix.Catalog.GetString("        Cliente:       ");
-			this.vbox9.Add(this.label11);
-			global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.vbox9[this.label11]));
-			w11.Position = 0;
-			w11.Fill = false;
-			// Container child vbox9.Gtk.Box+BoxChild
-			this.label12 = new global::Gtk.Label();
-			this.label12.Name = "label12";
-			this.label12.LabelProp = global::Mono.Unix.Catalog.GetString("Fecha Inicio:");
-			this.vbox9.Add(this.label12);
-			global::Gtk.Box.BoxChild w12 = ((global::Gtk.Box.BoxChild)(this.vbox9[this.label12]));
-			w12.Position = 1;
-			// Container child vbox9.Gtk.Box+BoxChild
-			this.label13 = new global::Gtk.Label();
-			this.label13.Name = "label13";
-			this.label13.LabelProp = global::Mono.Unix.Catalog.GetString("Fecha FIn:");
-			this.vbox9.Add(this.label13);
-			global::Gtk.Box.BoxChild w13 = ((global::Gtk.Box.BoxChild)(this.vbox9[this.label13]));
-			w13.Position = 2;
-			w13.Expand = false;
-			w13.Fill = false;
-			this.hbox6.Add(this.vbox9);
-			global::Gtk.Box.BoxChild w14 = ((global::Gtk.Box.BoxChild)(this.hbox6[this.vbox9]));
+			this.fixed1 = new global::Gtk.Fixed();
+			this.fixed1.Name = "fixed1";
+			this.fixed1.HasWindow = false;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.label1 = new global::Gtk.Label();
+			this.label1.Name = "label1";
+			this.label1.LabelProp = global::Mono.Unix.Catalog.GetString("Fecha inicial");
+			this.fixed1.Add(this.label1);
+			global::Gtk.Fixed.FixedChild w11 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.label1]));
+			w11.X = 15;
+			w11.Y = 140;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.label2 = new global::Gtk.Label();
+			this.label2.Name = "label2";
+			this.label2.LabelProp = global::Mono.Unix.Catalog.GetString("Fecha final");
+			this.fixed1.Add(this.label2);
+			global::Gtk.Fixed.FixedChild w12 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.label2]));
+			w12.X = 8;
+			w12.Y = 310;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.label4 = new global::Gtk.Label();
+			this.label4.Name = "label4";
+			this.label4.LabelProp = global::Mono.Unix.Catalog.GetString("Cliente");
+			this.fixed1.Add(this.label4);
+			global::Gtk.Fixed.FixedChild w13 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.label4]));
+			w13.X = 15;
+			w13.Y = 10;
+			this.hbox6.Add(this.fixed1);
+			global::Gtk.Box.BoxChild w14 = ((global::Gtk.Box.BoxChild)(this.hbox6[this.fixed1]));
 			w14.Position = 0;
 			w14.Expand = false;
 			w14.Fill = false;
@@ -194,112 +182,43 @@ namespace escuela_manejo.Main_forms
 			this.vbox8.Name = "vbox8";
 			this.vbox8.Spacing = 6;
 			// Container child vbox8.Gtk.Box+BoxChild
-			this.combobox4 = global::Gtk.ComboBox.NewText();
-			this.combobox4.WidthRequest = 300;
-			this.combobox4.Name = "combobox4";
-			this.vbox8.Add(this.combobox4);
-			global::Gtk.Box.BoxChild w15 = ((global::Gtk.Box.BoxChild)(this.vbox8[this.combobox4]));
+			this.comboclient = global::Gtk.ComboBox.NewText();
+			this.comboclient.WidthRequest = 300;
+			this.comboclient.Name = "comboclient";
+			this.vbox8.Add(this.comboclient);
+			global::Gtk.Box.BoxChild w15 = ((global::Gtk.Box.BoxChild)(this.vbox8[this.comboclient]));
 			w15.Position = 0;
 			w15.Fill = false;
 			// Container child vbox8.Gtk.Box+BoxChild
-			this.hbox7 = new global::Gtk.HBox();
-			this.hbox7.Name = "hbox7";
-			this.hbox7.Spacing = 6;
-			// Container child hbox7.Gtk.Box+BoxChild
-			this.spinbutton1 = new global::Gtk.SpinButton(0D, 100D, 1D);
-			this.spinbutton1.CanFocus = true;
-			this.spinbutton1.Name = "spinbutton1";
-			this.spinbutton1.Adjustment.PageIncrement = 10D;
-			this.spinbutton1.ClimbRate = 1D;
-			this.spinbutton1.Numeric = true;
-			this.hbox7.Add(this.spinbutton1);
-			global::Gtk.Box.BoxChild w16 = ((global::Gtk.Box.BoxChild)(this.hbox7[this.spinbutton1]));
-			w16.Position = 0;
+			this.calenIni = new global::Gtk.Calendar();
+			this.calenIni.CanFocus = true;
+			this.calenIni.Name = "calenIni";
+			this.calenIni.DisplayOptions = ((global::Gtk.CalendarDisplayOptions)(35));
+			this.vbox8.Add(this.calenIni);
+			global::Gtk.Box.BoxChild w16 = ((global::Gtk.Box.BoxChild)(this.vbox8[this.calenIni]));
+			w16.Position = 1;
 			w16.Expand = false;
 			w16.Fill = false;
-			// Container child hbox7.Gtk.Box+BoxChild
-			this.spinbutton2 = new global::Gtk.SpinButton(0D, 100D, 1D);
-			this.spinbutton2.CanFocus = true;
-			this.spinbutton2.Name = "spinbutton2";
-			this.spinbutton2.Adjustment.PageIncrement = 10D;
-			this.spinbutton2.ClimbRate = 1D;
-			this.spinbutton2.Numeric = true;
-			this.hbox7.Add(this.spinbutton2);
-			global::Gtk.Box.BoxChild w17 = ((global::Gtk.Box.BoxChild)(this.hbox7[this.spinbutton2]));
-			w17.Position = 1;
+			// Container child vbox8.Gtk.Box+BoxChild
+			this.calenEnd = new global::Gtk.Calendar();
+			this.calenEnd.CanFocus = true;
+			this.calenEnd.Name = "calenEnd";
+			this.calenEnd.DisplayOptions = ((global::Gtk.CalendarDisplayOptions)(35));
+			this.vbox8.Add(this.calenEnd);
+			global::Gtk.Box.BoxChild w17 = ((global::Gtk.Box.BoxChild)(this.vbox8[this.calenEnd]));
+			w17.Position = 2;
 			w17.Expand = false;
 			w17.Fill = false;
-			// Container child hbox7.Gtk.Box+BoxChild
-			this.spinbutton3 = new global::Gtk.SpinButton(0D, 100D, 1D);
-			this.spinbutton3.CanFocus = true;
-			this.spinbutton3.Name = "spinbutton3";
-			this.spinbutton3.Adjustment.PageIncrement = 10D;
-			this.spinbutton3.ClimbRate = 1D;
-			this.spinbutton3.Numeric = true;
-			this.hbox7.Add(this.spinbutton3);
-			global::Gtk.Box.BoxChild w18 = ((global::Gtk.Box.BoxChild)(this.hbox7[this.spinbutton3]));
-			w18.Position = 2;
+			this.hbox6.Add(this.vbox8);
+			global::Gtk.Box.BoxChild w18 = ((global::Gtk.Box.BoxChild)(this.hbox6[this.vbox8]));
+			w18.Position = 1;
 			w18.Expand = false;
-			this.vbox8.Add(this.hbox7);
-			global::Gtk.Box.BoxChild w19 = ((global::Gtk.Box.BoxChild)(this.vbox8[this.hbox7]));
-			w19.Position = 1;
+			w18.Fill = false;
+			this.vbox7.Add(this.hbox6);
+			global::Gtk.Box.BoxChild w19 = ((global::Gtk.Box.BoxChild)(this.vbox7[this.hbox6]));
+			w19.Position = 2;
 			w19.Expand = false;
 			w19.Fill = false;
-			// Container child vbox8.Gtk.Box+BoxChild
-			this.hbox8 = new global::Gtk.HBox();
-			this.hbox8.Name = "hbox8";
-			this.hbox8.Spacing = 6;
-			// Container child hbox8.Gtk.Box+BoxChild
-			this.spinbutton6 = new global::Gtk.SpinButton(0D, 100D, 1D);
-			this.spinbutton6.CanFocus = true;
-			this.spinbutton6.Name = "spinbutton6";
-			this.spinbutton6.Adjustment.PageIncrement = 10D;
-			this.spinbutton6.ClimbRate = 1D;
-			this.spinbutton6.Numeric = true;
-			this.hbox8.Add(this.spinbutton6);
-			global::Gtk.Box.BoxChild w20 = ((global::Gtk.Box.BoxChild)(this.hbox8[this.spinbutton6]));
-			w20.Position = 0;
-			w20.Expand = false;
-			w20.Fill = false;
-			// Container child hbox8.Gtk.Box+BoxChild
-			this.spinbutton5 = new global::Gtk.SpinButton(0D, 100D, 1D);
-			this.spinbutton5.CanFocus = true;
-			this.spinbutton5.Name = "spinbutton5";
-			this.spinbutton5.Adjustment.PageIncrement = 10D;
-			this.spinbutton5.ClimbRate = 1D;
-			this.spinbutton5.Numeric = true;
-			this.hbox8.Add(this.spinbutton5);
-			global::Gtk.Box.BoxChild w21 = ((global::Gtk.Box.BoxChild)(this.hbox8[this.spinbutton5]));
-			w21.Position = 1;
-			w21.Expand = false;
-			w21.Fill = false;
-			// Container child hbox8.Gtk.Box+BoxChild
-			this.spinbutton4 = new global::Gtk.SpinButton(0D, 100D, 1D);
-			this.spinbutton4.CanFocus = true;
-			this.spinbutton4.Name = "spinbutton4";
-			this.spinbutton4.Adjustment.PageIncrement = 10D;
-			this.spinbutton4.ClimbRate = 1D;
-			this.spinbutton4.Numeric = true;
-			this.hbox8.Add(this.spinbutton4);
-			global::Gtk.Box.BoxChild w22 = ((global::Gtk.Box.BoxChild)(this.hbox8[this.spinbutton4]));
-			w22.Position = 2;
-			w22.Expand = false;
-			w22.Fill = false;
-			this.vbox8.Add(this.hbox8);
-			global::Gtk.Box.BoxChild w23 = ((global::Gtk.Box.BoxChild)(this.vbox8[this.hbox8]));
-			w23.Position = 2;
-			w23.Expand = false;
-			w23.Fill = false;
-			this.hbox6.Add(this.vbox8);
-			global::Gtk.Box.BoxChild w24 = ((global::Gtk.Box.BoxChild)(this.hbox6[this.vbox8]));
-			w24.Position = 1;
-			w24.Expand = false;
-			w24.Fill = false;
-			this.vbox7.Add(this.hbox6);
-			global::Gtk.Box.BoxChild w25 = ((global::Gtk.Box.BoxChild)(this.vbox7[this.hbox6]));
-			w25.Position = 2;
-			w25.Expand = false;
-			w25.Fill = false;
 			// Container child vbox7.Gtk.Box+BoxChild
 			this.button4 = new global::Gtk.Button();
 			this.button4.CanFocus = true;
@@ -307,19 +226,20 @@ namespace escuela_manejo.Main_forms
 			this.button4.UseUnderline = true;
 			this.button4.Label = global::Mono.Unix.Catalog.GetString("Agregar Instancia");
 			this.vbox7.Add(this.button4);
-			global::Gtk.Box.BoxChild w26 = ((global::Gtk.Box.BoxChild)(this.vbox7[this.button4]));
-			w26.PackType = ((global::Gtk.PackType)(1));
-			w26.Position = 3;
-			w26.Expand = false;
-			w26.Fill = false;
+			global::Gtk.Box.BoxChild w20 = ((global::Gtk.Box.BoxChild)(this.vbox7[this.button4]));
+			w20.PackType = ((global::Gtk.PackType)(1));
+			w20.Position = 3;
+			w20.Expand = false;
+			w20.Fill = false;
 			this.Add(this.vbox7);
 			if ((this.Child != null))
 			{
 				this.Child.ShowAll();
 			}
-			this.DefaultWidth = 402;
-			this.DefaultHeight = 364;
+			this.DefaultWidth = 459;
+			this.DefaultHeight = 580;
 			this.Show();
+			this.button4.Clicked += new global::System.EventHandler(this.onClickBtnAddService);
 		}
 	}
 }

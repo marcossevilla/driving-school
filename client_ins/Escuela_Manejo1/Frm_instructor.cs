@@ -1,8 +1,10 @@
 ﻿using System;
 using Escuela_Manejo1.entidades;
 using Escuela_Manejo1.Datos;
-using Escuela_Manejo1.Otros;
+using Escuela_Manejo1.Negocio;
 using Gtk;
+using System.Globalization;
+
 namespace Escuela_Manejo1
 {
     public partial class Frm_instructor : Gtk.Window
@@ -54,6 +56,8 @@ namespace Escuela_Manejo1
                 ins.Phone = this.txtTelefonoins.Text;
                 ins.Id = this.txtidIn.Text;
                 ins.Address = this.txtDireccionIn.Text;
+                ins.Create_date = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"); 
+                ins.Last_update = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
 
                 //cus.Create_date = Devolverfechainicio();
                 //cus.Last_update = this.devolverfechaactualizada();

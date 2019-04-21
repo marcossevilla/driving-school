@@ -4,6 +4,7 @@ using MySql.Data;
 using Gtk;
 using System.Text;
 using Escuela_Manejo1.entidades;
+using System.Collections.Generic;
 
 
 namespace Escuela_Manejo1.Datos
@@ -21,8 +22,8 @@ namespace Escuela_Manejo1.Datos
             //string cadenaFecha = Devolverfechainicio();
             sbl.Clear();
             sbl.Append("INSERT INTO customer");
-            sbl.Append("(first_name,last_name,email,id,address,state,phone,create_date)");
-            sbl.Append(" VALUES('"+ cus.First_name + "','" + cus.Last_name + "','" + cus.Email + "','" + cus.Id +"','"+cus.Address + "','" + 1 + "','" + cus.Phone+ "','"+ cus.Create_date.ToString("yyyy-MM-dd HH:mm:ss") + "')"); 
+            sbl.Append("(first_name,last_name,email,id,address,state,phone,create_date,last_update)");
+            sbl.Append(" VALUES('" + cus.First_name + "','" + cus.Last_name + "','" + cus.Email + "','" + cus.Id + "','" + cus.Address + "','" + 1 + "','" + cus.Phone + "','" + cus.Create_date + "','" + cus.Last_update + "')");
             //+ "," + cus.Create_date + "," + cus.Last_update//
 
             //'" + cus.Create_date +"'
@@ -64,7 +65,7 @@ namespace Escuela_Manejo1.Datos
             ListStore lista = new ListStore(typeof(string), typeof(string), typeof(string), typeof(string), typeof(string), typeof(string), typeof(string), typeof(string), typeof(string));
             IDataReader rd = null;
             sbl.Clear();
-            sbl.Append("select id_customer,first_name,last_name,email,address,id,phone,create_date from customer where state <> '2'"); //,create_date,last_update
+            sbl.Append("select id_customer,first_name,last_name,email,address,id,phone,create_date from customer"); //,create_date,last_update
             try
             {
                 conn.AbrirConexion();
@@ -189,8 +190,8 @@ namespace Escuela_Manejo1.Datos
             sbl.Append("email= '" + cus.Email + "',");
             sbl.Append("address= '" + cus.Address + "',");
             sbl.Append("phone= '" + cus.Phone + "',");
-            sbl.Append("create_date= '" + cus.Create_date.ToString("yyyy-MM-dd HH:mm:ss") + "'");
-            //sbl.Append("last_update" + cus.Last_update + ";");
+            //sbl.Append("create_date= '" + cus.Create_date + "'");
+            sbl.Append("last_update='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'");
             sbl.Append("WHERE id='"+cus.Id+"';");
             Console.WriteLine(sbl.ToString());
             try
@@ -225,8 +226,8 @@ namespace Escuela_Manejo1.Datos
             sbl.Clear();
             sbl.Append("use escuela_manejo;");
             sbl.Append("select id_customer,first_name,last_name,email,id,address,phone,create_date from customer"); //,create_date,last_update
-            sbl.Append(" where (state <>2) ");
-            sbl.Append(" AND (id like '%" + cadena + "%' ");
+            sbl.Append(" where"); //(state <> 2)
+            sbl.Append(" (id like '%" + cadena + "%' ");
             sbl.Append(" OR first_name like '%" + cadena + "%' ");
             sbl.Append(" OR last_name like '%" + cadena + "%'); ");
             try {
@@ -257,7 +258,53 @@ namespace Escuela_Manejo1.Datos
 
 
         }
-#endregion
+
+
+        public List<Escuela_Manejo1.entidades.Customer> cbxCus()
+        {
+            List<Escuela_Manejo1.entidades.Customer> listCourse = new List<Escuela_Manejo1.entidades.Customer>();
+            IDataReader idr = null;
+            sbl.Clear();
+            sbl.Append("USE escuela_manejo;");
+            sbl.Append("SELECT id_customer, first_name FROM customer ;");
+
+            try
+            {
+                conn.AbrirConexion();
+                idr = conn.Leer(CommandType.Text, sbl.ToString());
+                while (idr.Read())
+                {
+                    entidades.Customer tins = new entidades.Customer()
+                    //Tbl_usuarios tus = new Tbl_usuarios()
+                    {
+                        Id_customer = (Int32)idr["id_customer"],
+                        First_name = idr["first_name"].ToString(),
+
+                    };
+                    listCourse.Add(tins);
+
+                }
+                idr.Close();
+                return listCourse;
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                Console.WriteLine(e.StackTrace);
+                throw;
+            }
+            finally
+            {
+                conn.cerrarConexion();
+            }
+        }
+
+
+
+
+
+        #endregion
 
 
 

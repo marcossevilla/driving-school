@@ -2,6 +2,7 @@
 using System.Data;
 using MySql.Data;
 using Gtk;
+using System.Collections.Generic;
 using System.Text;
 using Escuela_Manejo1.entidades;
 
@@ -20,8 +21,8 @@ namespace Escuela_Manejo1.Datos
             int n = 0;
             sb.Clear();
             sb.Append("INSERT INTO instructor");
-            sb.Append("(first_name,last_name,email,phone,id,address,state)");
-            sb.Append(" VALUES('" + Ins.First_name + "','" + Ins.Last_name + "','" + Ins.Email + "','" + Ins.Phone + "','" + Ins.Id + "','"+ Ins.Phone+ "','" + 1 + "')"); //+ "," + cus.Create_date + "," + cus.Last_update//
+            sb.Append("(first_name,last_name,email,phone,id,address,state,create_date,last_update)");
+            sb.Append(" VALUES('" + Ins.First_name + "','" + Ins.Last_name + "','" + Ins.Email + "','" + Ins.Phone + "','" + Ins.Id + "','"+ Ins.Phone+ "','" + 1 + "','" + Ins.Create_date + "','"+ Ins.Last_update + "')"); //+ "," + cus.Create_date + "," + cus.Last_update//
             Console.WriteLine("cadena insert " + sb.ToString());
             try
             {
@@ -58,10 +59,10 @@ namespace Escuela_Manejo1.Datos
         public ListStore listarInstructor()
         {
             ListStore datos = new ListStore(typeof(string),
-                typeof(string), typeof(string), typeof(string), typeof(string), typeof(string), typeof(string));
+                typeof(string), typeof(string), typeof(string), typeof(string), typeof(string), typeof(string) , typeof(string), typeof(string));
             IDataReader dr = null;
             sb.Clear();
-            sb.Append("SELECT id_instructor,first_name,last_name,email,phone,id,address FROM instructor WHERE state <> '2'");
+            sb.Append("SELECT id_instructor,first_name,last_name,email,phone,id,address,create_date,last_update FROM instructor ");
             try
             {
                 conn.AbrirConexion();
@@ -69,7 +70,7 @@ namespace Escuela_Manejo1.Datos
                 while (dr.Read())
                 {
                     datos.AppendValues(dr[0].ToString(), dr[1].ToString(),
-                        dr[2].ToString(), dr[3].ToString(), dr[4].ToString(),dr[5].ToString(),dr[6].ToString());
+                        dr[2].ToString(), dr[3].ToString(), dr[4].ToString(),dr[5].ToString(),dr[6].ToString(), dr[7].ToString(), dr[8].ToString());
 
                 }
                 return datos;
@@ -129,7 +130,7 @@ namespace Escuela_Manejo1.Datos
             int eliminado;
             sb.Clear();
             sb.Append("use escuela_manejo;");
-            sb.Append("update instructor set state = '2' WHERE id= '" + ins.Id + "';");
+            sb.Append("Delete from instructor WHERE id= '" + ins.Id + "';");
             Console.WriteLine(sb.ToString());
             //update customer set state= '2' where id= 'id';
             try
@@ -157,10 +158,12 @@ namespace Escuela_Manejo1.Datos
             sb.Append("last_name= '" + ins.Last_name + "',");
             sb.Append("email= '" + ins.Email + "',");
             sb.Append("address= '" + ins.Address + "',");
-            sb.Append("phone= '" + ins.Phone + "'");
-            //sbl.Append("create_date" + cus.Create_date + ";");
-            //sbl.Append("last_update" + cus.Last_update + ";");
-            sb.Append("WHERE id='" + ins.Id + "';");
+            sb.Append("phone= '" + ins.Phone + "',");
+            //sb.Append("create_date='" + ins.Create_date + "',");
+            sb.Append("last_update='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'");
+            sb.Append("WHERE id = " + "'" + ins.Id + "'; ");
+
+
             Console.WriteLine(sb.ToString());
             try
             {
@@ -232,7 +235,50 @@ namespace Escuela_Manejo1.Datos
         }
 
 
-#endregion
+        public List<Escuela_Manejo1.entidades.Instructor> cbxIns()
+        {
+            List<Escuela_Manejo1.entidades.Instructor> listCourse = new List<Escuela_Manejo1.entidades.Instructor>();
+            IDataReader idr = null;
+            sb.Clear();
+            sb.Append("USE escuela_manejo;");
+            sb.Append("SELECT id_instructor, first_name FROM instructor ;");
+
+            try
+            {
+                conn.AbrirConexion();
+                idr = conn.Leer(CommandType.Text, sb.ToString());
+                while (idr.Read())
+                {
+                    entidades.Instructor tins = new entidades.Instructor()
+                    //Tbl_usuarios tus = new Tbl_usuarios()
+                    {
+                        Id_instructor = (Int32)idr["id_instructor"],
+                        First_name = idr["first_name"].ToString(),
+
+                    };
+                    listCourse.Add(tins);
+
+                }
+                idr.Close();
+                return listCourse;
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                Console.WriteLine(e.StackTrace);
+                throw;
+            }
+            finally
+            {
+                conn.cerrarConexion();
+            }
+        }
+
+
+
+
+        #endregion
 
     }
 }

@@ -11,8 +11,8 @@ namespace Escuela_Manejo1.entidades
         private string address;
         private int state;
         private string phone;
-        //private DateTime create_date;
-        //private DateTime last_update;
+        private String create_date;
+        private String last_update;
 
         public int Id_instructor { get => id_instructor; set => id_instructor = value; }
         public string First_name { get => first_name; set => first_name = value; }
@@ -22,8 +22,8 @@ namespace Escuela_Manejo1.entidades
         public string Address { get => address; set => address = value; }
         public int State { get => state; set => state = value; }
         public string Phone { get => phone; set => phone = value; }
-        //public DateTime Create_date { get => create_date; set => create_date = value; }
-        //public DateTime Last_update { get => last_update; set => last_update = value; }
+        public String Create_date { get => create_date; set => create_date = value; }
+        public String Last_update { get => last_update; set => last_update = value; }
 
         public Instructor()
         {

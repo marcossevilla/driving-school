@@ -2,7 +2,7 @@
 using Gtk;
 using Escuela_Manejo1.entidades;
 using Escuela_Manejo1.Datos;
-namespace Escuela_Manejo1.Otros
+namespace Escuela_Manejo1.Negocio
 {
     public class mgCustomer
     {
