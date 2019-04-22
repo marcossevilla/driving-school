@@ -1,14 +1,14 @@
 /home/javier/Desktop/UCA/driving-school2/driving-school/drive-payment/drive/bin/Debug/drive.exe
 /home/javier/Desktop/UCA/driving-school2/driving-school/drive-payment/drive/bin/Debug/drive.pdb
+/home/javier/Desktop/UCA/driving-school2/driving-school/drive-payment/drive/bin/Debug/Escuela_Manejo1.exe
 /home/javier/Desktop/UCA/driving-school2/driving-school/drive-payment/drive/bin/Debug/MySql.Data.dll
 /home/javier/Desktop/UCA/driving-school2/driving-school/drive-payment/drive/bin/Debug/MySQL.Data.EntityFrameworkCore.dll
 /home/javier/Desktop/UCA/driving-school2/driving-school/drive-payment/drive/bin/Debug/Google.Protobuf.dll
+/home/javier/Desktop/UCA/driving-school2/driving-school/drive-payment/drive/bin/Debug/Escuela_Manejo1.pdb
 /home/javier/Desktop/UCA/driving-school2/driving-school/drive-payment/drive/bin/Debug/MySql.Data.xml
 /home/javier/Desktop/UCA/driving-school2/driving-school/drive-payment/drive/bin/Debug/MySQL.Data.EntityFrameworkCore.xml
+/home/javier/Desktop/UCA/driving-school2/driving-school/drive-payment/drive/obj/x86/Debug/drive.csprojAssemblyReference.cache
 /home/javier/Desktop/UCA/driving-school2/driving-school/drive-payment/drive/obj/x86/Debug/drive.csproj.CoreCompileInputs.cache
 /home/javier/Desktop/UCA/driving-school2/driving-school/drive-payment/drive/obj/x86/Debug/drive.csproj.CopyComplete
 /home/javier/Desktop/UCA/driving-school2/driving-school/drive-payment/drive/obj/x86/Debug/drive.exe
 /home/javier/Desktop/UCA/driving-school2/driving-school/drive-payment/drive/obj/x86/Debug/drive.pdb
-/home/javier/Desktop/UCA/driving-school2/driving-school/drive-payment/drive/bin/Debug/Escuela_Manejo1.exe
-/home/javier/Desktop/UCA/driving-school2/driving-school/drive-payment/drive/bin/Debug/Escuela_Manejo1.pdb
-/home/javier/Desktop/UCA/driving-school2/driving-school/drive-payment/drive/obj/x86/Debug/drive.csprojAssemblyReference.cache

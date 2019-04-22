@@ -22,7 +22,7 @@ namespace Escuela_Manejo1.Datos
             sb.Clear();
             sb.Append("INSERT INTO instructor");
             sb.Append("(first_name,last_name,email,phone,id,address,state,create_date,last_update)");
-            sb.Append(" VALUES('" + Ins.First_name + "','" + Ins.Last_name + "','" + Ins.Email + "','" + Ins.Phone + "','" + Ins.Id + "','"+ Ins.Phone+ "','" + 1 + "','" + Ins.Create_date + "','"+ Ins.Last_update + "')"); //+ "," + cus.Create_date + "," + cus.Last_update//
+            sb.Append(" VALUES('" + Ins.First_name + "','" + Ins.Last_name + "','" + Ins.Email + "','" + Ins.Phone + "','" + Ins.Id + "','"+ Ins.Address+ "','" + 1 + "','" + Ins.Create_date + "','"+ Ins.Last_update + "')"); //+ "," + cus.Create_date + "," + cus.Last_update//
             Console.WriteLine("cadena insert " + sb.ToString());
             try
             {

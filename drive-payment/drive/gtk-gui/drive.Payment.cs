@@ -82,7 +82,7 @@ namespace drive
 			w3.Y = 108;
 			// Container child fixed5.Gtk.Fixed+FixedChild
 			this.cmbMethod = global::Gtk.ComboBox.NewText();
-			this.cmbMethod.AppendText("");
+			this.cmbMethod.AppendText(global::Mono.Unix.Catalog.GetString("Seleccione..."));
 			this.cmbMethod.AppendText(global::Mono.Unix.Catalog.GetString("Card"));
 			this.cmbMethod.AppendText(global::Mono.Unix.Catalog.GetString("Cash"));
 			this.cmbMethod.Name = "cmbMethod";
@@ -106,7 +106,7 @@ namespace drive
 			this.btnPay.Label = global::Mono.Unix.Catalog.GetString("Pagar Todo");
 			this.fixed5.Add(this.btnPay);
 			global::Gtk.Fixed.FixedChild w6 = ((global::Gtk.Fixed.FixedChild)(this.fixed5[this.btnPay]));
-			w6.X = 376;
+			w6.X = 395;
 			w6.Y = 580;
 			// Container child fixed5.Gtk.Fixed+FixedChild
 			this.lblSubtotal = new global::Gtk.Label();
@@ -222,7 +222,7 @@ namespace drive
 			this.lblDate.LabelProp = global::Mono.Unix.Catalog.GetString("25/09/00");
 			this.fixed5.Add(this.lblDate);
 			global::Gtk.Fixed.FixedChild w20 = ((global::Gtk.Fixed.FixedChild)(this.fixed5[this.lblDate]));
-			w20.X = 576;
+			w20.X = 500;
 			w20.Y = 35;
 			this.Add(this.fixed5);
 			if ((this.Child != null))

@@ -26,6 +26,8 @@ namespace drive
 
 		private global::Gtk.Button btnPayCash;
 
+		private global::Gtk.Button btnAddMoney;
+
 		protected virtual void Build()
 		{
 			global::Stetic.Gui.Initialize(this);
@@ -64,7 +66,7 @@ namespace drive
 			// Container child fixed1.Gtk.Fixed+FixedChild
 			this.lblTotalValue = new global::Gtk.Label();
 			this.lblTotalValue.Name = "lblTotalValue";
-			this.lblTotalValue.LabelProp = global::Mono.Unix.Catalog.GetString("{placeholder}");
+			this.lblTotalValue.LabelProp = global::Mono.Unix.Catalog.GetString("0.0");
 			this.fixed1.Add(this.lblTotalValue);
 			global::Gtk.Fixed.FixedChild w4 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.lblTotalValue]));
 			w4.X = 152;
@@ -102,34 +104,45 @@ namespace drive
 			this.fixed1.Add(this.lblChangeDollar);
 			global::Gtk.Fixed.FixedChild w8 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.lblChangeDollar]));
 			w8.X = 132;
-			w8.Y = 149;
+			w8.Y = 150;
 			// Container child fixed1.Gtk.Fixed+FixedChild
 			this.lblChangeValue = new global::Gtk.Label();
 			this.lblChangeValue.Name = "lblChangeValue";
-			this.lblChangeValue.LabelProp = global::Mono.Unix.Catalog.GetString("{placeholder}");
+			this.lblChangeValue.LabelProp = global::Mono.Unix.Catalog.GetString("0.0");
 			this.fixed1.Add(this.lblChangeValue);
 			global::Gtk.Fixed.FixedChild w9 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.lblChangeValue]));
 			w9.X = 151;
-			w9.Y = 149;
+			w9.Y = 150;
 			// Container child fixed1.Gtk.Fixed+FixedChild
 			this.btnPayCash = new global::Gtk.Button();
 			this.btnPayCash.CanFocus = true;
 			this.btnPayCash.Name = "btnPayCash";
 			this.btnPayCash.UseUnderline = true;
-			this.btnPayCash.Label = global::Mono.Unix.Catalog.GetString("Pay");
+			this.btnPayCash.Label = global::Mono.Unix.Catalog.GetString("Pagar");
 			this.fixed1.Add(this.btnPayCash);
 			global::Gtk.Fixed.FixedChild w10 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.btnPayCash]));
 			w10.X = 181;
 			w10.Y = 201;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.btnAddMoney = new global::Gtk.Button();
+			this.btnAddMoney.CanFocus = true;
+			this.btnAddMoney.Name = "btnAddMoney";
+			this.btnAddMoney.UseUnderline = true;
+			this.btnAddMoney.Label = global::Mono.Unix.Catalog.GetString("Depositar...");
+			this.fixed1.Add(this.btnAddMoney);
+			global::Gtk.Fixed.FixedChild w11 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.btnAddMoney]));
+			w11.X = 301;
+			w11.Y = 105;
 			this.Add(this.fixed1);
 			if ((this.Child != null))
 			{
 				this.Child.ShowAll();
 			}
-			this.DefaultWidth = 400;
+			this.DefaultWidth = 425;
 			this.DefaultHeight = 251;
 			this.Show();
 			this.btnPayCash.Clicked += new global::System.EventHandler(this.onClickBtnPayCash);
+			this.btnAddMoney.Clicked += new global::System.EventHandler(this.onClickBtnAddMoney);
 		}
 	}
 }

@@ -3,18 +3,34 @@ using Gtk;
 
 namespace drive
 {
-    public partial class CashPayment : Gtk.Window
+    public partial class CashPayment: Gtk.Window
     {
-        public CashPayment() :
-                base(Gtk.WindowType.Toplevel) => this.Build();
+        public float total;
+        public float cambio;
+        public float pago;
+
+        public CashPayment(float total) :
+                base(Gtk.WindowType.Toplevel)
+        {
+
+            this.Build();
+            this.lblTotalValue.LabelProp = total.ToString();
+        }
 
         protected void onClickBtnPayCash(object sender, EventArgs e)
         {
             MessageDialog ms = null;
 
+
             if (string.IsNullOrEmpty(entAmount.Text))
             {
                 ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Info, ButtonsType.Ok, "Llena el campo.");
+                ms.Run();
+                ms.Destroy();
+            }
+            else if (float.Parse(this.entAmount.Text) < total)
+            {
+                ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Info, ButtonsType.Ok, "La cantidad depositada no es suficiente.");
                 ms.Run();
                 ms.Destroy();
             }
@@ -26,5 +42,29 @@ namespace drive
                 this.Destroy();
             }
         }
+
+        protected void onClickBtnAddMoney(object sender, EventArgs e)
+        {
+            var deposit = float.Parse(this.entAmount.Text);
+            var change = deposit - total;
+
+
+
+            this.lblChangeValue.LabelProp = change.ToString();
+        }
+
+
+       /* public int onDestroy()
+        {
+            int destroy = 1;
+
+
+            return destroy;
+            
+        }*/
+
+
+
     }
 }
+

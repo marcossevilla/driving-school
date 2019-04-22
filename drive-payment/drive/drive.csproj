@@ -59,6 +59,9 @@
       <HintPath>..\..\..\..\mySqlMonoConnector\mysql-connector-net-8.0.15-noinstall\v4.5.2\MySQL.Data.EntityFrameworkCore.dll</HintPath>
     </Reference>
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="gtk-gui\gui.stetic">
@@ -82,6 +85,7 @@
     <Compile Include="Entity\CourseService.cs" />
     <Compile Include="Data\DTService.cs" />
     <Compile Include="Entity\PaymentEnt.cs" />
+    <Compile Include="Entity\PaymentDetail.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />

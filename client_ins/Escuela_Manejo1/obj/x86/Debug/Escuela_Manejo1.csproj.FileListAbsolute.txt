@@ -38,8 +38,8 @@
 /home/javier/Downloads/Copias/nn/Escuela_Manejo1/Escuela_Manejo1/obj/x86/Debug/Escuela_Manejo1.pdb
 /home/javier/Desktop/UCA/driving-school2/driving-school/client_ins/Escuela_Manejo1/bin/Debug/Escuela_Manejo1.exe
 /home/javier/Desktop/UCA/driving-school2/driving-school/client_ins/Escuela_Manejo1/bin/Debug/Escuela_Manejo1.pdb
-/home/javier/Desktop/UCA/driving-school2/driving-school/client_ins/Escuela_Manejo1/obj/x86/Debug/Escuela_Manejo1.csprojAssemblyReference.cache
 /home/javier/Desktop/UCA/driving-school2/driving-school/client_ins/Escuela_Manejo1/obj/x86/Debug/Escuela_Manejo1.csproj.CoreCompileInputs.cache
 /home/javier/Desktop/UCA/driving-school2/driving-school/client_ins/Escuela_Manejo1/obj/x86/Debug/Escuela_Manejo1.csproj.CopyComplete
 /home/javier/Desktop/UCA/driving-school2/driving-school/client_ins/Escuela_Manejo1/obj/x86/Debug/Escuela_Manejo1.exe
 /home/javier/Desktop/UCA/driving-school2/driving-school/client_ins/Escuela_Manejo1/obj/x86/Debug/Escuela_Manejo1.pdb
+/home/javier/Desktop/UCA/driving-school2/driving-school/client_ins/Escuela_Manejo1/obj/x86/Debug/Escuela_Manejo1.csprojAssemblyReference.cache

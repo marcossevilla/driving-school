@@ -1,10 +1,12 @@
 ﻿<Properties StartupConfiguration="{1B73A200-A12C-4D9E-BD6E-0CB465E14611}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="../drive-payment/drive/Payment.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../drive-payment/drive/Entity/CourseService.cs">
     <Files>
-      <File FileName="../drive-payment/drive/Payment.cs" Line="28" Column="41" />
-      <File FileName="../drive-payment/drive/Data/DTPaymentAdmin.cs" Line="78" Column="33" />
-      <File FileName="../drive-payment/drive/Data/DTService.cs" Line="143" Column="23" />
-      <File FileName="escuela_manejo/Main_forms/AddCourseInstance.cs" Line="187" Column="44" />
+      <File FileName="../drive-payment/drive/Data/DTPaymentAdmin.cs" Line="243" Column="12" />
+      <File FileName="../drive-payment/drive/Entity/PaymentEnt.cs" Line="14" Column="27" />
+      <File FileName="../drive-payment/drive/CashPayment.cs" Line="60" Column="13" />
+      <File FileName="../drive-payment/drive/Payment.cs" Line="247" Column="92" />
+      <File FileName="../drive-payment/drive/CreditCardPayment.cs" Line="1" Column="1" />
+      <File FileName="../drive-payment/drive/Entity/CourseService.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

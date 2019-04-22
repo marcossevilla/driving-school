@@ -18,7 +18,7 @@ namespace Escuela_Manejo1
         {
             this.Build();
             trwInstructor.Model = dti.listarInstructor();
-            string[] titulos = {"id_instructor", "Nombre", "Apellido", "correo", "direccion", "id", "telefono", "fecha inicial", "fecha actualizada" };
+            string[] titulos = {"id_instructor", "Nombre", "Apellido", "Correo", "Telefono", "Id", "Direccion", "Fecha inicial", "Fecha actualizada" };
             for (int i = 0; i < titulos.Length; i++)
             {
                 trwInstructor.AppendColumn(titulos[i], new CellRendererText(), "text", i);

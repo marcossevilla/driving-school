@@ -4,8 +4,8 @@
     <images-root-path>..</images-root-path>
   </configuration>
   <import>
-    <widget-library name="../bin/Debug/drive.exe" internal="true" />
     <widget-library name="../../../client_ins/Escuela_Manejo1/bin/Debug/Escuela_Manejo1.exe" />
+    <widget-library name="../bin/Debug/drive.exe" internal="true" />
   </import>
   <widget class="Gtk.Window" id="MainWindow" design-size="560 433">
     <property name="MemberName" />
@@ -76,7 +76,7 @@
           <widget class="Gtk.ComboBox" id="cmbMethod">
             <property name="MemberName" />
             <property name="IsTextCombo">True</property>
-            <property name="Items" translatable="yes">
+            <property name="Items" translatable="yes">Seleccione...
 Card
 Cash</property>
             <signal name="Changed" handler="onCmbMethodChange" />
@@ -106,7 +106,7 @@ Cash</property>
             <signal name="Clicked" handler="onClickBtnPay" />
           </widget>
           <packing>
-            <property name="X">376</property>
+            <property name="X">395</property>
             <property name="Y">580</property>
           </packing>
         </child>
@@ -264,7 +264,7 @@ Cash</property>
             <property name="LabelProp" translatable="yes">25/09/00</property>
           </widget>
           <packing>
-            <property name="X">555</property>
+            <property name="X">500</property>
             <property name="Y">35</property>
           </packing>
         </child>
@@ -386,7 +386,7 @@ Cash</property>
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="drive.CashPayment" design-size="400 251">
+  <widget class="Gtk.Window" id="drive.CashPayment" design-size="425 251">
     <property name="MemberName" />
     <property name="Title" translatable="yes">CashPayment</property>
     <property name="WindowPosition">CenterOnParent</property>
@@ -427,7 +427,7 @@ Cash</property>
         <child>
           <widget class="Gtk.Label" id="lblTotalValue">
             <property name="MemberName" />
-            <property name="LabelProp" translatable="yes">{placeholder}</property>
+            <property name="LabelProp" translatable="yes">0.0</property>
           </widget>
           <packing>
             <property name="X">152</property>
@@ -473,17 +473,17 @@ Cash</property>
           </widget>
           <packing>
             <property name="X">132</property>
-            <property name="Y">149</property>
+            <property name="Y">150</property>
           </packing>
         </child>
         <child>
           <widget class="Gtk.Label" id="lblChangeValue">
             <property name="MemberName" />
-            <property name="LabelProp" translatable="yes">{placeholder}</property>
+            <property name="LabelProp" translatable="yes">0.0</property>
           </widget>
           <packing>
             <property name="X">151</property>
-            <property name="Y">149</property>
+            <property name="Y">150</property>
           </packing>
         </child>
         <child>
@@ -491,13 +491,27 @@ Cash</property>
             <property name="MemberName" />
             <property name="CanFocus">True</property>
             <property name="Type">TextOnly</property>
-            <property name="Label" translatable="yes">Pay</property>
+            <property name="Label" translatable="yes">Pagar</property>
             <property name="UseUnderline">True</property>
             <signal name="Clicked" handler="onClickBtnPayCash" />
           </widget>
           <packing>
             <property name="X">181</property>
             <property name="Y">201</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="btnAddMoney">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Depositar...</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="onClickBtnAddMoney" />
+          </widget>
+          <packing>
+            <property name="X">301</property>
+            <property name="Y">105</property>
           </packing>
         </child>
       </widget>

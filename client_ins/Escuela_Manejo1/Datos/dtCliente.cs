@@ -300,11 +300,72 @@ namespace Escuela_Manejo1.Datos
             }
         }
 
-
-
-
-
         #endregion
+
+        public int getIdClient(String client)
+        {
+            int existe = 0; //bandera
+            IDataReader idr = null;
+            sbl.Clear();
+            sbl.Append("USE escuela_manejo;");
+            sbl.Append("SELECT id_customer FROM customer WHERE first_name =" + "'" + client + "';");
+
+            try
+            {
+                conn.AbrirConexion();
+                idr = conn.Leer(CommandType.Text, sbl.ToString());
+                if (idr.Read())
+                {
+                    existe = (Int32)idr["id_customer"];
+                }
+                return existe;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                Console.WriteLine(e.StackTrace);
+                throw;
+            }
+            finally
+            {
+                idr.Close();
+                conn.cerrarConexion();
+            }
+        }//fin del metodo
+
+
+
+        public int getIdClientFull(string[] client)
+        {
+            int existe = 0; //bandera
+            IDataReader idr = null;
+            sbl.Clear();
+            sbl.Append("USE escuela_manejo;");
+            sbl.Append("SELECT id_customer FROM customer WHERE first_name =" + "'" + client[0] + "' AND last_name = '" + client[1] +  "';");
+
+            try
+            {
+                conn.AbrirConexion();
+                idr = conn.Leer(CommandType.Text, sbl.ToString());
+                if (idr.Read())
+                {
+                    existe = (Int32)idr["id_customer"];
+                }
+                return existe;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                Console.WriteLine(e.StackTrace);
+                throw;
+            }
+            finally
+            {
+                idr.Close();
+                conn.cerrarConexion();
+            }
+        }//fin del metodo
+
 
 
 

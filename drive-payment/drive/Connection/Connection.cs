@@ -30,7 +30,7 @@ namespace drive.Connection
             MySqlConnectionStringBuilder sb = new MySqlConnectionStringBuilder();
             sb.Server = "localhost";
             sb.UserID = "manejo";
-            sb.Database = "EscuelaManejo";
+            sb.Database = "escuela_manejo";
             sb.Password = "PurpleLamborghini";
             return sb.ConnectionString;
         }

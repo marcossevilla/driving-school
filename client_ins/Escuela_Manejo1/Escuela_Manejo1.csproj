@@ -71,6 +71,7 @@
     <Reference Include="MySQL.Data.EntityFrameworkCore">
       <HintPath>..\..\Seguridad con MONODEVELOP\Seguridad\bin\Debug\MySQL.Data.EntityFrameworkCore.dll</HintPath>
     </Reference>
+    <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="gtk-gui\gui.stetic">
