@@ -173,7 +173,7 @@ namespace Escuela_Manejo1
 			// Container child table1.Gtk.Table+TableChild
 			this.label5 = new global::Gtk.Label();
 			this.label5.Name = "label5";
-			this.label5.LabelProp = global::Mono.Unix.Catalog.GetString("Direccion");
+			this.label5.LabelProp = global::Mono.Unix.Catalog.GetString("Dirección");
 			this.table1.Add(this.label5);
 			global::Gtk.Table.TableChild w9 = ((global::Gtk.Table.TableChild)(this.table1[this.label5]));
 			w9.LeftAttach = ((uint)(2));
@@ -183,7 +183,7 @@ namespace Escuela_Manejo1
 			// Container child table1.Gtk.Table+TableChild
 			this.label6 = new global::Gtk.Label();
 			this.label6.Name = "label6";
-			this.label6.LabelProp = global::Mono.Unix.Catalog.GetString("Telefono");
+			this.label6.LabelProp = global::Mono.Unix.Catalog.GetString("Teléfono");
 			this.table1.Add(this.label6);
 			global::Gtk.Table.TableChild w10 = ((global::Gtk.Table.TableChild)(this.table1[this.label6]));
 			w10.TopAttach = ((uint)(1));
@@ -332,11 +332,11 @@ namespace Escuela_Manejo1
 			w21.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table2.Gtk.Table+TableChild
 			this.btnNuevoIns = new global::Gtk.Button();
-			this.btnNuevoIns.WidthRequest = 85;
+			this.btnNuevoIns.WidthRequest = 130;
 			this.btnNuevoIns.CanFocus = true;
 			this.btnNuevoIns.Name = "btnNuevoIns";
 			this.btnNuevoIns.UseUnderline = true;
-			this.btnNuevoIns.Label = global::Mono.Unix.Catalog.GetString("Nuevo");
+			this.btnNuevoIns.Label = global::Mono.Unix.Catalog.GetString("Limpiar Campos");
 			this.table2.Add(this.btnNuevoIns);
 			global::Gtk.Table.TableChild w22 = ((global::Gtk.Table.TableChild)(this.table2[this.btnNuevoIns]));
 			w22.XOptions = ((global::Gtk.AttachOptions)(0));

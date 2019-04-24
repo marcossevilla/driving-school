@@ -254,7 +254,7 @@
                 <child>
                   <widget class="Gtk.Label" id="label5">
                     <property name="MemberName" />
-                    <property name="LabelProp" translatable="yes">Direccion</property>
+                    <property name="LabelProp" translatable="yes">Dirección</property>
                   </widget>
                   <packing>
                     <property name="LeftAttach">2</property>
@@ -273,7 +273,7 @@
                 <child>
                   <widget class="Gtk.Label" id="label6">
                     <property name="MemberName" />
-                    <property name="LabelProp" translatable="yes">Telefono</property>
+                    <property name="LabelProp" translatable="yes">Teléfono</property>
                   </widget>
                   <packing>
                     <property name="TopAttach">1</property>
@@ -528,10 +528,10 @@
                     <child>
                       <widget class="Gtk.Button" id="btnNuevoIns">
                         <property name="MemberName" />
-                        <property name="WidthRequest">85</property>
+                        <property name="WidthRequest">130</property>
                         <property name="CanFocus">True</property>
                         <property name="Type">TextOnly</property>
-                        <property name="Label" translatable="yes">Nuevo</property>
+                        <property name="Label" translatable="yes">Limpiar Campos</property>
                         <property name="UseUnderline">True</property>
                         <signal name="Clicked" handler="OnBtnNuevoInsClicked" />
                       </widget>

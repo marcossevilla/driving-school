@@ -28,7 +28,7 @@ namespace Escuela_Manejo1.Datos
 
         public void AbrirConexion()
         {
-            MessageDialog ms = null;
+            //MessageDialog ms = null;
             if(conn.State==ConnectionState.Open)
             {
                 return;
@@ -43,9 +43,9 @@ namespace Escuela_Manejo1.Datos
                 }
                 catch (Exception e)
                 {
-                    ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error, ButtonsType.Ok, e.Message);
-                    ms.Run();
-                    ms.Destroy();
+                    //ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Error, ButtonsType.Ok, e.Message);
+                    //ms.Run();
+                    //ms.Destroy();
 
                 }
 

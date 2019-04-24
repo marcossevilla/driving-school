@@ -1,12 +1,22 @@
 ﻿<Properties StartupConfiguration="{1B73A200-A12C-4D9E-BD6E-0CB465E14611}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="../drive-payment/drive/Entity/CourseService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../client_ins/Escuela_Manejo1/Frm_Clientes.cs">
     <Files>
-      <File FileName="../drive-payment/drive/Data/DTPaymentAdmin.cs" Line="243" Column="12" />
+      <File FileName="../drive-payment/drive/Data/DTPaymentAdmin.cs" Line="177" Column="18" />
       <File FileName="../drive-payment/drive/Entity/PaymentEnt.cs" Line="14" Column="27" />
-      <File FileName="../drive-payment/drive/CashPayment.cs" Line="60" Column="13" />
-      <File FileName="../drive-payment/drive/Payment.cs" Line="247" Column="92" />
+      <File FileName="../drive-payment/drive/CashPayment.cs" Line="56" Column="126" />
+      <File FileName="../drive-payment/drive/Payment.cs" Line="245" Column="29" />
       <File FileName="../drive-payment/drive/CreditCardPayment.cs" Line="1" Column="1" />
       <File FileName="../drive-payment/drive/Entity/CourseService.cs" Line="1" Column="1" />
+      <File FileName="../client_ins/Escuela_Manejo1/Datos/dtCliente.cs" Line="3" Column="18" />
+      <File FileName="escuela_manejo/Connection/Connection.cs" Line="39" Column="10" />
+      <File FileName="../client_ins/Escuela_Manejo1/Datos/Conexion.cs" Line="31" Column="15" />
+      <File FileName="escuela_manejo/Data/DTcourse.cs" Line="1" Column="1" />
+      <File FileName="escuela_manejo/Main_forms/Start.cs" Line="40" Column="53" />
+      <File FileName="../client_ins/Escuela_Manejo1/MainWindow.cs" Line="1" Column="1" />
+      <File FileName="../client_ins/Escuela_Manejo1/Frm_Clientes.cs" Line="21" Column="45" />
+      <File FileName="../client_ins/Escuela_Manejo1/Frm_instructor.cs" Line="21" Column="110" />
+      <File FileName="../client_ins/Escuela_Manejo1/Datos/dtInstructor.cs" Line="1" Column="1" />
+      <File FileName="../drive-payment/drive/Connection/Connection.cs" Line="41" Column="51" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

@@ -36,7 +36,7 @@ namespace drive
             }
             else
             {
-                ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Info, ButtonsType.Ok, "Datos guardados!");
+                ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Info, ButtonsType.Ok, "Datos guardados.");
                 ms.Run();
                 ms.Destroy();
                 this.Destroy();
@@ -45,12 +45,20 @@ namespace drive
 
         protected void onClickBtnAddMoney(object sender, EventArgs e)
         {
-            var deposit = float.Parse(this.entAmount.Text);
-            var change = deposit - total;
+            try
+            {
+                var deposit = float.Parse(this.entAmount.Text);
+                var change = deposit - total;
+                this.lblChangeValue.LabelProp = change.ToString();
+            }
+            catch 
+            {
+                var ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Info, ButtonsType.Ok, "El valor debe ser un número.");
+                ms.Run();
+                ms.Destroy();
+                this.Destroy();
+            }
 
-
-
-            this.lblChangeValue.LabelProp = change.ToString();
         }
 
 

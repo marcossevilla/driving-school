@@ -166,10 +166,10 @@ namespace drive.Data
                     if (x > 0)
                     {
                         //guardado = true;
-                        var ms = new MessageDialog(null, DialogFlags.Modal,
-                        MessageType.Info, ButtonsType.Ok, "Se guardo el pago con exito!");
-                        ms.Run();
-                        ms.Destroy();
+                        //var ms = new MessageDialog(null, DialogFlags.Modal,
+                        //MessageType.Info, ButtonsType.Ok, "Se guardo el pago con exito!");
+                        //ms.Run();
+                        //ms.Destroy();
                     }
 
                 }

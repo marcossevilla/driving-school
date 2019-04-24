@@ -18,7 +18,7 @@ namespace Escuela_Manejo1
 
             this.Build();
             trwtabla.Model = dcl.listarCliente();
-            string[] titulos = { "id_customer", "Nombre", "Apellido", "correo", "direccion", "id", "telefono", "fecha inicial", "fecha actualizada" };
+            string[] titulos = { "ID Cliente", "Nombre", "Apellido", "Correo", "Dirección", "Id", "Teléfono", "Fecha inicial", "fecha actualizada" };
             for (int i = 0; i < titulos.Length; i++)
             {
                 trwtabla.AppendColumn(titulos[i], new CellRendererText(), "text", i);
@@ -116,7 +116,7 @@ namespace Escuela_Manejo1
 
                 if (mgs.Mguardarcliente(cus))
                 {
-                    mnsj = new MessageDialog(null, DialogFlags.Modal, MessageType.Info, ButtonsType.Ok, "Se guardo el usuario");
+                    mnsj = new MessageDialog(null, DialogFlags.Modal, MessageType.Info, ButtonsType.Ok, "Se guardó el usuario");
                     mnsj.Run();
                     mnsj.Destroy();
                     limpiarCosas();
@@ -125,7 +125,7 @@ namespace Escuela_Manejo1
                 else
                 {
 
-                    mnsj = new MessageDialog(null, DialogFlags.Modal, MessageType.Error, ButtonsType.Ok, "No se guardo");
+                    mnsj = new MessageDialog(null, DialogFlags.Modal, MessageType.Error, ButtonsType.Ok, "No se guardó");
                     mnsj.Run();
                     mnsj.Destroy();
                     //this.txtidc.GrabFocus();
@@ -141,7 +141,7 @@ namespace Escuela_Manejo1
             eliminado = dcl.Eliminarcliente(cus);
             if(eliminado!=0)
             {
-                mnsj = new MessageDialog(null, DialogFlags.Modal, MessageType.Info, ButtonsType.Ok, "Usuario eliminado con exito");
+                mnsj = new MessageDialog(null, DialogFlags.Modal, MessageType.Info, ButtonsType.Ok, "Usuario eliminado con éxito.");
                 mnsj.Run();
                 mnsj.Destroy();
                 limpiarCosas();
@@ -149,7 +149,7 @@ namespace Escuela_Manejo1
 
             }
             else {
-                mnsj = new MessageDialog(null, DialogFlags.Modal, MessageType.Error, ButtonsType.Ok, "Seleccione un usuario");
+                mnsj = new MessageDialog(null, DialogFlags.Modal, MessageType.Error, ButtonsType.Ok, "Seleccione un usuario.");
                 mnsj.Run();
                 mnsj.Destroy();
 
@@ -182,7 +182,7 @@ namespace Escuela_Manejo1
             if ( txtnombrec.Text.Equals("") || txtapellidoc.Text.Equals("") || txtcorreoc.Text.Equals("") || txtdireccionc.Text.Equals("") || txttelefonoc.Text.Equals(""))
             {
 
-                mnsj = new MessageDialog(null, DialogFlags.Modal, MessageType.Error, ButtonsType.Ok, "Todos los campos son requeridos");
+                mnsj = new MessageDialog(null, DialogFlags.Modal, MessageType.Error, ButtonsType.Ok, "Todos los campos son requeridos.");
                 mnsj.Run();
                 mnsj.Destroy();
             }
@@ -202,7 +202,7 @@ namespace Escuela_Manejo1
                 cus.State = 1;
                 if (dcl.actualizar(cus))
                 {
-                    mnsj = new MessageDialog(null, DialogFlags.Modal, MessageType.Info, ButtonsType.Ok, "Se actualizo cliente");
+                    mnsj = new MessageDialog(null, DialogFlags.Modal, MessageType.Info, ButtonsType.Ok, "Se actualizó cliente.");
                     mnsj.Run();
                     mnsj.Destroy();
                     limpiarCosas();
@@ -210,7 +210,7 @@ namespace Escuela_Manejo1
                 }
                 else
                 {
-                    mnsj = new MessageDialog(null, DialogFlags.Modal, MessageType.Error, ButtonsType.Ok, "No se actualizo");
+                    mnsj = new MessageDialog(null, DialogFlags.Modal, MessageType.Error, ButtonsType.Ok, "No se actualizó.");
                     mnsj.Run();
                     mnsj.Destroy();
                     //this.txtidc.GrabFocus();

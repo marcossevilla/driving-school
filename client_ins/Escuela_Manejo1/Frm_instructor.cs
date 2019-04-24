@@ -18,7 +18,7 @@ namespace Escuela_Manejo1
         {
             this.Build();
             trwInstructor.Model = dti.listarInstructor();
-            string[] titulos = {"id_instructor", "Nombre", "Apellido", "Correo", "Telefono", "Id", "Direccion", "Fecha inicial", "Fecha actualizada" };
+            string[] titulos = {"id_instructor", "Nombre", "Apellido", "Correo", "Teléfono", "Id", "Dirección", "Fecha inicial", "Fecha actualizada" };
             for (int i = 0; i < titulos.Length; i++)
             {
                 trwInstructor.AppendColumn(titulos[i], new CellRendererText(), "text", i);
@@ -42,7 +42,7 @@ namespace Escuela_Manejo1
             if (txtidIn.Text.Equals("") || txtNombreI.Text.Equals("") || txtApellidoI.Text.Equals("") || txtcorreoIn.Text.Equals("") || txtDireccionIn.Equals("") || txtTelefonoins.Text.Equals(""))
             {
 
-                mnsj = new MessageDialog(null, DialogFlags.Modal, MessageType.Error, ButtonsType.Ok, "Todos los campos son requeridos");
+                mnsj = new MessageDialog(null, DialogFlags.Modal, MessageType.Error, ButtonsType.Ok, "Todos los campos son requeridos.");
                 mnsj.Run();
                 mnsj.Destroy();
             }
@@ -63,7 +63,7 @@ namespace Escuela_Manejo1
                 //cus.Last_update = this.devolverfechaactualizada();
                 if (mgi.Mguardarinstructor(ins))
                 {
-                    mnsj = new MessageDialog(null, DialogFlags.Modal, MessageType.Info, ButtonsType.Ok, "Se guardo el Instructor");
+                    mnsj = new MessageDialog(null, DialogFlags.Modal, MessageType.Info, ButtonsType.Ok, "Se guardó el Instructor.");
                     mnsj.Run();
                     mnsj.Destroy();
 
@@ -72,7 +72,7 @@ namespace Escuela_Manejo1
                 else
                 {
 
-                    mnsj = new MessageDialog(null, DialogFlags.Modal, MessageType.Error, ButtonsType.Ok, "No se guardo");
+                    mnsj = new MessageDialog(null, DialogFlags.Modal, MessageType.Error, ButtonsType.Ok, "No se guardó.");
                     mnsj.Run();
                     mnsj.Destroy();
                     //this.txtidc.GrabFocus();
@@ -90,7 +90,7 @@ namespace Escuela_Manejo1
             eliminado = dti.EliminarInstructor(ins);
             if (eliminado != 0)
             {
-                mnsj = new MessageDialog(null, DialogFlags.Modal, MessageType.Info, ButtonsType.Ok, "instructor eliminado con exito");
+                mnsj = new MessageDialog(null, DialogFlags.Modal, MessageType.Info, ButtonsType.Ok, "instructor eliminado con éxito.");
                 mnsj.Run();
                 mnsj.Destroy();
                 this.limpiarcosas();
@@ -99,7 +99,7 @@ namespace Escuela_Manejo1
             }
             else
             {
-                mnsj = new MessageDialog(null, DialogFlags.Modal, MessageType.Error, ButtonsType.Ok, "Seleccione un instructor");
+                mnsj = new MessageDialog(null, DialogFlags.Modal, MessageType.Error, ButtonsType.Ok, "Seleccione un instructor.");
                 mnsj.Run();
                 mnsj.Destroy();
 
@@ -131,7 +131,7 @@ namespace Escuela_Manejo1
             if (txtidIn.Text.Equals("") || txtNombreI.Text.Equals("") || txtApellidoI.Text.Equals("") || txtcorreoIn.Text.Equals("") || txtDireccionIn.Equals("") || txtTelefonoins.Text.Equals(""))
             {
 
-                mnsj = new MessageDialog(null, DialogFlags.Modal, MessageType.Error, ButtonsType.Ok, "Todos los campos son requeridos");
+                mnsj = new MessageDialog(null, DialogFlags.Modal, MessageType.Error, ButtonsType.Ok, "Todos los campos son requeridos.");
                 mnsj.Run();
                 mnsj.Destroy();
             }
@@ -150,7 +150,7 @@ namespace Escuela_Manejo1
                 //cus.Last_update = this.devolverfechaactualizada();
                 if (dti.actualizar(ins))
                 {
-                    mnsj = new MessageDialog(null, DialogFlags.Modal, MessageType.Info, ButtonsType.Ok, "Se actualizo el instructor");
+                    mnsj = new MessageDialog(null, DialogFlags.Modal, MessageType.Info, ButtonsType.Ok, "Se actualizó el instructor.");
                     mnsj.Run();
                     mnsj.Destroy();
 
@@ -159,7 +159,7 @@ namespace Escuela_Manejo1
                 else
                 {
 
-                    mnsj = new MessageDialog(null, DialogFlags.Modal, MessageType.Error, ButtonsType.Ok, "No se guardo");
+                    mnsj = new MessageDialog(null, DialogFlags.Modal, MessageType.Error, ButtonsType.Ok, "No se guardó.");
                     mnsj.Run();
                     mnsj.Destroy();
                     //this.txtidc.GrabFocus();

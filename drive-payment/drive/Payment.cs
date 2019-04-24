@@ -28,7 +28,7 @@ namespace drive
 
         PrintDocument reporteFactura = new PrintDocument();
         PrintPreviewDialog vista = new PrintPreviewDialog();
-        String cadenaImpresion = "";
+        String cadena = "";
 
 
         decimal subtotal;
@@ -185,7 +185,7 @@ namespace drive
                     this.reporteFactura.Print();
 
                 }
-                catch (Exception ex)
+                catch
                 {
                     MessageDialog ms = new MessageDialog(null, DialogFlags.Modal, MessageType.Info, ButtonsType.Ok, "No existe una impresora conectada" );
                     ms.Run();
@@ -237,15 +237,18 @@ namespace drive
 
        public void Impresion(object sender , PrintPageEventArgs ev)
         {
-            cadenaImpresion = "";
+            cadena = "";
 
-            this.cadenaImpresion += "Escuela de Manejo Luisa Mercado" + "\n\nFactura #" + dtpayment.getIdPayment(this.payment) + "\n\n" +
+            this.cadena += "Escuela de Manejo Luisa Mercado" + "\n\nFactura #" + dtpayment.getIdPayment(this.payment) + "\n\n" +
                 "Fecha: " + DateTime.Now.ToString("dddd, dd MMMM yyyy") +
                 "\n\nCliente: " + this.cmbClient.ActiveText + "\n\n" +
+                "\n\nRUC:" + "10164090588" + "\n\n" +
+               
                 "----------------------------------------------------------------------\n" +
                 "     ID    Servicio    Precio\n\n" +
                 "----------------------------------------------------------------------\n";
 
+          
 
             /*ev.Graphics.DrawString(cadenaImpresion, new Font("Arial", 19), Brushes.Black, 20, 0);*/
 
@@ -264,24 +267,24 @@ namespace drive
                         if(datos.GetIterFirst(out iter2))
                         {
 
-                            cadenaImpresion += "      " + datos.GetValue(iter1, j).ToString();
+                            cadena += "      " + datos.GetValue(iter1, j).ToString();
                             //Console.WriteLine("pene");
 
                         }
                         if(j == trwPayments.Columns.Length - 1)
                         {
-                            cadenaImpresion += "\n";
+                            cadena += "\n";
 
                         }
                     }
                 }
 
-                this.cadenaImpresion += "----------------------------------------------------------------------" +
+                this.cadena += "----------------------------------------------------------------------" +
                     "\n\n\n\nSubtotal        " + this.lblSubtotalValue.LabelProp +
                     "\n\nIVA                15%" +
                     "\n\nTotal              " + this.lblTotalValue.LabelProp + "\n\n";
 
-                ev.Graphics.DrawString(cadenaImpresion,new Font("Arial",19), Brushes.Black, 20,0);
+                ev.Graphics.DrawString(cadena,new Font("Arial",19), Brushes.Black, 20,0);
 
             }
             //if(datos.IterNext) */
